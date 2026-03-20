@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /temporary screenshots/
+
+Sitemap: https://lescalinglab.com/sitemap.xml

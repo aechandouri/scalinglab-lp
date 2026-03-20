@@ -278,9 +278,19 @@
     .sys-panel { position:absolute;inset:0;opacity:0;transform:translateY(12px);transition:opacity 0.4s ease,transform 0.4s ease;pointer-events:none; }
     .sys-panel.active { opacity:1;transform:translateY(0);pointer-events:auto; }
     @media(max-width:768px){
-      .sys-wrapper { grid-template-columns:1fr !important;gap:36px !important; }
+      .sys-wrapper { grid-template-columns:1fr !important;gap:28px !important; }
       .sys-wrapper > div:last-child { position:static !important;top:0 !important;order:-1; }
-      .sys-wrapper > div:last-child > div { min-height:300px !important; }
+      .sys-wrapper > div:last-child > div { min-height:320px !important; }
+      .sys-panel { padding: 16px !important; }
+      .sys-panel table { font-size: 10px !important; }
+      .sys-panel table td, .sys-panel table th { padding: 6px 8px !important; }
+      .sys-panel > div { border-radius: 10px !important; overflow: hidden !important; }
+      /* Niche matrix table — tighter padding */
+      .sys-panel > div > div[style*="grid-template-columns:1.6fr"] { padding-left: 10px !important; padding-right: 10px !important; font-size: 9px !important; }
+      .sys-panel > div > div[style*="padding:20px 22px"] { padding: 14px 12px 10px !important; }
+      /* 6 systems grid — tighter */
+      .sys-panel > div > div[style*="display:grid;grid-template-columns:1fr 1fr"] { padding: 10px !important; gap: 8px !important; }
+      .sys-panel > div > div[style*="display:grid;grid-template-columns:1fr 1fr"] > div { padding: 10px 10px !important; }
     }
 
     /* ── Case Study Cards ── */
@@ -342,6 +352,8 @@
     @media (max-width: 768px) {
       .vs-table-header, .vs-row { grid-template-columns: 1fr 1fr !important; }
       .vs-criterion-cell { display: none !important; }
+      .vs-row > div { padding: 14px 12px !important; font-size: 12px !important; }
+      .vs-table-header > div { font-size: 11px !important; padding: 10px 12px !important; }
     }
 
     /* ── Divider ── */
@@ -589,7 +601,7 @@
     </div>
 
     <!-- Stats row — centered, 4 equal cols -->
-    <div class="fade-up delay-4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:760px;margin:0 auto;">
+    <div class="fade-up delay-4 hero-stats-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:760px;margin:0 auto;">
       <div class="stat-box" style="text-align:center;--delay:0s;">
         <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:36px;letter-spacing:-0.01em;color:#FFFFFF;line-height:1;position:relative;z-index:1;">+$723k</div>
         <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;font-weight:500;font-family:'Oswald',sans-serif;letter-spacing:0.05em;text-transform:uppercase;position:relative;z-index:1;">Cash collecté</div>
@@ -612,7 +624,9 @@
 
 <style>
   @media (max-width: 600px) {
-    .hero-stats-grid { grid-template-columns: repeat(2,1fr) !important; }
+    .hero-stats-grid { grid-template-columns: repeat(2,1fr) !important; gap: 10px !important; }
+    .hero-stats-grid .stat-box { padding: 16px 12px !important; }
+    .hero-stats-grid .stat-box div:first-child { font-size: 28px !important; }
   }
 </style>
 
@@ -783,7 +797,17 @@
   </div>
   <style>
     @media (max-width: 768px) {
-      .founder-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+      .founder-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+      #polaroid-wrap { height: 420px !important; }
+      #polaroid-wrap .pol-card { width: 130px !important; }
+      #polaroid-wrap .pol-card img { height: 160px !important; }
+      #polaroid-wrap .pol-card { padding: 6px 6px 24px !important; }
+      #polaroid-wrap .pol-card:nth-child(1) { --tx: -68px !important; --ty: -90px !important; }
+      #polaroid-wrap .pol-card:nth-child(2) { --tx: 62px !important; --ty: -85px !important; }
+      #polaroid-wrap .pol-card:nth-child(3) { --tx: -72px !important; --ty: 10px !important; }
+      #polaroid-wrap .pol-card:nth-child(4) { --tx: 66px !important; --ty: 15px !important; }
+      #polaroid-wrap .pol-card:nth-child(5) { --tx: -40px !important; --ty: 100px !important; }
+      #polaroid-wrap .pol-card:nth-child(6) { --tx: 44px !important; --ty: 95px !important; }
     }
     .pol-card {
       position: absolute;
@@ -1715,9 +1739,10 @@
 
   <style>
     @media (max-width: 768px) {
-      .fsteps-wrapper { grid-template-columns: 1fr !important; gap: 36px !important; }
+      .fsteps-wrapper { grid-template-columns: 1fr !important; gap: 28px !important; }
       .fsteps-wrapper > div:last-child { position: static !important; top: 0 !important; order: -1; }
-      .fsteps-wrapper > div:last-child > div { min-height: 340px !important; }
+      .fsteps-wrapper > div:last-child > div { min-height: 300px !important; }
+      .fstep-panel { padding: 20px !important; }
       .problems-grid { grid-template-columns: 1fr !important; }
       .cs-grid-top { grid-template-columns: 1fr !important; }
       .cs-grid-bottom { grid-template-columns: 1fr !important; max-width: 100% !important; }
@@ -2406,7 +2431,7 @@
       <div style="border-radius:16px;overflow:hidden;border:1px solid rgba(74,59,255,0.2);box-shadow:0 0 60px rgba(59,47,232,0.12);">
         <div class="calendly-inline-widget"
              data-url="https://calendly.com/qualifiedappointments/scale-ton-agence-icia-a-30k-m-en-1-to-1-yt?hide_gdpr_banner=1&background_color=06060F&text_color=ffffff&primary_color=6055FF"
-             style="min-width:320px;height:720px;"></div>
+             style="min-width:280px;width:100%;height:720px;"></div>
       </div>
     </div>
 
@@ -2556,5 +2581,54 @@
 </svg>
 
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+<!-- ── Global Mobile Fixes ── -->
+<style>
+@media (max-width: 768px) {
+  /* Hero section */
+  section[style*="padding:88px"] { padding: 72px 20px 40px !important; }
+
+  /* Flywheel SVG — scale down */
+  svg[viewBox="0 0 480 480"] { max-width: 320px; height: auto; margin: 0 auto; display: block; }
+
+  /* VS comparison — reduce blue overlay width */
+  .vs-row > div:last-child { font-size: 12px !important; }
+
+  /* Proof section case study cards */
+  .cs-card { border-radius: 10px !important; }
+
+  /* CTA section padding */
+  section[id="apply"] { padding: 80px 20px !important; }
+
+  /* Footer padding */
+  footer { padding: 40px 20px 32px !important; }
+
+  /* Problems section cards */
+  .problems-grid > div { padding: 28px 20px !important; }
+
+  /* Calendly container */
+  #calendly-embed .calendly-inline-widget { height: 680px !important; }
+}
+
+@media (max-width: 480px) {
+  /* Even smaller screens */
+  .hero-stats-grid .stat-box div:first-child { font-size: 24px !important; }
+  .hero-stats-grid .stat-box { padding: 14px 8px !important; }
+
+  /* Tighter polaroids */
+  #polaroid-wrap .pol-card { width: 110px !important; }
+  #polaroid-wrap .pol-card img { height: 135px !important; }
+  #polaroid-wrap .pol-card:nth-child(1) { --tx: -55px !important; --ty: -80px !important; }
+  #polaroid-wrap .pol-card:nth-child(2) { --tx: 48px !important; --ty: -75px !important; }
+  #polaroid-wrap .pol-card:nth-child(3) { --tx: -58px !important; --ty: 8px !important; }
+  #polaroid-wrap .pol-card:nth-child(4) { --tx: 52px !important; --ty: 12px !important; }
+  #polaroid-wrap .pol-card:nth-child(5) { --tx: -32px !important; --ty: 85px !important; }
+  #polaroid-wrap .pol-card:nth-child(6) { --tx: 36px !important; --ty: 80px !important; }
+  #polaroid-wrap { height: 360px !important; }
+
+  /* Nav logo */
+  nav .display-bold { font-size: 20px !important; }
+}
+</style>
 </body>
 </html>

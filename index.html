@@ -649,6 +649,23 @@
       border-color: rgba(96,85,255,0.5);
       box-shadow: 0 0 28px rgba(59,47,232,0.2), 0 0 8px rgba(96,85,255,0.15);
     }
+    /* Swoosh underline draw animation */
+    .swoosh-draw {
+      stroke-dasharray: 340;
+      stroke-dashoffset: 340;
+      animation: swoosh-draw 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) 0.8s forwards;
+    }
+    @keyframes swoosh-draw {
+      to { stroke-dashoffset: 0; }
+    }
+    .hero-swoosh {
+      opacity: 0;
+      animation: swoosh-fade 0.3s ease 0.8s forwards;
+    }
+    @keyframes swoosh-fade {
+      to { opacity: 1; }
+    }
+
     @keyframes stat-border-glow {
       0%, 100% { background-position: 0% 50%; opacity: 0.4; }
       50% { background-position: 100% 50%; opacity: 0.8; }
@@ -812,7 +829,26 @@
     <!-- Headline — 2 lines -->
     <h1 class="fade-up delay-1" style="margin-bottom:28px;color:#FFFFFF;max-width:1100px;margin-left:auto;margin-right:auto;">
       <span class="display-bold" style="font-size:clamp(22px,3vw,43px);display:block;line-height:1.1;color:#FFFFFF;">Comment lancer &amp; scaler<br class="md:hidden"><span style="background:linear-gradient(135deg,#C8C4FF 0%,#6055FF 40%,#3B2FE8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"> une Agence de Croissance IA</span></span>
-      <span class="heading-oswald" style="display:block;font-size:clamp(18px,3vw,42px);color:rgba(255,255,255,0.92);margin-top:16px;letter-spacing:0.06em;">à 300k€/an &amp; +80% de marges</span>
+      <span class="heading-oswald" style="display:inline-block;position:relative;font-size:clamp(18px,3vw,42px);color:rgba(255,255,255,0.92);margin-top:16px;letter-spacing:0.06em;">à 300k€/an &amp; +80% de marges
+        <svg class="hero-swoosh" viewBox="0 0 320 18" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="position:absolute;bottom:-8px;left:-2%;width:104%;height:18px;pointer-events:none;">
+          <defs>
+            <linearGradient id="swoosh-grad" x1="0" y1="0" x2="320" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#3B2FE8" stop-opacity="0.1"/>
+              <stop offset="25%" stop-color="#6055FF"/>
+              <stop offset="75%" stop-color="#C8C4FF"/>
+              <stop offset="100%" stop-color="#3B2FE8" stop-opacity="0.1"/>
+            </linearGradient>
+            <filter id="swoosh-glow">
+              <feGaussianBlur stdDeviation="2.5" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <path d="M4 12 Q80 4, 160 8 T316 6" stroke="url(#swoosh-grad)" stroke-width="2.2" stroke-linecap="round" fill="none" filter="url(#swoosh-glow)" class="swoosh-draw"/>
+        </svg>
+      </span>
     </h1>
 
     <!-- Sub -->

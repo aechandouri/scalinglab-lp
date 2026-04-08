@@ -1,5 +1,12 @@
 # Scaling Lab' — Abdé Chan
 
+## Markdown Mirrors (AI-readable clean versions of each page)
+Plain-text markdown mirrors are available for every page on this site.
+Add .md to any URL to get a clean, chrome-free version:
+- https://lescalinglab.com/index.md — Homepage (full program description, FAQ, founder bio)
+- https://lescalinglab.com/resultats.md — Student results page (all 7 case studies with numbers)
+
+
 ## About
 Scaling Lab' is a 1-on-1, 6-month intensive coaching program for French-speaking entrepreneurs who want to launch and scale an AI growth agency to 300k€/year at 80%+ margins. Founded by Abdé Chan — a 25-year-old French-Moroccan entrepreneur (born in Casablanca, raised in France) who left an engineering school path to build a real AI acquisition agency on the US market. He generates an average of 27,000€/month from his agency (723k$ total cash collected, 86% net margins) and has personally coached 115+ agency owners across 75+ niches. Unlike most coaches, Abdé's primary income is his agency — not this program. Every method taught is currently running on live clients.
 

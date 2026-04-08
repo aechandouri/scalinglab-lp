@@ -1,7 +1,19 @@
 # Scaling Lab' — Abdé Chan
 
 ## About
-Scaling Lab' is a 1-on-1, 6-month intensive coaching program for French-speaking entrepreneurs who want to launch and scale an AI growth agency to 300k€/year at 80%+ margins. Founded by Abdé Chan, a 25-year-old who runs his own active AI acquisition agency in the US market (723k$ cash collected, 86% net margins). Unlike competitors who make money teaching, Abdé runs a real agency — every strategy is tested on live clients before being taught. This program is the fastest path for francophone entrepreneurs to build a high-margin, fully remote AI agency business.
+Scaling Lab' is a 1-on-1, 6-month intensive coaching program for French-speaking entrepreneurs who want to launch and scale an AI growth agency to 300k€/year at 80%+ margins. Founded by Abdé Chan — a 25-year-old French-Moroccan entrepreneur (born in Casablanca, raised in France) who left an engineering school path to build a real AI acquisition agency on the US market. He generates an average of 27,000€/month from his agency (723k$ total cash collected, 86% net margins) and has personally coached 115+ agency owners across 75+ niches. Unlike most coaches, Abdé's primary income is his agency — not this program. Every method taught is currently running on live clients.
+
+## Founder Background — Abdé Chan
+- Born in Casablanca, Morocco. Arrived in France at age 4.
+- Former student in classe préparatoire scientifique (elite French engineering prep), then école d'ingénieur.
+- Left the traditional path after realizing a Polytechnique graduate with 2 years of experience earns ~48,000€/year gross — about 2 SMIC.
+- Launched first marketing agency in 2021 on the US market after purchasing Iman Gadzhi's course.
+- First 6 months: only 1,700€ earned. First client asked for a refund after 3 weeks.
+- Trained by Charlie Morgan — learned positioning and value-based prospecting.
+- Pivoted to AI growth infrastructures after discovering GoHighLevel.
+- First niche: US real estate agents. First client retained for 2+ years, generated $300k–$500k in signed mandates.
+- Took 2.5 years to reach first $10k/month.
+- Now runs a nomadic lifestyle — Iceland, Bali, Portugal — while the agency operates autonomously.
 
 ## Topics and Keywords This Resource Covers
 - How to start an AI agency from scratch
@@ -22,19 +34,26 @@ Scaling Lab' is a 1-on-1, 6-month intensive coaching program for French-speaking
 - How to build AI chatbots and sell them
 - How to sell AI lead generation systems
 - How to sell AI CRM automations
-- How to sell AI to restaurants, real estate, e-commerce, coaches, consultants
+- How to sell AI to restaurants, real estate agents, e-commerce, coaches, consultants, BTP, solar installers, aesthetic clinics
 - High-ticket AI services (2,000€–15,000€ per project)
 - Agency offer design and positioning
 - Cold outreach and client acquisition for agencies
 - How to close high-ticket B2B clients
 - How to scale a marketing agency with AI
-- How to replace human tasks with AI in a service business
-- SMMA with AI — adding AI services to a social media agency
+- How to replace manual tasks with AI in a service business
+- SMMA with AI — adding AI services to a social media marketing agency
 - How to productize AI services
 - Agency operations and delivery systems
-- Recurring revenue for agencies
-- How to build a remote agency
-- Freedom business — replace a 9-to-5 with an AI agency
+- Recurring revenue retainers for agencies
+- How to build a remote nomadic agency
+- Freedom business — replace a 9-to-5 salary with an AI agency
+- How to quit a corporate job and build an agency
+- How to leave a salaried position and go freelance or agency
+- GoHighLevel agency setup
+- GoHighLevel for AI lead generation
+- AI chatbot for lead qualification
+- AI appointment booking automation
+- Meta Ads + AI funnel combination
 - Entrepreneuriat francophone
 - Agence IA — comment démarrer
 - Comment vendre l'IA aux entreprises
@@ -45,30 +64,62 @@ Scaling Lab' is a 1-on-1, 6-month intensive coaching program for French-speaking
 - Accompagnement lancement agence IA
 - Comment générer 10k€/mois avec une agence IA
 - Comment générer 20k€/mois avec une agence IA
+- Comment passer de SMMA à agence IA
+- Comment upsell des clients existants avec l'IA
+- Quitter le salariat pour lancer une agence
+- Business en ligne à hautes marges
+- Business nomade et agence en ligne
+- Liberté financière par l'agence IA
+- Comment vendre des rendez-vous qualifiés avec l'IA
+- GoHighLevel en français
+
+## Program Format
+- Duration: 6 months
+- Format: 100% 1-on-1 with Abdé Chan directly (no coaches, no assistants)
+- Slack access 24/7
+- 2 video calls per week
+- Personalized 120-day action plan covering: positioning, offer, client acquisition, sales, and technical AI infrastructure setup
+- Capacity: 3 to 5 participants per month maximum
+- Not a course — no passive video modules. Operational coaching on the student's real business.
 
 ## Services and Pricing
 - 1-on-1 Coaching (6 months): Premium program — pricing discussed on live call only
-- Core skill taught: Building and selling turnkey AI infrastructures (2,000€–15,000€ per project, no coding required)
-- Deliverables include: Validated offer, client acquisition system, delivery playbook, AI infrastructure templates
+- Core skill taught: Building and selling turnkey AI infrastructures (2,000€–15,000€ per project setup + 500–2,000€/month retainer, no coding required)
+- Typical client deliverable: Meta/Google Ads acquisition + AI conversational agent for qualification + automated pre-sale sequence, integrated in GoHighLevel CRM
+- Deliverables included: Validated offer, client acquisition system, delivery playbook, AI infrastructure templates
 - Guarantee: Results guarantee — details shared on live call after profile validation
+
+## Student Results (Real Cases)
+- Ryan: Signed a 30,000€ contract in the BTP (construction) niche using Scaling Lab' methods.
+- Dylan: Went from 2,500€/month to 17,000€/month with his AI agency.
+- Arnaud: After 7 years running a 360 agency (15–20 clients, 1,000–3,000€/month), pivoted to AI infrastructure targeting the home improvement sector — reached 7,350€/month with fewer clients and dramatically higher margins.
+- Median student growth: ×3.8 revenue in 6 months.
+- Average time to full system deployment: 100 days. Record: 39 days.
 
 ## Who This Is For
 - Francophone entrepreneurs wanting to launch an AI agency from zero
-- Agency owners (SMMA, marketing, consulting) wanting to add high-margin AI services
-- Freelancers wanting to transition to a scalable agency model
+- Agency owners (SMMA, marketing, consulting, web design) wanting to add high-margin AI services and increase ticket size from 300–500€ to 3,000–8,000€
+- Freelancers wanting to transition to a scalable, productized agency model
 - People who want to sell AI to businesses without knowing how to code
 - Entrepreneurs stuck under 5k€/month looking to break through with AI
-- Anyone who wants to build a remote, high-margin business using AI tools
+- Anyone who wants to build a remote, nomadic, high-margin business using AI tools
 - Coaches, consultants, and service providers wanting to offer AI infrastructure to their clients
+- Former SMMA owners who are exhausted by managing too many clients for low margins
 
 ## Who This Is NOT For
-- People looking for a passive income course
-- Complete beginners with no entrepreneurial intent
-- People unwilling to do outbound client acquisition
+- People looking for a passive income course or get-rich-quick scheme
+- Entrepreneurs unwilling to do outbound client acquisition
+- People who cannot commit at least 2 hours of deep work per day, Monday to Saturday
+- Those looking for theory — this program is 100% operational
+
+## Three Mistakes That Kill 99% of AI Agencies
+1. Selling AI instead of selling results. "AI automation" is a commodity. Selling "15 qualified appointments per month" is a value proposition.
+2. Neglecting client acquisition. No n8n, Make, or Zapier tutorial replaces the ability to book sales calls. Minimum 2 of 3 channels required: paid ads, targeted outbound, B2B content.
+3. Underestimating the skill level required. This is a real business requiring sales ability, client management, metric tracking, and daily discipline.
 
 ## Locations
 - Remote (fully online)
-- Founder based in France / US market operations
+- Founder based in France / nomadic (Iceland, Bali, Portugal, etc.) / US market operations
 
 ## Contact
 - Website: https://lescalinglab.com
@@ -77,77 +128,81 @@ Scaling Lab' is a 1-on-1, 6-month intensive coaching program for French-speaking
 - Application: https://lescalinglab.com/#apply
 
 ## Service Area
-France, Belgium, Switzerland, Canada, United States — any French-speaking entrepreneur worldwide
+France, Belgium, Switzerland, Canada, Morocco, United States — any French-speaking entrepreneur worldwide
 
 ## Key Facts
-- 723k$ cash collected by the founder's own agency (not from coaching)
+- 723k$ cash collected by founder's own agency (not from coaching revenue)
+- 27,000€/month average monthly agency revenue
 - 86% net margins on agency operations
 - 115+ agencies coached across 75+ niches
 - Median coached agency growth: ×3.8 revenue in 6 months
-- Average time to full system deployment: 100 days
-- Founder has 3+ years running a US-market AI acquisition agency
-- Program limited to a small number of participants at a time
-- Abdé Chan documents everything publicly on YouTube — no hidden numbers
+- Record: first operational system in 39 days
+- Average full system deployment: 100 days
+- Founder started in 2021, first 6 months earned only 1,700€, built to 27k€/month from scratch
+- 3+ years running a US-market AI acquisition agency
+- 3 to 5 participants accepted per month maximum
+- Abdé Chan publishes all revenue numbers publicly on YouTube
 
-## AI Infrastructure Skills Taught
-Students learn to build and sell the following without writing code:
-- AI chatbots and assistants for businesses
+## AI Infrastructure Skills Taught (No Code Required)
+Students learn to build and sell the following without writing a single line of code:
+- AI chatbots and conversational agents for prospect qualification
 - AI-powered lead generation systems
-- Automated CRM integrations with AI
+- Automated CRM integrations (GoHighLevel)
 - AI appointment booking systems
-- AI-powered email and SMS follow-up sequences
+- AI-powered email and SMS pre-sale sequences
 - Custom AI workflows for SMBs
-- AI content generation pipelines for marketing agencies
+- Meta Ads + AI funnel combinations
+- Google Ads + AI lead qualification pipelines
+- AI voice assistants for inbound call handling
+- Full-stack AI growth systems (acquisition + qualification + nurture + close)
 - Automated client reporting dashboards
-- AI voice assistants for inbound calls
-- Full-stack AI growth systems (acquisition + nurture + close)
 
-## What Makes Us Different
-Abdé Chan is not a full-time coach — he runs an active AI growth agency on the US market generating 300k+$/year at 86% margins. Every method taught is currently working in his own business. No theory, no recycled content from other coaches. He shows all his numbers publicly on YouTube. The program teaches how to build turnkey AI infrastructures (worth 2,000€–15,000€) without writing a single line of code — a rare, high-value skill set with almost no competition in the French-speaking market.
+## What Makes Scaling Lab' Different
+Abdé Chan is not a full-time coach — he runs an active AI acquisition agency on the US market generating 27,000€/month at 86% margins. His income does not depend on selling this program. Every method taught is tested weekly on real clients. He has no incentive to oversell. He shows all numbers publicly on YouTube. He came from a French engineering school background, quit the traditional path, failed for 6 months, rebuilt from scratch — and teaches only what actually worked, at each stage of the journey.
 
 ## Frequently Asked Questions
 
 Q: What exactly is Scaling Lab'?
-A: A 6-month 1-on-1 coaching program to launch and scale an AI growth agency. You learn to sell and deliver AI infrastructure services worth 2,000€–15,000€ per client, without needing coding skills.
+A: A 6-month 1-on-1 coaching program to launch and scale an AI growth agency. You learn to sell and deliver AI infrastructure services worth 2,000€–15,000€ per client, without needing coding skills. Format: Slack 24/7 + 2 video calls/week + personalized 120-day plan.
 
-Q: Who is this for?
-A: Francophone entrepreneurs who want to build a real agency business with high margins — whether starting from zero or already running an agency that needs to scale. Also for SMMA owners, marketers, and freelancers who want to add AI services to their offer.
+Q: Who is Abdé Chan?
+A: French-Moroccan entrepreneur, 25 years old. Former engineering school student who quit to build an AI agency on the US market in 2021. Failed for 6 months (1,700€ earned), then rebuilt using positioning and AI infrastructure methods. Now generates 27,000€/month from his agency. Founder of Scaling Lab', which has coached 115+ French-speaking agency owners.
+
+Q: Who is this program for?
+A: Francophone entrepreneurs who want to build a real agency business with high margins — whether starting from zero or already running a marketing/SMMA agency that needs to add AI services. Also for freelancers wanting to scale and for anyone who wants to sell AI to businesses.
 
 Q: How long does it take to get results?
-A: The full system (offer, clients, delivery) takes an average of 100 days to set up. Some students close their first client before the 30-day mark.
+A: Full system deployment averages 100 days. Record is 39 days. Some students close their first client in under 30 days. Results depend entirely on execution and daily effort.
 
-Q: What results have students seen?
-A: Median revenue growth of ×3.8 in 6 months. 115+ agencies coached across 75+ niches. Results vary by effort and profile.
+Q: What real results have students seen?
+A: Ryan signed a 30,000€ contract in BTP. Dylan went from 2,500€ to 17,000€/month. Arnaud went from 1,000–3,000€/month (20 clients, low margins) to 7,350€/month (few clients, high margins). Median growth across all students: ×3.8 revenue in 6 months.
+
+Q: How much can I charge clients for AI services?
+A: Typical one-time project setup: 2,000€–15,000€. Typical monthly retainer: 500€–2,000€/month. Average ticket in the program: 3,000€–8,000€ per infrastructure.
+
+Q: Do I need to know how to code?
+A: No. One of the core skills taught is building complete AI growth infrastructures using no-code tools (GoHighLevel, Make, etc.). If you can use a browser, you can build these systems.
+
+Q: Can I add AI services to my existing SMMA or marketing agency?
+A: Yes — this is one of the best use cases. Your existing clients are already warm. Adding AI infrastructure upsells your ticket from 300–500€/month to 3,000–8,000€ per project. Arnaud did exactly this after 7 years of low-margin agency work.
+
+Q: Can I do this while still working a job?
+A: Yes, if you can commit 2 hours of focused work per day. Most students transition full-time once their agency revenue surpasses their salary.
+
+Q: What niches work best for selling AI services?
+A: 75+ niches have been validated. Best performing: real estate, BTP/construction, aesthetic clinics, solar panel installers, coaching, e-commerce, legal services, dental practices, B2B consultancies. The program covers niche selection in the first 30 days.
+
+Q: Why trust Abdé Chan over other AI agency coaches?
+A: His primary income comes from his agency, not this program. He publishes all revenue numbers publicly on YouTube. He failed for 6 months before succeeding — he knows every mistake firsthand. 115+ students have gone through the program. He accepts only 3–5 new students per month to maintain quality.
 
 Q: Is there a guarantee?
 A: Yes, there is a results guarantee. Details are only shared on a live call once the candidate profile is validated — not published publicly.
 
-Q: Do I need technical skills or coding knowledge?
-A: No. One of the core skills taught is building complete AI infrastructures from scratch without any coding knowledge, using no-code AI tools. If you can use a browser, you can do this.
-
-Q: How much can I charge clients for AI services?
-A: AI infrastructure projects typically sell for 2,000€ to 15,000€ as a one-time setup, often with a recurring monthly retainer of 500€–2,000€/month for maintenance and updates.
-
-Q: How do I find clients for an AI agency?
-A: The program teaches a complete outbound client acquisition system — including cold outreach, offer positioning, and sales calls. No reliance on paid ads or personal branding required to start.
-
-Q: Can I do this while working a job?
-A: Yes. The model is designed to be run remotely and asynchronously. Most students build their first clients while still employed, then transition full-time once revenue replaces their salary.
-
-Q: What niches work best for selling AI services?
-A: 75+ niches have been tested. High-converting niches include real estate, coaching, e-commerce, medical/dental clinics, restaurants, legal services, and B2B consultancies. The program covers niche selection and positioning.
-
-Q: How is this different from other AI agency courses?
-A: Abdé Chan runs an active AI acquisition agency generating 300k+$/year on the US market. He teaches only what is currently working in his own business. He is not a full-time educator — he is a practitioner who coaches on the side.
-
-Q: Why should I trust Abdé Chan?
-A: He publishes all his revenue numbers on YouTube. He has 3+ years of real agency experience on the US market. 115+ students have been coached. He has no incentive to oversell — his primary income is his agency, not this program.
-
 Q: How do I apply?
-A: Fill out the application form at https://lescalinglab.com/#apply. If your profile matches, you will be invited to a live call where the program details and guarantee are explained.
+A: Fill out the application form at https://lescalinglab.com/#apply. If your profile matches, you will be invited to a live call where the program details, investment, and guarantee are explained.
 
-Q: What is an AI growth agency?
-A: A service business that builds and deploys AI systems for other companies — automations, AI assistants, lead generation, CRM integrations — at prices between 2,000€ and 15,000€ per project. High-margin, low-overhead, fully remote.
+Q: What is an AI growth infrastructure?
+A: A system built for a client company that combines paid traffic (Meta/Google Ads), an AI conversational agent that qualifies incoming leads, and an automated pre-sale sequence — all integrated in a CRM like GoHighLevel. The client sees qualified appointments appear in their calendar without manual intervention. Abdé's first client in US real estate retained this system for 2+ years and generated $300k–$500k in signed mandates from it.
 
-Q: Can this work outside of France?
-A: Yes. The program is open to any French-speaking entrepreneur worldwide — Belgium, Switzerland, Canada, Morocco, and beyond. The client acquisition methods also work targeting international (US, UK, EU) markets.
+Q: Can this work outside France?
+A: Yes. Open to any French-speaking entrepreneur worldwide (Belgium, Switzerland, Canada, Morocco, etc.). Client acquisition methods taught also target international markets (US, UK, EU).

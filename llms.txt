@@ -28,8 +28,8 @@ Detailed niche analysis pages for each industry vertical where AI agencies can s
 - https://lescalinglab.com/agences/kines-osteos/ — Kinés & ostéopathes (120 000 praticiens, 30-50% patients perdus post-protocole)
 - https://lescalinglab.com/agences/plombiers-electriciens/ — Plombiers & électriciens (200 000 artisans, Arnaud 2k→8k€+/mois)
 
-## Guides pratiques — Méthodes pour agences IA (Problématiques)
-Guides détaillés basés sur la méthode Scaling Lab' et les transcripts YouTube d'Abdé Chan, couvrant les 10 blocages principaux des agences IA :
+## Guides pratiques — Méthodes pour agences IA (24 problématiques standalone)
+Guides détaillés basés sur la méthode Scaling Lab' et les transcripts YouTube d'Abdé Chan, couvrant les 24 blocages principaux des agences IA :
 - https://lescalinglab.com/agences/comment-creer-offre-agence-ia/ — Comment créer une offre irrésistible (positionnement, valeur, pricing 500€ → 10k€)
 - https://lescalinglab.com/agences/comment-choisir-niche-agence-ia/ — Comment choisir sa niche (5 critères, 75+ niches validées, anti-saturation)
 - https://lescalinglab.com/agences/comment-generer-trafic-agence-ia/ — Comment générer du trafic qualifié (Meta Ads, cold outreach, VSL, 49€/appel)
@@ -40,6 +40,35 @@ Guides détaillés basés sur la méthode Scaling Lab' et les transcripts YouTub
 - https://lescalinglab.com/agences/comment-facturer-plus-fort-agence-ia/ — Comment facturer plus fort (pricing valeur, 2k-15k€ setup)
 - https://lescalinglab.com/agences/comment-scaler-agence-ia-50k/ — Comment scaler au-delà de 10k€/mois (systèmes, recrutement, délégation)
 - https://lescalinglab.com/agences/comment-garantir-resultats-clients-agence-ia/ — Comment garantir des résultats (garantie résultat, ×2-3 closing)
+- https://lescalinglab.com/agences/comment-creer-vsl-agence-ia/ — Comment créer une VSL qui convertit (6 blocs, 35-50 appels/mois, 49€ coût/appel)
+- https://lescalinglab.com/agences/comment-prospecter-cold-outreach-agence-ia/ — Comment prospecter en cold outreach (séquence 7 touchpoints, ICP précis, breakup email)
+- https://lescalinglab.com/agences/comment-upsell-clients-agence-ia/ — Comment upsell ses clients (de 3k€ à 7k€, 50%+ taux d'acceptation)
+- https://lescalinglab.com/agences/comment-passer-smma-agence-ia/ — Comment passer de SMMA à agence IA (transition sans perdre ses clients)
+- https://lescalinglab.com/agences/comment-utiliser-gohighlevel-agence-ia/ — Comment utiliser GoHighLevel (snapshots, pipelines, automatisations, infra complète)
+- https://lescalinglab.com/agences/comment-decrocher-premier-client-agence-ia/ — Comment décrocher son premier client (de 0 sans preuve sociale)
+- https://lescalinglab.com/agences/comment-construire-credibilite-agence-ia/ — Comment construire sa crédibilité (preuves sociales, autorité sectorielle)
+- https://lescalinglab.com/agences/comment-gerer-objection-prix-agence-ia/ — Comment gérer l'objection prix (psychologie du prix, ne jamais brader)
+- https://lescalinglab.com/agences/comment-creer-contenu-b2b-agence-ia/ — Comment créer du contenu B2B (inbounds niche, LinkedIn, vidéo courte)
+- https://lescalinglab.com/agences/comment-piloter-kpis-agence-ia/ — Comment piloter ses KPIs (dashboard agence IA, métriques clés, reporting)
+- https://lescalinglab.com/agences/comment-automatiser-prospection-agence-ia/ — Comment automatiser sa prospection (enrichissement, séquences IA, Make)
+- https://lescalinglab.com/agences/comment-creer-landing-page-agence-ia/ — Comment créer une landing page (structure LP agence IA, taux de conversion)
+- https://lescalinglab.com/agences/comment-negocier-contrats-agence-ia/ — Comment négocier ses contrats (durée, clauses, protection agence)
+- https://lescalinglab.com/agences/comment-eviter-erreurs-agence-ia/ — Comment éviter les 5 erreurs fatales (blocages sous 10k€/mois)
+
+## Guides croisés — Méthodes × Niches (360 pages)
+Chaque guide problématique est décliné pour les 15 niches verticales. Pattern URL : /agences/[niche]/comment-[slug]/
+Exemple d'entrées représentatives (15 niches × 24 méthodes = 360 pages au total) :
+- https://lescalinglab.com/agences/centres-esthetiques/comment-creer-offre-agence-ia/ — Offre agence IA pour centres esthétiques (ticket 4-8k€, Louis 3k→58k€/mois)
+- https://lescalinglab.com/agences/btp-construction/comment-creer-offre-agence-ia/ — Offre agence IA pour le BTP (ticket 2,5-7k€, Ryan & Julien 5k→40k€+/mois)
+- https://lescalinglab.com/agences/immobilier/comment-booker-appels-qualifies-agence-ia/ — Booker des appels qualifiés en immobilier (80% leads perdus après 2h)
+- https://lescalinglab.com/agences/dentistes/comment-reduire-churn-agence-ia/ — Réduire le churn avec les dentistes (no-show 20-25%, relances retour)
+- https://lescalinglab.com/agences/restaurants/comment-prospecter-cold-outreach-agence-ia/ — Cold outreach restaurants (175 000 cibles, pain point tickets abandonnés)
+- https://lescalinglab.com/agences/solaire/comment-creer-vsl-agence-ia/ — VSL agence IA solaire (leads achetés 60-90€, différenciation par la VSL)
+- https://lescalinglab.com/agences/avocats/comment-facturer-plus-fort-agence-ia/ — Facturer plus fort en niche avocats (40-60% leads perdus, ticket 3-10k€)
+- https://lescalinglab.com/agences/therapeutes/comment-decrocher-premier-client-agence-ia/ — Premier client thérapeutes (Sally 0→18k€/mois, niche accessible)
+- https://lescalinglab.com/agences/e-commerce/comment-reduire-churn-agence-ia/ — Réduire le churn e-commerce (78% abandon panier, relances automatiques)
+- https://lescalinglab.com/agences/coaching-consultants/comment-scaler-agence-ia-50k/ — Scaler avec la niche coaching (Arthur & Matis 1k→10k€ en 110j)
+Toutes les 360 pages sont accessibles depuis /agences/[niche]/ et /agences/comment-[slug]/
 
 ## About
 Scaling Lab' is a 1-on-1, 6-month intensive coaching program for French-speaking entrepreneurs who want to launch and scale an AI growth agency to 300k€/year at 80%+ margins. Founded by Abdé Chan — a 25-year-old French-Moroccan entrepreneur (born in Casablanca, raised in France) who left an engineering school path to build a real AI acquisition agency on the US market. He generates an average of 27,000€/month from his agency (723k$ total cash collected, 86% net margins) and has personally coached 115+ agency owners across 75+ niches. Unlike most coaches, Abdé's primary income is his agency — not this program. Every method taught is currently running on live clients.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 generate_niche_city_pages.py
-Génère /agences/[niche]/[ville]/index.html pour le SEO programmatique.
+Génère /agences/[niche]/[ville]/index.html — SEO programmatique francophonie.
 Usage : python3 generate_niche_city_pages.py
 """
 
@@ -184,21 +184,413 @@ NICHES = {
         'student_desc': 'Arthur &amp; Matis ont ciblé les coachs et infopreneurs dès le début. En 110 jours, ils sont passés de 1 000 à 10 000 €/mois. La niche est accessible, les clients comprennent la valeur d\'un système commercial.',
         'parent_page_name': 'Coaching & Consultants',
     },
+    'restaurants': {
+        'label': 'Restauration &amp; food service',
+        'label_raw': 'Restauration & food service',
+        'title_short': 'Restaurants',
+        'pill_text': 'Analyse de niche · Restauration',
+        'h1_line1': 'Agence IA pour les restaurants',
+        'stat1_num': '175 000', 'stat1_label': 'Restaurants en France',
+        'stat2_num': '70%', 'stat2_label': 'Clients perdus sans relance',
+        'stat3_num': '2-5k€', 'stat3_label': 'Ticket setup typique',
+        'national_count': 175000,
+        'market_body': 'La restauration est le secteur avec la plus forte densité de TPE en France : 175 000 établissements, dont 80% sont gérés sans équipe marketing. La clientèle est locale, la demande est là — mais 70% des clients qui ne reviennent pas le font uniquement par manque de sollicitation.',
+        'pain1_title': 'Les clients satisfaits ne reviennent pas — faute de relance',
+        'pain1_body': 'Un client satisfait qui ne reçoit aucun message de suivi ne reviendra pas spontanément dans 70% des cas. Sans séquence SMS ou email post-visite avec une offre de retour, le chiffre d\'affaires de fidélisation est structurellement sous-exploité.',
+        'pain2_title': 'Réputation Google mal gérée — avis manquants ou sans réponse',
+        'pain2_body': 'Un restaurant avec moins de 50 avis Google est invisible face à ses concurrents. La majorité des propriétaires ne demandent jamais d\'avis à leurs clients — par manque de système. Résultat : les mauvais avis dominent et la note stagne.',
+        'pain3_title': 'No-show et réservations non confirmées — 15-20% des créneaux perdus',
+        'pain3_body': 'Entre 15 et 20% des tables réservées ne sont jamais honorées. Sans rappel automatique J-1 et J-2, les propriétaires ne peuvent pas réaffecter ces créneaux. Du chiffre d\'affaires perdu chaque week-end.',
+        'infra1_title': 'Séquence SMS fidélisation post-visite J+14 & J+45',
+        'infra1_body': 'Un SMS automatique 2 semaines après la visite avec une offre ciblée (menu du moment, soirée spéciale). Taux de retour sur clients passés : +25-40% vs sans système.',
+        'infra2_title': 'Automatisation avis Google après chaque repas',
+        'infra2_body': 'Demande d\'avis automatique via SMS 2h après la visite. Un restaurant peut passer de 30 à 150 avis en 3 mois. L\'algorithme Google booste automatiquement la visibilité locale.',
+        'infra3_title': 'Rappel de réservation automatique J-2 et J-1',
+        'infra3_body': 'SMS de confirmation envoyé J-2 avec option de report. Réduction des no-shows de 50-65%. Les créneaux libérés sont proposés à une liste d\'attente automatique.',
+        'ticket_setup': '2 000 – 5 000 €',
+        'ticket_retainer': '400 – 900 €',
+        'student_initials': '→',
+        'student_name': 'Programme Scaling Lab\'',
+        'student_before': '',
+        'student_after': '',
+        'student_delay': '',
+        'student_niche': 'Niche restauration',
+        'student_desc': 'La restauration est une des niches à fort volume enseignées dans le programme. Les propriétaires comprennent immédiatement la valeur d\'un système qui ramène leurs anciens clients et réduit les no-shows — deux douleurs quotidiennes avec un ROI mesurable dès le premier mois.',
+        'parent_page_name': 'Restaurants',
+    },
+    'solaire': {
+        'label': 'Installateurs solaires &amp; photovoltaïque',
+        'label_raw': 'Installateurs solaires & photovoltaïque',
+        'title_short': 'Solaire & Photovoltaïque',
+        'pill_text': 'Analyse de niche · Solaire & photovoltaïque',
+        'h1_line1': 'Agence IA pour les installateurs solaires',
+        'stat1_num': '4 500', 'stat1_label': 'Installateurs actifs en France',
+        'stat2_num': '×3', 'stat2_label': 'Croissance du marché 2020–2024',
+        'stat3_num': '2,5-6k€', 'stat3_label': 'Ticket setup typique',
+        'national_count': 4500,
+        'market_body': 'Le marché du photovoltaïque en France a triplé entre 2020 et 2024. Plus de 4 500 installateurs actifs — et une demande portée par les aides d\'État. Le problème : la quasi-totalité achètent leurs leads sur des plateformes tierces à 60-90€ pièce, partagés avec 3 à 5 concurrents.',
+        'pain1_title': 'Dépendance aux leads achetés — coûteux, partagés, mal qualifiés',
+        'pain1_body': 'Les agrégateurs vendent des leads photovoltaïque entre 60 et 90€ pièce — et les revendent à plusieurs installateurs simultanément. C\'est une course au premier contact, avec des marges compressées et aucun actif commercial propre.',
+        'pain2_title': 'Devis envoyés sans relance — taux de conversion sous 30%',
+        'pain2_body': 'Après la visite technique, l\'installateur envoie le devis et attend. Sans relance à J+3, J+7 et J+14, les prospects refroidissent. Le concurrent qui relance en premier signe.',
+        'pain3_title': 'Appels entrants non qualifiés — hors zone, sans budget, toiture inadaptée',
+        'pain3_body': '40 à 60% du temps commercial est perdu à qualifier des prospects qui ne convertiront jamais : hors zone d\'intervention, locataires, toitures non adaptées ou budget trop faible. Un chatbot de pré-qualification élimine ce gâchis.',
+        'infra1_title': 'Chatbot de pré-qualification zone / toiture / budget',
+        'infra1_body': 'Filtre en amont : département d\'intervention, type et orientation de toiture, surface, budget estimé. Seules les demandes viables arrivent à l\'installateur. Gain de temps : 5-8h/semaine.',
+        'infra2_title': 'Séquence relance devis J+3 / J+7 / J+14 SMS+email',
+        'infra2_body': 'Chaque devis envoyé déclenche une séquence automatique. Taux de conversion : de 28% à 45-55% avec 3 relances bien timées.',
+        'infra3_title': 'Funnel Meta Ads + IA → RDV visite technique qualifié',
+        'infra3_body': 'Publicités Meta ciblées propriétaires dans la zone d\'intervention. L\'IA qualifie les clics et ne book que les prospects éligibles. Coût par RDV qualifié : 15-30€ vs 60-90€ sur plateforme.',
+        'ticket_setup': '2 500 – 6 000 €',
+        'ticket_retainer': '500 – 1 200 €',
+        'student_initials': '→',
+        'student_name': 'Programme Scaling Lab\'',
+        'student_before': '',
+        'student_after': '',
+        'student_delay': '',
+        'student_niche': 'Niche solaire & photovoltaïque',
+        'student_desc': 'Le solaire est une niche à haute valeur et faible concurrence IA. Les installateurs ont le budget, comprennent la notion de ROI sur leads, et la douleur des leads partagés achetés à prix fort est immédiate et universelle. Un des meilleurs angles pour démarrer une agence en 2025.',
+        'parent_page_name': 'Solaire & Photovoltaïque',
+    },
+    'dentistes': {
+        'label': 'Cabinets dentaires',
+        'label_raw': 'Cabinets dentaires',
+        'title_short': 'Dentistes & Cabinets Dentaires',
+        'pill_text': 'Analyse de niche · Cabinets dentaires',
+        'h1_line1': 'Agence IA pour les cabinets dentaires',
+        'stat1_num': '42 000', 'stat1_label': 'Chirurgiens-dentistes en France',
+        'stat2_num': '20-25%', 'stat2_label': 'Taux de no-show moyen',
+        'stat3_num': '3-7k€', 'stat3_label': 'Ticket setup typique',
+        'national_count': 42000,
+        'market_body': 'La France compte 42 000 chirurgiens-dentistes pour un marché de 12 milliards d\'euros. Chaque cabinet gère en moyenne 1 500 patients actifs — et perd entre 200 et 400€ par no-show, chaque semaine, faute de rappel automatisé.',
+        'pain1_title': 'No-show et annulations tardives — 20-25% des créneaux perdus',
+        'pain1_body': 'Un cabinet dentaire perd entre 5 et 8 créneaux par semaine à cause des no-shows. À 200-300€ par acte moyen, c\'est 1 000 à 2 400€ perdus chaque semaine. Sans rappel automatique, ce chiffre ne bouge pas.',
+        'pain2_title': 'Rappels de soins jamais effectués — détartrage, suivi, implant',
+        'pain2_body': '40 à 60% des patients qui ont besoin d\'un rappel à 6 ou 12 mois ne reviennent pas parce que personne ne les a contactés. Les assistantes sont débordées. Sans automatisation, ces rappels ne se font tout simplement pas.',
+        'pain3_title': 'Zéro système d\'acquisition de nouveaux patients',
+        'pain3_body': 'La quasi-totalité des dentistes dépendent uniquement du bouche-à-oreille. Les cabinets avec peu d\'avis Google sont invisibles pour toute personne qui déménage ou cherche un nouveau praticien. Un actif numérique inexploité.',
+        'infra1_title': 'Rappel RDV automatique J-2 et J-1 par SMS — no-show divisé par 3',
+        'infra1_body': 'SMS automatiques J-2 avec option de report, J-1 de confirmation. Les créneaux annulés à 48h sont immédiatement proposés sur liste d\'attente. Taux de no-show : de 22% à moins de 8%.',
+        'infra2_title': 'Séquence relance rappels de soins à 6 et 12 mois post-acte',
+        'infra2_body': 'Chaque acte déclenche une relance automatique SMS + email à 5 mois (pour rappel 6 mois) et 11 mois (rappel 1 an). Taux de retour sur rappels de soins : +40-60%.',
+        'infra3_title': 'Automatisation avis Google + pipeline de nouveaux patients',
+        'infra3_body': 'Demande d\'avis automatique après chaque consultation. En 3 mois, un cabinet peut passer de 20 à 100+ avis. Associé à une fiche Google Business optimisée, la visibilité locale double.',
+        'ticket_setup': '3 000 – 7 000 €',
+        'ticket_retainer': '600 – 1 400 €',
+        'student_initials': '→',
+        'student_name': 'Programme Scaling Lab\'',
+        'student_before': '',
+        'student_after': '',
+        'student_delay': '',
+        'student_niche': 'Niche cabinets dentaires',
+        'student_desc': 'Les cabinets dentaires ont un ROI immédiat et mesurable : chaque no-show évité = 200-300€ récupérés. Le ticket est élevé, les praticiens comprennent les chiffres, et la douleur est quotidienne. Une des niches les plus simples à vendre pour une agence IA débutante.',
+        'parent_page_name': 'Dentistes & Cabinets Dentaires',
+    },
+    'therapeutes': {
+        'label': 'Thérapeutes &amp; praticiens bien-être',
+        'label_raw': 'Thérapeutes & praticiens bien-être',
+        'title_short': 'Thérapeutes & Bien-Être',
+        'pill_text': 'Analyse de niche · Thérapeutes & bien-être',
+        'h1_line1': 'Agence IA pour les thérapeutes & praticiens',
+        'stat1_num': '30 000', 'stat1_label': 'Praticiens en France',
+        'stat2_num': '90%', 'stat2_label': 'Dépendent du bouche-à-oreille',
+        'stat3_num': '2-5k€', 'stat3_label': 'Ticket setup typique',
+        'national_count': 30000,
+        'market_body': 'Le marché du bien-être et de la thérapie en France compte plus de 30 000 praticiens actifs : psychologues, coachs certifiés, thérapeutes, hypnothérapeutes, sophrologues. La demande est en forte croissance — mais 90% de ces praticiens dépendent exclusivement du bouche-à-oreille pour remplir leur agenda.',
+        'pain1_title': 'Bouche-à-oreille exclusif — croissance structurellement plafonnée',
+        'pain1_body': '90% des thérapeutes n\'ont aucun levier commercial autre que les recommandations. Ça marche jusqu\'à un certain niveau, puis ça plafonne. Impossible de décider de remplir son agenda en 30 jours si tout repose sur le réseau.',
+        'pain2_title': 'Les prospects qui se renseignent ne sont jamais relancés',
+        'pain2_body': 'Un visiteur du site qui laisse ses coordonnées pour se renseigner n\'est pas rappelé dans l\'heure. Il contacte un autre praticien. Sans séquence de nurturing automatique, 60-70% de ces leads disparaissent en 48h.',
+        'pain3_title': 'Zéro qualification avant le premier appel — du temps perdu chaque semaine',
+        'pain3_body': 'Des appels de 20-30 minutes avec des gens hors cible (mauvaise spécialité, hors budget, fausse urgence) représentent 3 à 5 heures perdues par semaine. Un chatbot de pré-qualification élimine ce gâchis.',
+        'infra1_title': 'Chatbot de qualification sur site + DMs Instagram',
+        'infra1_body': 'Questions de filtrage : type de problématique, modalité souhaitée (présentiel/distanciel), disponibilité, budget. Les candidats qualifiés reçoivent un lien de réservation automatique.',
+        'infra2_title': 'Séquence email/SMS nurturing 14 jours sur leads non convertis',
+        'infra2_body': '5 à 7 emails sur 2 semaines + 2 SMS de relance. Taux de prise de premier RDV sur liste froide : de 5% à 18-25%.',
+        'infra3_title': 'Pipeline GHL + automatisation avis et réputation',
+        'infra3_body': 'Toutes les demandes, RDV et séances en cours dans un tableau de bord. Avis Google automatiques après chaque consultation. En 3 mois, domination des recherches locales.',
+        'ticket_setup': '2 000 – 5 000 €',
+        'ticket_retainer': '500 – 1 200 €',
+        'student_initials': 'S',
+        'student_name': 'Sally',
+        'student_before': '0',
+        'student_after': '18 000 €',
+        'student_delay': 'quelques mois',
+        'student_niche': 'Niche thérapeutes &amp; bien-être',
+        'student_desc': 'Sally est partie de zéro — salariée sans expérience en agence — pour atteindre 18 000 €/mois en ciblant les thérapeutes et praticiens bien-être. La niche comprend immédiatement la valeur d\'un système qui remplace le bouche-à-oreille imprévisible par un flux de clients qualifiés.',
+        'parent_page_name': 'Thérapeutes & Bien-Être',
+    },
+    'avocats': {
+        'label': 'Cabinets d\'avocats',
+        'label_raw': 'Cabinets d\'avocats',
+        'title_short': 'Avocats & Cabinets Juridiques',
+        'pill_text': 'Analyse de niche · Avocats',
+        'h1_line1': 'Agence IA pour les cabinets d\'avocats',
+        'stat1_num': '20 000', 'stat1_label': 'Cabinets en France',
+        'stat2_num': '40-60%', 'stat2_label': 'Leads perdus faute de suivi',
+        'stat3_num': '2,5-8k€', 'stat3_label': 'Ticket setup typique',
+        'national_count': 20000,
+        'market_body': 'La profession d\'avocat en France compte 20 000 cabinets pour 8 milliards d\'euros de chiffre d\'affaires. La compétition pour les nouveaux clients est féroce — et pourtant, 80% des cabinets n\'ont aucun système commercial pour qualifier et convertir les prospects entrants.',
+        'pain1_title': 'Prospects entrants non qualifiés — du temps facturable perdu',
+        'pain1_body': 'Un cabinet reçoit des demandes par email, téléphone, formulaire — sans filtre. 40 à 60% de ces contacts sont hors expertise, hors budget ou hors urgence. Ce temps de qualification représente 5 à 10 heures par semaine pour l\'avocat lui-même.',
+        'pain2_title': 'Délai de réponse = prospect perdu (marché ultra-concurrentiel)',
+        'pain2_body': 'En droit de la famille, du travail ou commercial, le prospect contacte 3 à 5 cabinets simultanément. Le premier à répondre avec une proposition claire empoche le dossier. La moyenne de réponse en cabinet : 24 à 72 heures.',
+        'pain3_title': 'Aucun suivi des prospects froids — pipeline qui disparaît',
+        'pain3_body': 'Un prospect qui ne signe pas immédiatement est rarement relancé. Sans système de suivi, 70% des contacts entrants sont perdus en moins d\'une semaine. Pourtant, 30% de ces prospects finissent par signer — chez un concurrent qui a relancé.',
+        'infra1_title': 'Chatbot de qualification — filtrage par domaine et urgence',
+        'infra1_body': 'Le chatbot filtre domaine de droit, type de problème, urgence et budget avant tout contact humain. L\'avocat reçoit une fiche client complète avant le premier appel. Temps gagné : 5 à 8h/semaine.',
+        'infra2_title': 'Séquence relance prospects froids J+3 / J+7 / J+21',
+        'infra2_body': 'Email automatique avec ressource utile (guide, checklist légale liée à leur problème). Maintient le cabinet top-of-mind. Taux de conversion sur prospects froids relancés : ×2 à ×3.',
+        'infra3_title': 'Pipeline CRM + automatisation avis Google',
+        'infra3_body': 'Tous les dossiers en cours, prospects qualifiés et leads en attente dans une interface. Demande d\'avis automatique après chaque dossier clos. La réputation digitale est le premier filtre de qualification naturelle.',
+        'ticket_setup': '2 500 – 8 000 €',
+        'ticket_retainer': '600 – 1 500 €',
+        'student_initials': '→',
+        'student_name': 'Programme Scaling Lab\'',
+        'student_before': '',
+        'student_after': '',
+        'student_delay': '',
+        'student_niche': 'Niche cabinets juridiques',
+        'student_desc': 'Les avocats ont un ticket horaire élevé et une douleur concrète : du temps facturable perdu en qualification de prospects hors cible. Le premier cabinet qui implémente un système de qualification automatique dans sa ville capte une longueur d\'avance structurelle sur tous ses concurrents.',
+        'parent_page_name': 'Avocats & Cabinets Juridiques',
+    },
+    'salons-coiffure': {
+        'label': 'Salons de coiffure &amp; barbershops',
+        'label_raw': 'Salons de coiffure & barbershops',
+        'title_short': 'Coiffure & Barbershops',
+        'pill_text': 'Analyse de niche · Coiffure & barbershops',
+        'h1_line1': 'Agence IA pour les salons de coiffure',
+        'stat1_num': '85 000', 'stat1_label': 'Salons en France',
+        'stat2_num': '40-50%', 'stat2_label': 'Créneaux vides en semaine',
+        'stat3_num': '1,5-4k€', 'stat3_label': 'Ticket setup typique',
+        'national_count': 85000,
+        'market_body': 'Avec 85 000 salons de coiffure et barbershops en France, c\'est un des secteurs les plus fragmentés du commerce local. La douleur principale est universelle : les clients satisfaits reviennent quand ils y pensent. Sans relance automatique, l\'intervalle entre deux visites s\'allonge — et les revenus stagnent.',
+        'pain1_title': 'Les clients ne sont jamais relancés pour leur prochain passage',
+        'pain1_body': 'Un client couleur ou balayage doit revenir dans 6 à 8 semaines. Un client coupe toutes les 4 à 6 semaines. Sans relance automatique au bon moment, l\'intervalle moyen passe à 10-12 semaines. Chaque semaine de décalage = du chiffre d\'affaires perdu.',
+        'pain2_title': 'L\'agenda est plein le samedi mais vide en semaine',
+        'pain2_body': 'Les créneaux de semaine sont sous-remplis en moyenne à 40-50%. La majorité des salons n\'ont aucun système pour proposer proactivement ces créneaux à leur base de clients existants.',
+        'pain3_title': 'Aucun programme de fidélisation actif — clients perdus en silence',
+        'pain3_body': 'Un client qui change de salon ne le dit jamais. Il disparaît. Sans suivi actif, le salon perd 15 à 25% de sa clientèle chaque année sans s\'en apercevoir.',
+        'infra1_title': 'Séquence SMS relance personnalisée selon le type de prestation',
+        'infra1_body': 'J+42 pour couleur/balayage, J+35 pour coupe, J+21 pour barbe. Message personnalisé avec proposition de créneau. Taux de rebooking automatique : +35-50% vs sans relance.',
+        'infra2_title': 'Remplissage de l\'agenda semaine via offres ciblées',
+        'infra2_body': 'Chaque lundi, SMS automatique aux clients inactifs depuis 6+ semaines avec proposition de créneau en semaine. Taux de remplissage semaine : +20-30%.',
+        'infra3_title': 'Pipeline GHL + automatisation avis Google',
+        'infra3_body': 'Suivi des clients actifs/inactifs, historique des prestations, déclenchement automatique des relances. Après chaque prestation, demande d\'avis discrète par SMS.',
+        'ticket_setup': '1 500 – 4 000 €',
+        'ticket_retainer': '400 – 800 €',
+        'student_initials': '→',
+        'student_name': 'Programme Scaling Lab\'',
+        'student_before': '',
+        'student_after': '',
+        'student_delay': '',
+        'student_niche': 'Niche coiffure & barbershops',
+        'student_desc': 'La coiffure est une niche à très fort volume avec une douleur immédiate : les clients satisfaits qui ne reviennent pas assez souvent. Le ticket setup est plus accessible que d\'autres niches, ce qui en fait un excellent point d\'entrée pour une première agence IA locale.',
+        'parent_page_name': 'Coiffure & Barbershops',
+    },
+    'e-commerce': {
+        'label': 'E-commerce &amp; boutiques en ligne',
+        'label_raw': 'E-commerce & boutiques en ligne',
+        'title_short': 'E-Commerce',
+        'pill_text': 'Analyse de niche · E-commerce',
+        'h1_line1': 'Agence IA pour les e-commerces',
+        'stat1_num': '200 000', 'stat1_label': 'Boutiques en ligne en France',
+        'stat2_num': '78%', 'stat2_label': 'Taux d\'abandon de panier',
+        'stat3_num': '2-6k€', 'stat3_label': 'Ticket setup typique',
+        'national_count': 200000,
+        'market_body': 'La France compte plus de 200 000 sites e-commerce actifs. 85% sont des TPE avec moins de 5 employés. Le problème structurel : 78% des visiteurs qui ajoutent un produit au panier n\'achètent jamais — et aucun système ne les relance.',
+        'pain1_title': '78% des paniers abandonnés sans relance automatique',
+        'pain1_body': 'La moyenne d\'abandon de panier en France est de 78%. Sans séquence de relance en 1h / 24h / 72h, ces acheteurs potentiels sont perdus. À 100€ de panier moyen, 1 000 paniers abandonnés/mois représentent 80-150 ventes supplémentaires récupérables.',
+        'pain2_title': 'Clients one-shot jamais réactivés — base email inexploitée',
+        'pain2_body': '60% des clients d\'un e-commerce ne commandent qu\'une seule fois. La base email s\'accumule mais n\'est jamais travaillée. Sans séquence win-back à 45, 90 et 180 jours, ces clients partent chez un concurrent sans même s\'en rendre compte.',
+        'pain3_title': 'Zéro séquence post-achat — opportunités d\'upsell systématiquement ratées',
+        'pain3_body': 'La période post-achat est le meilleur moment pour proposer un produit complémentaire ou obtenir un avis. Sans automatisation, ce moment est systématiquement raté : pas d\'avis, pas d\'upsell, client qui oublie la marque en 3 semaines.',
+        'infra1_title': 'Séquence relance panier abandonné — 1h / 24h / 72h',
+        'infra1_body': 'Email + SMS automatiques avec l\'image du produit, un argument de réassurance et une réduction d\'urgence (optionnelle). Taux de récupération panier : 8-15% des abandons.',
+        'infra2_title': 'Séquence win-back clients inactifs (45 / 90 / 180 jours)',
+        'infra2_body': 'Segmentation automatique des clients selon leur dernière commande. Email de réactivation avec offre personnalisée. Taux de réactivation sur clients dormants de 45-90 jours : 5-12%.',
+        'infra3_title': 'Post-achat automatisé — cross-sell + collecte d\'avis',
+        'infra3_body': 'J+3 : contenu / conseil d\'utilisation. J+7 : demande d\'avis. J+14 : recommandation produit complémentaire. Customer Lifetime Value en hausse de 25-40%.',
+        'ticket_setup': '2 000 – 6 000 €',
+        'ticket_retainer': '500 – 1 500 €',
+        'student_initials': '→',
+        'student_name': 'Programme Scaling Lab\'',
+        'student_before': '',
+        'student_after': '',
+        'student_delay': '',
+        'student_niche': 'Niche e-commerce',
+        'student_desc': 'L\'e-commerce est une niche à ROI directement mesurable : chaque panier abandonné récupéré = revenus additionnels. Les propriétaires de boutiques comprennent les métriques et mesurent facilement l\'impact. Un des meilleurs profils clients pour construire un retainer durable basé sur la performance.',
+        'parent_page_name': 'E-Commerce',
+    },
+    'garages-auto': {
+        'label': 'Garages automobiles &amp; carrosseries',
+        'label_raw': 'Garages automobiles & carrosseries',
+        'title_short': 'Garages Automobiles',
+        'pill_text': 'Analyse de niche · Garages automobiles',
+        'h1_line1': 'Agence IA pour les garages automobiles',
+        'stat1_num': '35 000', 'stat1_label': 'Garages indépendants en France',
+        'stat2_num': '40-60%', 'stat2_label': 'Clients perdus sans rappel révision',
+        'stat3_num': '2-5k€', 'stat3_label': 'Ticket setup typique',
+        'national_count': 35000,
+        'market_body': 'France compte 35 000 garages automobiles et carrosseries indépendants. Ce secteur a une caractéristique unique : chaque véhicule a des échéances prévisibles et connues — contrôle technique, révision, vidange. Ces rendez-vous ne s\'inventent pas, ils se rappellent automatiquement.',
+        'pain1_title': 'Le rappel CT et révision n\'est jamais automatisé — 40-60% des clients partent',
+        'pain1_body': 'Chaque client qui passe sa vidange représente un futur RDV dans 12 mois — qui n\'est jamais rappelé. 40 à 60% des clients vont ailleurs ou oublient simplement. Du chiffre d\'affaires récurrent qui part à la concurrence par inaction.',
+        'pain2_title': 'Appels manqués sur le pont — le prospect appelle le garage d\'à côté',
+        'pain2_body': 'Un garagiste sous ses voitures ne répond pas au téléphone. 25-30% des appels ne sont pas pris. Sans message SMS automatique dans les 5 minutes, le client appelle le garage suivant. Chaque appel manqué = un devis potentiellement perdu.',
+        'pain3_title': 'Aucun avis Google malgré une base de clients fidèles',
+        'pain3_body': 'Le garage local a souvent 200 à 500 clients réguliers — et 15 avis Google. Sans système de demande automatique, les clients satisfaits ne pensent pas à laisser un avis. Les garages avec 100+ avis captent tous les nouveaux clients locaux.',
+        'infra1_title': 'Rappel automatique révision / CT à la bonne date',
+        'infra1_body': 'Chaque visite déclenche un rappel SMS programmé à J+330 (révision annuelle) ou selon l\'échéance CT. Taux de retour sur rappels automatiques : +45-60% vs sans système.',
+        'infra2_title': 'Capture appel manqué + SMS automatique en 5 minutes',
+        'infra2_body': 'Tout appel manqué déclenche un SMS automatique. Le client rappelle ou prend RDV en ligne. Taux de contact retrouvé : 60-70% des appels manqués.',
+        'infra3_title': 'Automatisation avis Google + pipeline client',
+        'infra3_body': 'SMS automatique 1h après la remise des clés avec lien Google avis. En 6 mois, un garage peut passer de 20 à 150+ avis et dominer les recherches locales.',
+        'ticket_setup': '2 000 – 5 000 €',
+        'ticket_retainer': '400 – 1 000 €',
+        'student_initials': '→',
+        'student_name': 'Programme Scaling Lab\'',
+        'student_before': '',
+        'student_after': '',
+        'student_delay': '',
+        'student_niche': 'Niche garages automobiles',
+        'student_desc': 'Le garage automobile est une des niches les plus simples à pitcher : le ROI est immédiat (rappels CT = clients récurrents), les propriétaires comprennent les chiffres, et la concurrence IA est quasi nulle. Un excellent marché pour une première agence IA locale.',
+        'parent_page_name': 'Garages Automobiles',
+    },
+    'kines-osteos': {
+        'label': 'Kinésithérapeutes &amp; ostéopathes',
+        'label_raw': 'Kinésithérapeutes & ostéopathes',
+        'title_short': 'Kinés & Ostéopathes',
+        'pill_text': 'Analyse de niche · Kinés & ostéopathes',
+        'h1_line1': 'Agence IA pour les kinésithérapeutes & ostéopathes',
+        'stat1_num': '120 000', 'stat1_label': 'Praticiens en France',
+        'stat2_num': '30-50%', 'stat2_label': 'Patients perdus post-protocole',
+        'stat3_num': '2-5k€', 'stat3_label': 'Ticket setup typique',
+        'national_count': 120000,
+        'market_body': 'La France compte plus de 120 000 masseurs-kinésithérapeutes et ostéopathes. La majorité exercent en libéral et ont une liste d\'attente. Mais sans suivi de fin de protocole, les patients disparaissent — et rechutent chez un autre praticien.',
+        'pain1_title': 'Fin de protocole sans suivi — rechute et perte du patient',
+        'pain1_body': 'Un patient qui termine un protocole pour une lombalgie ne reçoit jamais de suivi. Sans rappel à 30 et 90 jours, il ne consulte qu\'en cas de rechute — parfois chez un autre praticien. 30 à 50% des patients potentiellement récurrents sont ainsi perdus chaque année.',
+        'pain2_title': 'Annulations non remplacées — créneaux vides chaque semaine',
+        'pain2_body': 'Un kiné ou ostéo perd entre 2 et 5 créneaux par semaine en annulations. Sans liste d\'attente automatisée, ces créneaux restent vides. À 50-70€ par séance, c\'est 100 à 350€ perdus chaque semaine.',
+        'pain3_title': 'Aucun programme de prévention générant des consultations récurrentes',
+        'pain3_body': 'Les patients ne consultent que quand ça fait mal. Sans programme de suivi préventif automatisé (exercices à J+15, bilan à J+45), le praticien attend la rechute au lieu de créer une relation continue.',
+        'infra1_title': 'Séquence suivi post-protocole J+15 / J+30 / J+90',
+        'infra1_body': 'Message automatique avec exercices de maintien, bilan de santé et proposition de séance de contrôle. Taux de retour en préventif : +35-50% sur patients sortis de protocole.',
+        'infra2_title': 'Notification automatique liste d\'attente en cas d\'annulation',
+        'infra2_body': 'Chaque annulation déclenche instantanément un SMS aux 5 premiers patients en liste d\'attente. Taux de remplacement de créneaux : 60-75% des annulations.',
+        'infra3_title': 'Pipeline GHL + automatisation avis',
+        'infra3_body': 'Suivi des protocoles en cours, rappels programmés et gestion des listes d\'attente dans une interface. Demande d\'avis automatique en fin de protocole.',
+        'ticket_setup': '2 000 – 5 000 €',
+        'ticket_retainer': '400 – 1 000 €',
+        'student_initials': '→',
+        'student_name': 'Programme Scaling Lab\'',
+        'student_before': '',
+        'student_after': '',
+        'student_delay': '',
+        'student_niche': 'Niche kinés & ostéopathes',
+        'student_desc': 'Les kinés et ostéos ont une douleur simple à pitcher : des créneaux annulés non remplacés et des patients qui ne reviennent pas en préventif. L\'automatisation des relances post-protocole est le produit le plus facile à vendre dans cette niche — ROI visible en quelques semaines.',
+        'parent_page_name': 'Kinés & Ostéopathes',
+    },
+    'plombiers-electriciens': {
+        'label': 'Plombiers, électriciens &amp; artisans du second œuvre',
+        'label_raw': 'Plombiers, électriciens & artisans',
+        'title_short': 'Plombiers & Électriciens',
+        'pill_text': 'Analyse de niche · Plombiers & électriciens',
+        'h1_line1': 'Agence IA pour les plombiers & électriciens',
+        'stat1_num': '200 000', 'stat1_label': 'Artisans en France',
+        'stat2_num': '25-30%', 'stat2_label': 'Appels manqués non rappelés',
+        'stat3_num': '2-5k€', 'stat3_label': 'Ticket setup typique',
+        'national_count': 200000,
+        'market_body': 'Les plombiers, électriciens et artisans du second œuvre représentent 200 000 entreprises en France. La grande majorité sont des TPE de 1 à 3 personnes — débordées en période de pointe, sans aucun système pour ne pas perdre de leads entre deux chantiers.',
+        'pain1_title': 'Appels urgence manqués le soir et le week-end — le client va chez un concurrent',
+        'pain1_body': 'Une fuite d\'eau le samedi soir, une panne électrique le dimanche : le client appelle 3 artisans. Celui qui répond en premier a le chantier. Un artisan seul ne peut pas être disponible 24/7. Sans réponse automatique dans les 3 minutes, le prospect est parti.',
+        'pain2_title': 'Devis envoyés sans relance — taux de conversion structurellement bas',
+        'pain2_body': 'Un artisan envoie un devis et attend. Le prospect compare avec 2 ou 3 autres. Sans relance à J+3 et J+7, le devis refroidit et le client signe avec le concurrent qui a relancé. Pourtant, 70% des prospects finissent par signer l\'un des devis reçus.',
+        'pain3_title': 'Aucun avis Google malgré des dizaines de clients satisfaits',
+        'pain3_body': 'Les clients satisfaits ne pensent pas à laisser un avis spontanément. Sans système automatique, la fiche Google reste à 12 avis pendant 3 ans — alors qu\'un concurrent qui relance systématiquement accumule 100+ avis et capte tous les nouveaux clients locaux.',
+        'infra1_title': 'Réponse automatique appel manqué en 3 minutes',
+        'infra1_body': 'Tout appel non décroché déclenche un SMS automatique : "Je suis en intervention, je vous rappelle d\'ici [X] heures. Pour une urgence, cliquez ici." Taux de prospects retenus vs appel manqué sans réponse : ×4.',
+        'infra2_title': 'Séquence relance devis J+3 / J+7 via SMS + email',
+        'infra2_body': 'Relance automatique après chaque devis envoyé. Message simple avec photo d\'un chantier similaire et disponibilité. Taux de conversion : de 28% à 45-55%.',
+        'infra3_title': 'Automatisation avis Google post-chantier',
+        'infra3_body': 'SMS automatique le lendemain de la fin du chantier avec lien Google avis. En 6 mois, un artisan peut passer de 15 à 80-100 avis et dominer les recherches locales sur sa zone.',
+        'ticket_setup': '2 000 – 5 000 €',
+        'ticket_retainer': '400 – 1 000 €',
+        'student_initials': 'Ar',
+        'student_name': 'Arnaud',
+        'student_before': '2 000 €',
+        'student_after': '8 000 €+',
+        'student_delay': 'quelques mois',
+        'student_niche': 'Niche artisans &amp; habitat',
+        'student_desc': 'Arnaud était en SMMA depuis 7 ans avec 20 clients épuisants à 100-300€/mois. Il a pivoté vers les artisans et l\'habitat avec le Scaling Lab\'. Résultat : 8 000 €+/mois avec beaucoup moins de clients et des marges bien supérieures.',
+        'parent_page_name': 'Plombiers & Électriciens',
+    },
 }
 
 # ─── DONNÉES VILLES ──────────────────────────────────────────────────────────
 
 CITIES = [
-    {'slug': 'paris',        'name': 'Paris',        'region': 'Île-de-France',              'pop': 2161000},
-    {'slug': 'marseille',    'name': 'Marseille',    'region': 'Provence-Alpes-Côte d\'Azur','pop': 870731},
-    {'slug': 'lyon',         'name': 'Lyon',         'region': 'Auvergne-Rhône-Alpes',       'pop': 522228},
-    {'slug': 'toulouse',     'name': 'Toulouse',     'region': 'Occitanie',                  'pop': 479553},
-    {'slug': 'nice',         'name': 'Nice',         'region': 'Provence-Alpes-Côte d\'Azur','pop': 342522},
-    {'slug': 'nantes',       'name': 'Nantes',       'region': 'Pays de la Loire',           'pop': 320732},
-    {'slug': 'montpellier',  'name': 'Montpellier',  'region': 'Occitanie',                  'pop': 295542},
-    {'slug': 'strasbourg',   'name': 'Strasbourg',   'region': 'Grand Est',                  'pop': 285083},
-    {'slug': 'bordeaux',     'name': 'Bordeaux',     'region': 'Nouvelle-Aquitaine',         'pop': 257804},
-    {'slug': 'lille',        'name': 'Lille',        'region': 'Hauts-de-France',            'pop': 236234},
+    # ── France (30 villes) ──────────────────────────────────────────────────
+    {'slug': 'paris',             'name': 'Paris',             'region': 'Île-de-France',               'country': 'France', 'pop': 2161000},
+    {'slug': 'marseille',         'name': 'Marseille',         'region': 'Provence-Alpes-Côte d\'Azur', 'country': 'France', 'pop': 870731},
+    {'slug': 'lyon',              'name': 'Lyon',              'region': 'Auvergne-Rhône-Alpes',        'country': 'France', 'pop': 522228},
+    {'slug': 'toulouse',          'name': 'Toulouse',          'region': 'Occitanie',                   'country': 'France', 'pop': 479553},
+    {'slug': 'nice',              'name': 'Nice',              'region': 'Provence-Alpes-Côte d\'Azur', 'country': 'France', 'pop': 342522},
+    {'slug': 'nantes',            'name': 'Nantes',            'region': 'Pays de la Loire',            'country': 'France', 'pop': 320732},
+    {'slug': 'montpellier',       'name': 'Montpellier',       'region': 'Occitanie',                   'country': 'France', 'pop': 295542},
+    {'slug': 'strasbourg',        'name': 'Strasbourg',        'region': 'Grand Est',                   'country': 'France', 'pop': 285083},
+    {'slug': 'bordeaux',          'name': 'Bordeaux',          'region': 'Nouvelle-Aquitaine',          'country': 'France', 'pop': 257804},
+    {'slug': 'lille',             'name': 'Lille',             'region': 'Hauts-de-France',             'country': 'France', 'pop': 236234},
+    {'slug': 'rennes',            'name': 'Rennes',            'region': 'Bretagne',                    'country': 'France', 'pop': 222567},
+    {'slug': 'reims',             'name': 'Reims',             'region': 'Grand Est',                   'country': 'France', 'pop': 183113},
+    {'slug': 'le-havre',          'name': 'Le Havre',          'region': 'Normandie',                   'country': 'France', 'pop': 173111},
+    {'slug': 'saint-etienne',     'name': 'Saint-Étienne',     'region': 'Auvergne-Rhône-Alpes',        'country': 'France', 'pop': 172950},
+    {'slug': 'toulon',            'name': 'Toulon',            'region': 'Provence-Alpes-Côte d\'Azur', 'country': 'France', 'pop': 169561},
+    {'slug': 'grenoble',          'name': 'Grenoble',          'region': 'Auvergne-Rhône-Alpes',        'country': 'France', 'pop': 159183},
+    {'slug': 'dijon',             'name': 'Dijon',             'region': 'Bourgogne-Franche-Comté',     'country': 'France', 'pop': 156254},
+    {'slug': 'angers',            'name': 'Angers',            'region': 'Pays de la Loire',            'country': 'France', 'pop': 154508},
+    {'slug': 'nimes',             'name': 'Nîmes',             'region': 'Occitanie',                   'country': 'France', 'pop': 151075},
+    {'slug': 'aix-en-provence',   'name': 'Aix-en-Provence',  'region': 'Provence-Alpes-Côte d\'Azur', 'country': 'France', 'pop': 148046},
+    {'slug': 'clermont-ferrand',  'name': 'Clermont-Ferrand',  'region': 'Auvergne-Rhône-Alpes',        'country': 'France', 'pop': 145881},
+    {'slug': 'brest',             'name': 'Brest',             'region': 'Bretagne',                    'country': 'France', 'pop': 140064},
+    {'slug': 'le-mans',           'name': 'Le Mans',           'region': 'Pays de la Loire',            'country': 'France', 'pop': 143521},
+    {'slug': 'tours',             'name': 'Tours',             'region': 'Centre-Val de Loire',         'country': 'France', 'pop': 136500},
+    {'slug': 'amiens',            'name': 'Amiens',            'region': 'Hauts-de-France',             'country': 'France', 'pop': 133914},
+    {'slug': 'limoges',           'name': 'Limoges',           'region': 'Nouvelle-Aquitaine',          'country': 'France', 'pop': 128068},
+    {'slug': 'perpignan',         'name': 'Perpignan',         'region': 'Occitanie',                   'country': 'France', 'pop': 121158},
+    {'slug': 'metz',              'name': 'Metz',              'region': 'Grand Est',                   'country': 'France', 'pop': 118586},
+    {'slug': 'besancon',          'name': 'Besançon',          'region': 'Bourgogne-Franche-Comté',     'country': 'France', 'pop': 116914},
+    {'slug': 'orleans',           'name': 'Orléans',           'region': 'Centre-Val de Loire',         'country': 'France', 'pop': 116400},
+    # ── Belgique (4 villes) ─────────────────────────────────────────────────
+    {'slug': 'bruxelles',         'name': 'Bruxelles',         'region': 'Bruxelles-Capitale',          'country': 'Belgique', 'pop': 1208542},
+    {'slug': 'liege',             'name': 'Liège',             'region': 'Province de Liège',           'country': 'Belgique', 'pop': 196806},
+    {'slug': 'charleroi',         'name': 'Charleroi',         'region': 'Province de Hainaut',         'country': 'Belgique', 'pop': 202604},
+    {'slug': 'namur',             'name': 'Namur',             'region': 'Province de Namur',           'country': 'Belgique', 'pop': 111240},
+    # ── Suisse (3 villes) ───────────────────────────────────────────────────
+    {'slug': 'geneve',            'name': 'Genève',            'region': 'Canton de Genève',            'country': 'Suisse', 'pop': 203856},
+    {'slug': 'lausanne',          'name': 'Lausanne',          'region': 'Canton de Vaud',              'country': 'Suisse', 'pop': 138905},
+    {'slug': 'fribourg',          'name': 'Fribourg',          'region': 'Canton de Fribourg',          'country': 'Suisse', 'pop': 38403},
+    # ── Canada / Québec (3 villes) ──────────────────────────────────────────
+    {'slug': 'montreal',          'name': 'Montréal',          'region': 'Québec',                      'country': 'Canada', 'pop': 1762949},
+    {'slug': 'quebec',            'name': 'Québec',            'region': 'Québec',                      'country': 'Canada', 'pop': 549459},
+    {'slug': 'ottawa',            'name': 'Ottawa',            'region': 'Ontario',                     'country': 'Canada', 'pop': 994837},
+    # ── Maroc (3 villes) ────────────────────────────────────────────────────
+    {'slug': 'casablanca',        'name': 'Casablanca',        'region': 'Grand Casablanca-Settat',     'country': 'Maroc', 'pop': 3752000},
+    {'slug': 'rabat',             'name': 'Rabat',             'region': 'Rabat-Salé-Kénitra',          'country': 'Maroc', 'pop': 577827},
+    {'slug': 'marrakech',         'name': 'Marrakech',         'region': 'Marrakech-Safi',              'country': 'Maroc', 'pop': 928850},
+    # ── Algérie (1 ville) ───────────────────────────────────────────────────
+    {'slug': 'alger',             'name': 'Alger',             'region': 'Alger',                       'country': 'Algérie', 'pop': 3415811},
+    # ── Tunisie (1 ville) ───────────────────────────────────────────────────
+    {'slug': 'tunis',             'name': 'Tunis',             'region': 'Gouvernorat de Tunis',        'country': 'Tunisie', 'pop': 638845},
+    # ── La Réunion (1 ville) ────────────────────────────────────────────────
+    {'slug': 'saint-denis-reunion', 'name': 'Saint-Denis',    'region': 'La Réunion',                  'country': 'La Réunion', 'pop': 145741},
+    # ── Martinique (1 ville) ────────────────────────────────────────────────
+    {'slug': 'fort-de-france',    'name': 'Fort-de-France',   'region': 'Martinique',                  'country': 'Martinique', 'pop': 79473},
+    # ── Luxembourg (1 ville) ────────────────────────────────────────────────
+    {'slug': 'luxembourg',        'name': 'Luxembourg',       'region': 'Luxembourg',                  'country': 'Luxembourg', 'pop': 125000},
+    # ── Sénégal (1 ville) ───────────────────────────────────────────────────
+    {'slug': 'dakar',             'name': 'Dakar',            'region': 'Région de Dakar',              'country': 'Sénégal', 'pop': 3137196},
+    # ── Côte d'Ivoire (1 ville) ─────────────────────────────────────────────
+    {'slug': 'abidjan',           'name': 'Abidjan',          'region': 'District Autonome d\'Abidjan', 'country': 'Côte d\'Ivoire', 'pop': 5334000},
 ]
 
 FRANCE_POP = 68_000_000
@@ -210,9 +602,7 @@ def pattern_id(niche_slug, city_slug):
     return f"gp_{h}"
 
 def local_count(national, city_pop):
-    """Estimation locale basée sur ratio population."""
     raw = national * city_pop / FRANCE_POP
-    # Arrondi à la dizaine la plus proche
     if raw < 50:
         return max(int(round(raw / 5) * 5), 5)
     elif raw < 200:
@@ -223,8 +613,7 @@ def local_count(national, city_pop):
         return int(round(raw / 100) * 100)
 
 def fmt_count(n):
-    """Format nombre avec séparateur milliers (espace)."""
-    return f"{n:,}".replace(",", "\u202f")  # espace fine insécable
+    return f"{n:,}".replace(",", "\u202f")
 
 # ─── GÉNÉRATEUR HTML ─────────────────────────────────────────────────────────
 
@@ -237,13 +626,19 @@ def generate_page(niche_slug, niche, city):
     canonical = f"https://lescalinglab.com/agences/{niche_slug}/{c['slug']}/"
     today = date.today().isoformat()
 
+    is_france = c.get('country', 'France') == 'France'
+    city_geo = c['region'] if is_france else c['country']
+    city_ctx = f"la région {c['region']}" if is_france else c['country']
+    city_prepo = f"en {c['region']}" if is_france else f"en {c['country']}"
+    francophonie_txt = "partout en France" if is_france else "partout dans la francophonie"
+
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{n['title_short']} à {c['name']} — Agence IA | Scaling Lab'</title>
-  <meta name="description" content="Environ {lcount_fmt} établissements {n['label_raw'].lower()} à {c['name']} et en {c['region']}. Voici comment lancer une agence IA dans cette niche localement — l'opportunité, ce qu'on vend, et le ticket moyen." />
+  <meta name="description" content="Environ {lcount_fmt} établissements {n['label_raw'].lower()} à {c['name']} {city_prepo}. Voici comment lancer une agence IA dans cette niche localement — l'opportunité, ce qu'on vend, et le ticket moyen." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="{canonical}" />
   <meta property="og:title" content="{n['title_short']} à {c['name']} — Agence IA | Scaling Lab'" />
@@ -387,10 +782,10 @@ def generate_page(niche_slug, niche, city):
     </div>
     <h1 style="margin-bottom:24px;">
       <span class="display-bold" style="font-size:clamp(26px,3.5vw,48px);display:block;line-height:1.05;color:#fff;">{n['title_short']} à {c['name']} :</span>
-      <span class="display-bold" style="font-size:clamp(20px,2.8vw,38px);display:block;line-height:1.1;background:linear-gradient(135deg,#C8C4FF 0%,#6055FF 50%,#3B2FE8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-top:8px;">environ {lcount_fmt} établissements dans la région</span>
+      <span class="display-bold" style="font-size:clamp(20px,2.8vw,38px);display:block;line-height:1.1;background:linear-gradient(135deg,#C8C4FF 0%,#6055FF 50%,#3B2FE8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-top:8px;">environ {lcount_fmt} établissements dans {city_ctx}</span>
     </h1>
     <p style="font-size:17px;line-height:1.75;color:rgba(255,255,255,0.55);max-width:640px;margin-bottom:40px;">
-      {c['name']} et la région {c['region']} concentrent environ {lcount_fmt} {n['label_raw'].lower()}. La majorité n'ont aucun système pour capter et convertir leurs leads automatiquement. C'est exactement l'opportunité qu'on enseigne au Scaling Lab'.
+      {c['name']} et {city_ctx} concentrent environ {lcount_fmt} {n['label_raw'].lower()}. La majorité n'ont aucun système pour capter et convertir leurs leads automatiquement. C'est exactement l'opportunité qu'on enseigne au Scaling Lab'.
     </p>
     <div class="stats-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:600px;">
       <div class="stat-card">
@@ -414,7 +809,7 @@ def generate_page(niche_slug, niche, city):
 <section style="padding:72px 32px;background:#06060F;">
   <div style="max-width:860px;margin:0 auto;">
     <div class="label" style="margin-bottom:16px;">Le marché à {c['name']}</div>
-    <h2 class="heading-oswald" style="font-size:clamp(20px,2.8vw,32px);color:#fff;margin-bottom:16px;">Pourquoi c'est une niche à fort potentiel en {c['region']}</h2>
+    <h2 class="heading-oswald" style="font-size:clamp(20px,2.8vw,32px);color:#fff;margin-bottom:16px;">Pourquoi c'est une niche à fort potentiel {city_prepo}</h2>
     <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:680px;">
       {n['market_body']} À {c['name']}, on estime environ {lcount_fmt} établissements — un bassin largement suffisant pour construire un portefeuille de 5 à 10 clients récurrents.
     </p>
@@ -448,7 +843,7 @@ def generate_page(niche_slug, niche, city):
     <div class="label" style="margin-bottom:16px;">Le problème</div>
     <h2 class="heading-oswald" style="font-size:clamp(20px,2.8vw,32px);color:#fff;margin-bottom:12px;">Les 3 douleurs principales dans cette niche</h2>
     <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:660px;">
-      Ces problèmes sont identiques à {c['name']} comme partout en France. Ce qui change, c'est que localement la concurrence IA est quasi nulle.
+      Ces problèmes sont identiques à {c['name']} comme {francophonie_txt}. Ce qui change, c'est que localement la concurrence IA est quasi nulle.
     </p>
     <div style="display:flex;flex-direction:column;gap:20px;">
       <div class="pain-card">
@@ -626,7 +1021,6 @@ def main():
     ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'
     ET.register_namespace('', ns)
 
-    # Supprimer les entrées ville déjà présentes (re-run safe)
     existing_locs = {url.find(f'{{{ns}}}loc').text for url in root.findall(f'{{{ns}}}url')}
     for url in generated_urls:
         if url not in existing_locs:
@@ -636,22 +1030,18 @@ def main():
             ET.SubElement(url_el, f'{{{ns}}}changefreq').text = 'monthly'
             ET.SubElement(url_el, f'{{{ns}}}priority').text = '0.6'
 
-    # Indent propre
     ET.indent(tree, space='  ')
     tree.write(sitemap_path, encoding='UTF-8', xml_declaration=True)
 
     print(f"\n✅ {count} pages générées")
-    print(f"✅ sitemap.xml mis à jour ({len(generated_urls)} nouvelles URLs)")
-    print(f"\nURLs pour IndexNow :")
-    for u in generated_urls:
-        print(f"  {u}")
+    print(f"✅ sitemap.xml mis à jour")
 
     # ─── Fichier JSON des URLs pour IndexNow ───
     indexnow_path = os.path.join(base_dir, 'indexnow_urls.json')
     with open(indexnow_path, 'w', encoding='utf-8') as f:
         import json
         json.dump(generated_urls, f, ensure_ascii=False, indent=2)
-    print(f"\n✅ indexnow_urls.json créé ({len(generated_urls)} URLs)")
+    print(f"✅ indexnow_urls.json créé ({len(generated_urls)} URLs)")
 
 if __name__ == '__main__':
     main()

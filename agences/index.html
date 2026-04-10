@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toutes les niches — Agence IA par secteur | Scaling Lab'</title>
+  <meta name="description" content="15 niches analysées pour lancer une agence IA : restaurants, BTP, immobilier, dentistes, coiffure, solaire et plus. Chiffres réels, douleurs principales, ticket moyen, résultats élèves." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lescalinglab.com/agences/" />
+  <meta property="og:title" content="Toutes les niches — Agence IA par secteur | Scaling Lab'" />
+  <meta property="og:description" content="15 niches analysées pour lancer une agence IA. Opportunités, pain points, tickets et résultats réels." />
+  <meta property="og:url" content="https://lescalinglab.com/agences/" />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://lescalinglab.com/"},
+      {"@type":"ListItem","position":2,"name":"Niches","item":"https://lescalinglab.com/agences/"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700;1,900&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #06060F; color: #fff; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+    .display-bold { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; letter-spacing: -0.04em; line-height: 1; }
+    .heading-oswald { font-family: 'Oswald', sans-serif; font-weight: 700; letter-spacing: -0.01em; line-height: 1.05; text-transform: uppercase; }
+    .label { font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: #6055FF; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(160deg, #5048FF 0%, #3B2FE8 55%, #2E24CC 100%);
+      color: #fff; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700;
+      letter-spacing: 0.02em; padding: 14px 32px; border-radius: 100px;
+      border: none; cursor: pointer; position: relative; overflow: hidden; text-decoration: none;
+      transition: transform 0.25s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+      box-shadow: 0 0 32px rgba(59,47,232,0.55), 0 6px 24px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.45);
+    }
+    .btn-primary::before { content:''; position:absolute; top:0; left:0; right:0; height:48%; background:linear-gradient(180deg,rgba(255,255,255,0.2) 0%,transparent 100%); border-radius:100px 100px 0 0; pointer-events:none; }
+    .btn-primary:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 0 55px rgba(59,47,232,0.7), 0 12px 36px rgba(0,0,0,0.55); }
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: rgba(200,196,255,0.8);
+      background: rgba(59,47,232,0.15); border: 1px solid rgba(96,85,255,0.3);
+      padding: 8px 16px; border-radius: 100px;
+    }
+    .pill-dot { width: 6px; height: 6px; border-radius: 50%; background: #6055FF; flex-shrink: 0; animation: pulse-dot 2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.75)} }
+    .niche-card {
+      background: rgba(12,12,30,0.7); border: 1px solid rgba(30,30,56,0.8);
+      box-shadow: 0 1px 0 rgba(100,90,255,0.12) inset, 0 20px 60px rgba(0,0,0,0.4);
+      border-radius: 16px; padding: 28px; text-decoration: none; color: inherit;
+      display: flex; flex-direction: column; gap: 14px;
+      transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    }
+    .niche-card:hover {
+      box-shadow: 0 1px 0 rgba(100,90,255,0.3) inset, 0 0 0 1px rgba(74,59,255,0.4), 0 24px 60px rgba(59,47,232,0.18);
+      transform: translateY(-3px); border-color: rgba(96,85,255,0.4);
+    }
+    .niche-icon { width: 44px; height: 44px; border-radius: 10px; background: rgba(59,47,232,0.2); border: 1px solid rgba(96,85,255,0.25); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+    .niche-title { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: 0.02em; color: #fff; }
+    .niche-stat { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 13px; background: linear-gradient(135deg,#C8C4FF,#6055FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .niche-desc { font-size: 13px; line-height: 1.65; color: rgba(255,255,255,0.45); }
+    .niche-ticket { font-size: 12px; color: rgba(96,85,255,0.7); font-family: 'Oswald', sans-serif; letter-spacing: 0.05em; }
+    .niche-arrow { font-size: 14px; color: rgba(96,85,255,0.5); transition: transform 0.2s ease, color 0.2s ease; margin-top: auto; }
+    .niche-card:hover .niche-arrow { transform: translateX(4px); color: #6055FF; }
+    .breadcrumb { font-size: 12px; color: rgba(255,255,255,0.35); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .breadcrumb a:hover { color: rgba(255,255,255,0.6); }
+    .section-divider { border: none; border-top: 1px solid rgba(30,30,56,0.6); margin: 0; }
+    nav, section, footer { position: relative; z-index: 2; }
+    .hero-bg {
+      background:
+        radial-gradient(ellipse 80% 60% at 60% 40%, rgba(43,36,214,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 70% at 20% 80%, rgba(74,59,255,0.08) 0%, transparent 50%),
+        #06060F;
+    }
+  </style>
+</head>
+<body>
+
+<div id="grid-bg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:hidden;opacity:0.3;"></div>
+<script>
+(function(){
+  var el=document.getElementById('grid-bg');
+  var SZ=48,SW=0.5;
+  function build(){
+    var W=window.innerWidth,H=window.innerHeight;
+    var cols=Math.ceil(W/SZ)+1,rows=Math.ceil(H/SZ)+1;
+    var h='',v='';
+    for(var i=0;i<=rows;i++) h+='<line x1="0" y1="'+(i*SZ)+'" x2="'+(cols*SZ)+'" y2="'+(i*SZ)+'"/>';
+    for(var j=0;j<=cols;j++) v+='<line x1="'+(j*SZ)+'" y1="0" x2="'+(j*SZ)+'" y2="'+(rows*SZ)+'"/>';
+    el.innerHTML='<svg width="'+W+'" height="'+H+'" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gp_hub" cx="55%" cy="35%" r="55%"><stop offset="0%" stop-color="#3B2FE8" stop-opacity="0.5"/><stop offset="60%" stop-color="#3B2FE8" stop-opacity="0.07"/><stop offset="100%" stop-color="#3B2FE8" stop-opacity="0"/></radialGradient></defs><g stroke="url(#gp_hub)" stroke-width="'+SW+'" fill="none">'+h+v+'</g></svg>';
+  }
+  build();
+  window.addEventListener('resize',build);
+})();
+</script>
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(16px);background:rgba(6,6,15,0.85);border-bottom:1px solid rgba(30,30,56,0.7);">
+  <div style="max-width:1100px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="https://lescalinglab.com/" style="display:flex;align-items:baseline;">
+      <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:22px;font-weight:400;color:rgba(255,255,255,0.8);letter-spacing:-0.02em;">scaling</span><span style="font-family:'Playfair Display',serif;font-style:italic;font-size:22px;font-weight:900;background:linear-gradient(135deg,#E0DEFF,#7B6FFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 10px rgba(96,85,255,0.4));">lab'</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:32px;">
+      <a href="https://lescalinglab.com/resultats" style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.45);display:none;" id="nav-resultats" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Résultats</a>
+    </div>
+    <a href="https://lescalinglab.com/#apply" class="btn-primary" style="padding:10px 22px;font-size:13px;">Candidater →</a>
+  </div>
+</nav>
+<script>if(window.innerWidth>640)document.getElementById('nav-resultats').style.display='block';</script>
+
+<section class="hero-bg" style="padding:104px 32px 72px;position:relative;overflow:hidden;">
+  <div style="max-width:860px;margin:0 auto;position:relative;z-index:3;">
+    <div class="breadcrumb" style="margin-bottom:28px;">
+      <a href="https://lescalinglab.com/">Accueil</a><span>›</span>
+      <span style="color:rgba(200,196,255,0.6);">Niches</span>
+    </div>
+    <div class="pill" style="margin-bottom:28px;width:fit-content;">
+      <span class="pill-dot"></span>
+      SEO Programmatique · 15 niches · Francophonie
+    </div>
+    <h1 style="margin-bottom:20px;">
+      <span class="display-bold" style="font-size:clamp(28px,4vw,56px);display:block;line-height:1.05;color:#fff;">Lancer une agence IA :</span>
+      <span class="display-bold" style="font-size:clamp(22px,3vw,44px);display:block;line-height:1.1;background:linear-gradient(135deg,#C8C4FF 0%,#6055FF 50%,#3B2FE8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-top:8px;">15 niches à fort potentiel analysées</span>
+    </h1>
+    <p style="font-size:17px;line-height:1.75;color:rgba(255,255,255,0.55);max-width:620px;margin-bottom:40px;">
+      Chaque niche ci-dessous a été validée sur des marchés réels. Tu trouveras les chiffres du marché, les 3 douleurs principales, ce qu'on livre concrètement, et les tickets moyens. Plus les résultats d'élèves qui ont déjà travaillé dans cette niche.
+    </p>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;">
+      <div style="background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:12px;padding:16px 24px;text-align:center;">
+        <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:28px;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">15</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.45);margin-top:4px;">Niches analysées</div>
+      </div>
+      <div style="background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:12px;padding:16px 24px;text-align:center;">
+        <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:28px;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">50</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.45);margin-top:4px;">Villes francophones</div>
+      </div>
+      <div style="background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:12px;padding:16px 24px;text-align:center;">
+        <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:28px;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">75+</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.45);margin-top:4px;">Niches validées en programme</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<section style="padding:72px 32px;background:#06060F;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Niches avec résultats élèves prouvés</div>
+    <h2 class="heading-oswald" style="font-size:clamp(18px,2.5vw,28px);color:#fff;margin-bottom:40px;">Les niches déjà travaillées par des élèves du programme</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:60px;">
+
+      <a href="https://lescalinglab.com/agences/centres-esthetiques/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">💆</div>
+          <div>
+            <div class="niche-title">Centres Esthétiques</div>
+            <div class="niche-stat">13 000 établissements</div>
+          </div>
+        </div>
+        <div class="niche-desc">Louis : 3k → 58k€/mois. La niche avec le plus fort ticket et la meilleure réceptivité aux systèmes d'automatisation.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 4 000–8 000 € · Retainer 800–1 500 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/btp-construction/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">🏗️</div>
+          <div>
+            <div class="niche-title">BTP & Construction</div>
+            <div class="niche-stat">440 000 entreprises</div>
+          </div>
+        </div>
+        <div class="niche-desc">Ryan & Julien : 5k → 40k€+ en 3 mois. Volume exceptionnel, douleur sur les devis non relancés et appels manqués sur chantier.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 2 500–7 000 € · Retainer 500–1 500 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/experts-comptables/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">📊</div>
+          <div>
+            <div class="niche-title">Experts-Comptables</div>
+            <div class="niche-stat">22 000 cabinets</div>
+          </div>
+        </div>
+        <div class="niche-desc">Abdou : 0 → 15k$/mois en 6 mois. La clé : ne jamais dire "IA" — parler CRM, automatisation commerciale, nouveaux clients.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 2 000–7 000 € · Retainer 500–1 500 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/coaching-consultants/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">🎯</div>
+          <div>
+            <div class="niche-title">Coaching & Consultants</div>
+            <div class="niche-stat">750M€ de marché</div>
+          </div>
+        </div>
+        <div class="niche-desc">Arthur & Matis : 1k → 10k€/mois en 110 jours. Les coachs comprennent la valeur d'un système commercial — ils en ont besoin eux-mêmes.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 3 000–8 000 € · Retainer 700–1 500 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/therapeutes/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">🧘</div>
+          <div>
+            <div class="niche-title">Thérapeutes & Bien-Être</div>
+            <div class="niche-stat">30 000 praticiens</div>
+          </div>
+        </div>
+        <div class="niche-desc">Sally : 0 → 18k€/mois. 90% dépendent exclusivement du bouche-à-oreille. Le premier système commercial dans cette niche crée un avantage structurel immédiat.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 2 000–5 000 € · Retainer 500–1 200 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/plombiers-electriciens/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">🔧</div>
+          <div>
+            <div class="niche-title">Plombiers & Électriciens</div>
+            <div class="niche-stat">200 000 artisans</div>
+          </div>
+        </div>
+        <div class="niche-desc">Arnaud : 2k → 8k€+/mois (niche artisans habitat). La niche la plus simple à pitcher — ROI immédiat sur les appels manqués et les devis non relancés.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 2 000–5 000 € · Retainer 400–1 000 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="label" style="margin-bottom:16px;">Niches à fort potentiel — opportunité non saturée</div>
+    <h2 class="heading-oswald" style="font-size:clamp(18px,2.5vw,28px);color:#fff;margin-bottom:40px;">Marchés validés par le programme, concurrence IA quasi nulle</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;">
+
+      <a href="https://lescalinglab.com/agences/immobilier/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">🏠</div>
+          <div>
+            <div class="niche-title">Immobilier</div>
+            <div class="niche-stat">33 000 agences</div>
+          </div>
+        </div>
+        <div class="niche-desc">80% des leads perdus si réponse > 2h. Ticket élevé, budget disponible, douleur mesurable et immédiate. Un des meilleurs profils clients pour un retainer durable.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 3 000–9 000 € · Retainer 700–2 000 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/restaurants/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">🍽️</div>
+          <div>
+            <div class="niche-title">Restaurants</div>
+            <div class="niche-stat">175 000 établissements</div>
+          </div>
+        </div>
+        <div class="niche-desc">70% des clients perdus sans relance. No-shows à 20%, avis Google inexploités. Le volume est là — et la douleur est quotidienne.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 2 000–5 000 € · Retainer 400–900 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/solaire/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">☀️</div>
+          <div>
+            <div class="niche-title">Solaire & Photovoltaïque</div>
+            <div class="niche-stat">×3 croissance 2020–2024</div>
+          </div>
+        </div>
+        <div class="niche-desc">Leads achetés à 60-90€ sur agrégateurs. Un système propre qui génère des RDV qualifiés change radicalement l'économie de l'installateur.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 2 500–6 000 € · Retainer 500–1 200 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/dentistes/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">🦷</div>
+          <div>
+            <div class="niche-title">Dentistes & Cabinets Dentaires</div>
+            <div class="niche-stat">42 000 praticiens</div>
+          </div>
+        </div>
+        <div class="niche-desc">20-25% de no-shows chaque semaine. Rappels de soins jamais faits. ROI immédiat et mesurable : chaque créneau récupéré = 200-300€.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 3 000–7 000 € · Retainer 600–1 400 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/avocats/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">⚖️</div>
+          <div>
+            <div class="niche-title">Avocats & Cabinets Juridiques</div>
+            <div class="niche-stat">20 000 cabinets</div>
+          </div>
+        </div>
+        <div class="niche-desc">Temps facturable perdu en qualification de prospects hors cible. Ticket élevé, budget disponible, douleur concrète et récurrente.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 2 500–8 000 € · Retainer 600–1 500 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/salons-coiffure/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">✂️</div>
+          <div>
+            <div class="niche-title">Coiffure & Barbershops</div>
+            <div class="niche-stat">85 000 salons</div>
+          </div>
+        </div>
+        <div class="niche-desc">Relance couleur/coupe jamais faite = clients perdus en silence. Le volume est exceptionnel, le ticket plus accessible pour un premier client.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 1 500–4 000 € · Retainer 400–800 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/e-commerce/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">🛒</div>
+          <div>
+            <div class="niche-title">E-Commerce</div>
+            <div class="niche-stat">200 000 boutiques</div>
+          </div>
+        </div>
+        <div class="niche-desc">78% d'abandon de panier sans relance. ROI directement mesurable sur chaque panier récupéré. Excellent profil pour un retainer basé sur la performance.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 2 000–6 000 € · Retainer 500–1 500 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/garages-auto/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">🚗</div>
+          <div>
+            <div class="niche-title">Garages Automobiles</div>
+            <div class="niche-stat">35 000 garages</div>
+          </div>
+        </div>
+        <div class="niche-desc">Rappel CT/révision jamais automatisé. 40-60% des clients partent chez un concurrent par inaction. Système récurrent avec ROI à vie sur chaque client.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 2 000–5 000 € · Retainer 400–1 000 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+      <a href="https://lescalinglab.com/agences/kines-osteos/" class="niche-card">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div class="niche-icon">🦴</div>
+          <div>
+            <div class="niche-title">Kinés & Ostéopathes</div>
+            <div class="niche-stat">120 000 praticiens</div>
+          </div>
+        </div>
+        <div class="niche-desc">Fin de protocole sans suivi = rechute chez un autre praticien. Créneaux annulés non remplacés. La liste d'attente automatisée est la vente la plus facile dans cette niche.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div class="niche-ticket">Setup 2 000–5 000 € · Retainer 400–1 000 €/mois</div>
+          <div class="niche-arrow">→</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<section style="padding:96px 32px;background:rgba(12,12,30,0.3);">
+  <div style="max-width:680px;margin:0 auto;text-align:center;">
+    <div class="pill" style="margin-bottom:32px;width:fit-content;margin-left:auto;margin-right:auto;">
+      <span class="pill-dot"></span>
+      Scaling Lab' — Programme 1-1
+    </div>
+    <h2 class="display-bold" style="font-size:clamp(26px,3.5vw,44px);color:#fff;margin-bottom:20px;">
+      Quelle niche choisir pour démarrer ?
+    </h2>
+    <p style="font-size:16px;line-height:1.75;color:rgba(255,255,255,0.45);margin-bottom:40px;max-width:500px;margin-left:auto;margin-right:auto;">
+      La sélection de niche est le premier module du programme. On analyse ton profil, ton réseau et ton marché local pour identifier la meilleure entrée. 115+ agences accompagnées, 75+ niches validées.
+    </p>
+    <a href="https://lescalinglab.com/#apply" class="btn-primary" style="font-size:15px;padding:16px 36px;">Candidater au programme →</a>
+  </div>
+</section>
+
+<footer style="background:#06060F;border-top:1px solid rgba(30,30,56,0.6);padding:40px 32px;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center;">
+    <a href="https://lescalinglab.com/" style="display:flex;align-items:baseline;">
+      <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:20px;font-weight:400;color:rgba(255,255,255,0.5);">scaling</span><span style="font-family:'Playfair Display',serif;font-style:italic;font-size:20px;font-weight:900;color:rgba(255,255,255,0.5);">lab'</span>
+    </a>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;justify-content:center;">
+      <a href="https://lescalinglab.com/" style="font-size:13px;color:rgba(255,255,255,0.3);" onmouseover="this.style.color='rgba(255,255,255,0.6)'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Accueil</a>
+      <a href="https://lescalinglab.com/resultats" style="font-size:13px;color:rgba(255,255,255,0.3);" onmouseover="this.style.color='rgba(255,255,255,0.6)'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Résultats</a>
+      <a href="https://lescalinglab.com/#apply" style="font-size:13px;color:rgba(255,255,255,0.3);" onmouseover="this.style.color='rgba(255,255,255,0.6)'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Candidater</a>
+    </div>
+    <p style="font-size:12px;color:rgba(255,255,255,0.15);">© 2025 Scaling Lab'. Tous droits réservés.</p>
+  </div>
+</footer>
+
+</body>
+</html>

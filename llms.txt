@@ -6,6 +6,10 @@ Add .md to any URL to get a clean, chrome-free version:
 - https://lescalinglab.com/index.md — Homepage (full program description, FAQ, founder bio)
 - https://lescalinglab.com/resultats.md — Student results page (all 7 case studies with numbers)
 
+## Niche Hub
+Full directory of all 15 niche verticals with stats, pain points, pricing, and city-level pages:
+- https://lescalinglab.com/agences/ — Hub toutes niches (15 niches, 50 villes, francophonie)
+
 ## Niche Pages (Programmatic SEO — Agences par secteur)
 Detailed niche analysis pages for each industry vertical where AI agencies can sell services:
 - https://lescalinglab.com/agences/centres-esthetiques/ — Centres esthétiques & médecine esthétique (13 000 cabinets, Louis 3k→58k€/mois)
@@ -13,6 +17,16 @@ Detailed niche analysis pages for each industry vertical where AI agencies can s
 - https://lescalinglab.com/agences/immobilier/ — Immobilier (33 000 agences, 80% leads perdus après 2h)
 - https://lescalinglab.com/agences/experts-comptables/ — Experts-comptables (22 000 cabinets, 83% TPE sans CRM)
 - https://lescalinglab.com/agences/coaching-consultants/ — Coaching & consultants (750M€ marché, Arthur & Matis 1k→10k€/mois en 110j)
+- https://lescalinglab.com/agences/restaurants/ — Restauration (175 000 restaurants, 70% clients perdus sans relance)
+- https://lescalinglab.com/agences/solaire/ — Solaire & photovoltaïque (4 500 installateurs, leads achetés 60-90€ sur agrégateurs)
+- https://lescalinglab.com/agences/dentistes/ — Cabinets dentaires (42 000 praticiens, 20-25% de no-shows)
+- https://lescalinglab.com/agences/therapeutes/ — Thérapeutes & bien-être (30 000 praticiens, Sally 0→18k€/mois)
+- https://lescalinglab.com/agences/avocats/ — Cabinets d'avocats (20 000 cabinets, 40-60% leads perdus faute de suivi)
+- https://lescalinglab.com/agences/salons-coiffure/ — Coiffure & barbershops (85 000 salons, relances jamais faites)
+- https://lescalinglab.com/agences/e-commerce/ — E-commerce (200 000 boutiques, 78% abandon panier)
+- https://lescalinglab.com/agences/garages-auto/ — Garages automobiles (35 000 garages, rappel CT/révision inexistant)
+- https://lescalinglab.com/agences/kines-osteos/ — Kinés & ostéopathes (120 000 praticiens, 30-50% patients perdus post-protocole)
+- https://lescalinglab.com/agences/plombiers-electriciens/ — Plombiers & électriciens (200 000 artisans, Arnaud 2k→8k€+/mois)
 
 
 ## About

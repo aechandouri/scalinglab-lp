@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plombiers & Électriciens &amp; Agence IA — 200 000 artisans en france | Scaling Lab'</title>
+  <meta name="description" content="200 000 plombiers, électriciens & artisans en France. Comment lancer une agence IA dans cette niche : l'opportunité, ce qu'on vend, le ticket moyen. Cas élève inclus." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lescalinglab.com/agences/plombiers-electriciens/" />
+  <meta property="og:title" content="Vendre l'IA aux Plombiers & Électriciens — Scaling Lab'" />
+  <meta property="og:description" content="200 000 plombiers, électriciens & artisans. 25-30% appels manqués non rappelés. Voici l'opportunité pour une agence IA." />
+  <meta property="og:url" content="https://lescalinglab.com/agences/plombiers-electriciens/" />
+  <meta property="og:type" content="article" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://lescalinglab.com/"},
+      {"@type":"ListItem","position":2,"name":"Niches","item":"https://lescalinglab.com/agences/"},
+      {"@type":"ListItem","position":3,"name":"Plombiers & Électriciens","item":"https://lescalinglab.com/agences/plombiers-electriciens/"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Combien peut-on facturer un plombier ou un électricien pour une infrastructure IA ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un setup complet (réponse appel manqué, relance devis, avis Google) se facture entre 2 000 et 5 000 €. Le retainer mensuel tourne entre 400 et 1 000 €/mois. ROI direct : si le système récupère 1 devis/semaine à 800 € de panier moyen, le retainer est rentabilisé en 2 semaines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment approcher un plombier ou un électricien pour lui vendre de l'IA ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'angle de l'appel manqué : \"La semaine dernière, combien de fois votre téléphone a sonné quand vous étiez sur le pont ?\" Puis montrer le SMS automatique en 3 minutes. La démonstration dure 30 secondes et convainc immédiatement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Les artisans sont-ils sceptiques face au digital ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, la majorité. La clé : ne jamais parler d'IA, d'automatisation ou de digital. Parler uniquement de ce qu'ils voient : \"Plus d'appels manqués perdus, plus de devis signés, plus d'avis Google.\" Résultat concret, pas technologie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quel type d'infrastructure livre-t-on concrètement à un artisan ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le setup standard : SMS automatique 3 minutes après tout appel manqué, séquence relance devis J+3/J+7 via SMS et email simple, demande d'avis Google le lendemain de la fin du chantier, pipeline GHL pour suivre les devis en cours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment justifier le retainer mensuel face à un artisan sceptique ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Calcul direct : \"Mon système vous récupère en moyenne 2 devis supplémentaires par mois. À 700 € de panier moyen, ça fait 1 400 €/mois de CA additionnel. Mon retainer est à 500 €. La différence, c'est votre marge.\" Le calcul est fait en 10 secondes."
+      }
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700;1,900&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        ink: '#06060F', deep: '#0C0C1E',
+        primary: '#3B2FE8', bright: '#6055FF', tint: '#C8C4FF'
+      } } }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #06060F; color: #fff; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+
+    .display-bold { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; letter-spacing: -0.04em; line-height: 1; }
+    .heading-oswald { font-family: 'Oswald', sans-serif; font-weight: 700; letter-spacing: -0.01em; line-height: 1.05; text-transform: uppercase; }
+    .label { font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: #6055FF; }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(160deg, #5048FF 0%, #3B2FE8 55%, #2E24CC 100%);
+      color: #fff; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700;
+      letter-spacing: 0.02em; padding: 14px 32px; border-radius: 100px;
+      border: none; cursor: pointer; position: relative; overflow: hidden; text-decoration: none;
+      transition: transform 0.25s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+      box-shadow: 0 0 32px rgba(59,47,232,0.55), 0 6px 24px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.45), inset 0 -1px 0 rgba(0,0,0,0.3);
+    }
+    .btn-primary::before { content:''; position:absolute; top:0; left:0; right:0; height:48%; background:linear-gradient(180deg,rgba(255,255,255,0.2) 0%,transparent 100%); border-radius:100px 100px 0 0; pointer-events:none; }
+    .btn-primary:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 0 55px rgba(59,47,232,0.7), 0 12px 36px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.55); }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.7);
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500;
+      padding: 12px 24px; border-radius: 100px; border: 1px solid rgba(255,255,255,0.1);
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease; cursor: pointer;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.2); }
+
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: rgba(200,196,255,0.8);
+      background: rgba(59,47,232,0.15); border: 1px solid rgba(96,85,255,0.3);
+      padding: 8px 16px; border-radius: 100px;
+    }
+    .pill-dot { width: 6px; height: 6px; border-radius: 50%; background: #6055FF; flex-shrink: 0; animation: pulse-dot 2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.75)} }
+
+    .glow-card {
+      background: rgba(12,12,30,0.7); border: 1px solid rgba(30,30,56,0.8);
+      box-shadow: 0 1px 0 rgba(100,90,255,0.12) inset, 0 0 0 1px rgba(30,30,56,1), 0 20px 60px rgba(0,0,0,0.4);
+      border-radius: 16px;
+    }
+    .glow-card-hover { transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease; }
+    .glow-card-hover:hover { box-shadow: 0 1px 0 rgba(100,90,255,0.25) inset, 0 0 0 1px rgba(74,59,255,0.35), 0 24px 60px rgba(59,47,232,0.15), 0 4px 20px rgba(0,0,0,0.5); transform: translateY(-2px); }
+
+    .stat-card {
+      background: rgba(12,12,30,0.6); border: 1px solid rgba(30,30,56,0.7);
+      border-radius: 12px; padding: 20px 24px; text-align: center;
+    }
+    .stat-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 28px; background: linear-gradient(135deg,#C8C4FF,#6055FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 4px; }
+
+    .pain-card { background: rgba(12,12,30,0.5); border: 1px solid rgba(59,47,232,0.15); border-radius: 14px; padding: 28px; }
+    .pain-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 36px; color: rgba(96,85,255,0.25); line-height: 1; }
+
+    .infra-item { display: flex; gap: 16px; align-items: flex-start; padding: 20px 0; border-bottom: 1px solid rgba(30,30,56,0.6); }
+    .infra-item:last-child { border-bottom: none; }
+    .infra-icon { width: 36px; height: 36px; border-radius: 8px; background: rgba(59,47,232,0.2); border: 1px solid rgba(96,85,255,0.25); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 16px; }
+
+    .result-card { background: linear-gradient(135deg, rgba(59,47,232,0.12) 0%, rgba(12,12,30,0.8) 100%); border: 1px solid rgba(96,85,255,0.25); border-radius: 20px; padding: 36px; }
+
+    .faq-item { border-bottom: 1px solid rgba(30,30,56,0.6); }
+    .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 24px 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; color: rgba(255,255,255,0.85); font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 500; }
+    .faq-q:hover { color: #fff; }
+    .faq-a { display: none; padding: 0 0 24px; font-size: 14px; line-height: 1.75; color: rgba(255,255,255,0.55); }
+    .faq-item.open .faq-a { display: block; }
+    .faq-chevron { transition: transform 0.2s ease; flex-shrink: 0; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    .breadcrumb { font-size: 12px; color: rgba(255,255,255,0.35); display: flex; align-items: center; gap: 8px; }
+    .breadcrumb a:hover { color: rgba(255,255,255,0.6); }
+
+    .hero-bg {
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 50%, rgba(43,36,214,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 70% at 20% 80%, rgba(74,59,255,0.08) 0%, transparent 50%),
+        #06060F;
+    }
+    .section-divider { border: none; border-top: 1px solid rgba(30,30,56,0.6); margin: 0; }
+
+    @media (max-width: 768px) {
+      .hide-mobile { display: none !important; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(16px);background:rgba(6,6,15,0.85);border-bottom:1px solid rgba(30,30,56,0.7);">
+  <div style="max-width:1100px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="https://lescalinglab.com/" style="display:flex;align-items:baseline;gap:0;">
+      <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:22px;font-weight:400;color:rgba(255,255,255,0.8);letter-spacing:-0.02em;">scaling</span><span style="font-family:'Playfair Display',serif;font-style:italic;font-size:22px;font-weight:900;background:linear-gradient(135deg,#E0DEFF,#7B6FFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 10px rgba(96,85,255,0.4));">lab'</span>
+    </a>
+    <div class="hide-mobile" style="display:flex;align-items:center;gap:32px;">
+      <a href="https://lescalinglab.com/agences/" style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.45);" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Toutes les niches</a>
+      <a href="https://lescalinglab.com/resultats" style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.45);" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Résultats élèves</a>
+    </div>
+    <a href="https://lescalinglab.com/#apply" class="btn-primary" style="padding:10px 22px;font-size:13px;">Candidater →</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero-bg" style="padding:104px 32px 64px;position:relative;overflow:hidden;">
+  <div style="max-width:860px;margin:0 auto;position:relative;z-index:3;">
+
+    <div class="breadcrumb" style="margin-bottom:28px;">
+      <a href="https://lescalinglab.com/">Accueil</a>
+      <span>›</span>
+      <a href="https://lescalinglab.com/agences/">Niches</a>
+      <span>›</span>
+      <span style="color:rgba(200,196,255,0.6);">Plombiers & Électriciens</span>
+    </div>
+
+    <div class="pill" style="margin-bottom:28px;width:fit-content;">
+      <span class="pill-dot"></span>
+      Analyse de niche · Plombiers & électriciens
+    </div>
+
+    <h1 style="margin-bottom:24px;">
+      <span class="display-bold" style="font-size:clamp(28px,4vw,52px);display:block;line-height:1.05;color:#fff;">Plombiers & Électriciens :</span>
+      <span class="display-bold" style="font-size:clamp(20px,2.8vw,38px);display:block;line-height:1.1;background:linear-gradient(135deg,#C8C4FF 0%,#6055FF 50%,#3B2FE8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-top:8px;">200 000 artisans en france, 25-30% appels manqués non rappelés</span>
+    </h1>
+
+    <p style="font-size:17px;line-height:1.75;color:rgba(255,255,255,0.55);max-width:640px;margin-bottom:40px;">
+      Arnaud était en SMMA depuis 7 ans avec 20 clients épuisants. Il a pivoté vers les artisans et l'habitat. Résultat : 8 000 €+/mois avec beaucoup moins de clients. La niche artisans est massive, accessible, et la concurrence IA est quasi nulle.
+    </p>
+
+    <div class="stats-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:600px;">
+      <div class="stat-card">
+        <div class="stat-num">200 000</div>
+        <div class="stat-label">Artisans en France</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">25-30%</div>
+        <div class="stat-label">Appels manqués non rappelés</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">2-5k€</div>
+        <div class="stat-label">Ticket setup typique</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ LE MARCHÉ ═══ -->
+<section style="padding:72px 32px;background:#06060F;">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Le marché</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,34px);color:#fff;margin-bottom:16px;">Pourquoi c'est une niche à fort potentiel</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:680px;">
+      Les plombiers, électriciens et artisans du second œuvre représentent 200 000 entreprises en France. La grande majorité sont des TPE de 1 à 3 personnes — débordées en période de pointe, sans aucun système pour ne pas perdre de leads entre deux chantiers.
+    </p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;">
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Taille du marché</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">200 000 plombiers, électriciens et artisans du second œuvre en France. La majorité sont des TPE de 1 à 3 personnes. Le marché de l'entretien et rénovation résidentielle représente 60 milliards d'euros.</div>
+      </div>
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Chiffre d'affaires moyen</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">80 000 à 300 000 €/an pour un artisan solo à 2-3 compagnons. Panier moyen : 500-2 000 € par chantier. La perte d'un appel manqué représente souvent 300-1 000 € de devis potentiel.</div>
+      </div>
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Équipement numérique</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">Parfois un logiciel de devis (Batigest, Obat). Aucun CRM, aucun système de rappel automatique, aucune demande d'avis Google structurée. La plupart gèrent leurs prospects sur carnet ou mémoire.</div>
+      </div>
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Profil client</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">Artisans de 30-55 ans, souvent sur chantier toute la journée. Comprennent immédiatement l'argument de l'appel manqué. Sceptiques face au digital — convaincus uniquement par du concret et du ROI direct.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ LES PROBLÈMES ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.3);">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Le problème</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,34px);color:#fff;margin-bottom:12px;">L'acquisition dans cette niche : comment ça marche vraiment</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:660px;">
+      Le plombier et l'électricien ont trois problèmes commerciaux simples. Pas techniques. Juste pas automatisés. Chacun a une solution directe.
+    </p>
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div class="pain-card">
+        <div class="pain-num">01</div>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin:8px 0;">Appels urgence manqués le soir et le week-end — le client va chez un concurrent</h3>
+        <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.55);margin-top:8px;">Une fuite d'eau le samedi soir, une panne électrique le dimanche : le client appelle 3 artisans. Celui qui répond en premier a le chantier. Un artisan seul ne peut pas être disponible 24/7. Sans réponse automatique dans les 3 minutes, le prospect est parti.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-num">02</div>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin:8px 0;">Devis envoyés sans relance — taux de conversion structurellement bas</h3>
+        <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.55);margin-top:8px;">Un artisan envoie un devis et attend. Le prospect compare avec 2 ou 3 autres. Sans relance à J+3 et J+7, le devis refroidit et le client signe avec le concurrent qui a relancé. Pourtant, 70% des prospects finissent par signer l'un des devis reçus.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-num">03</div>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin:8px 0;">Aucun avis Google malgré des dizaines de clients satisfaits</h3>
+        <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.55);margin-top:8px;">Les clients satisfaits ne pensent pas à laisser un avis spontanément. Sans système automatique, la fiche Google reste à 12 avis pendant 3 ans — alors qu'un concurrent qui relance systématiquement accumule 100+ avis et capte tous les nouveaux clients locaux.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ L'INFRASTRUCTURE ═══ -->
+<section style="padding:72px 32px;background:#06060F;">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Ce que tu vends</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,34px);color:#fff;margin-bottom:12px;">L'infrastructure IA concrète</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:660px;">
+      L'infrastructure est pensée pour un artisan qui est sur chantier toute la journée. Zéro intervention manuelle — tout part automatiquement.
+    </p>
+
+    <div class="glow-card" style="padding:32px;margin-bottom:32px;">
+      <div class="infra-item">
+        <div class="infra-icon">⚡</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Réponse automatique appel manqué en 3 minutes</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">Tout appel non décroché déclenche un SMS automatique : "Je suis en intervention, je vous rappelle d'ici [X] heures. Pour une urgence, cliquez ici." Taux de prospects retenus vs appel manqué sans réponse : ×4.</div>
+        </div>
+      </div>
+      <div class="infra-item">
+        <div class="infra-icon">🔄</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Séquence relance devis J+3 / J+7 via SMS + email</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">Relance automatique après chaque devis envoyé. Message simple avec photo d'un chantier similaire et disponibilité. Taux de conversion : de 28% à 45-55%.</div>
+        </div>
+      </div>
+      <div class="infra-item">
+        <div class="infra-icon">📣</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Automatisation avis Google post-chantier</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">SMS automatique le lendemain de la fin du chantier avec lien Google avis. En 6 mois, un artisan peut passer de 15 à 80-100 avis et dominer les recherches locales sur sa zone.</div>
+        </div>
+      </div>
+      <div class="infra-item">
+        <div class="infra-icon">📊</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Dashboard artisan — appels capturés & avis collectés</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">Rapport mensuel : appels manqués capturés, devis relancés et signés, avis Google collectés. L'artisan voit son taux de conversion et sa note Google progresser chaque mois.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticket -->
+    <div style="background:rgba(59,47,232,0.1);border:1px solid rgba(96,85,255,0.2);border-radius:14px;padding:28px;display:flex;gap:32px;flex-wrap:wrap;align-items:center;">
+      <div>
+        <div style="font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.5);margin-bottom:6px;">Ticket setup</div>
+        <div style="font-family:'Oswald',sans-serif;font-size:28px;font-weight:700;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">2 000 – 5 000 €</div>
+      </div>
+      <div style="width:1px;height:40px;background:rgba(96,85,255,0.2);flex-shrink:0;" class="hide-mobile"></div>
+      <div>
+        <div style="font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.5);margin-bottom:6px;">Retainer mensuel</div>
+        <div style="font-family:'Oswald',sans-serif;font-size:28px;font-weight:700;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">400 – 1 000 €/mois</div>
+      </div>
+      <div style="flex:1;min-width:200px;">
+        <div style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.45);">Les entreprises avec 2+ compagnons et >200 000 €/an de CA acceptent les tickets à 3 000-5 000 €. Les artisans solos commencent souvent à 2 000-2 500 € setup. Un ticket accessible = porte d'entrée facile dans cette niche à fort volume.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ RÉSULTAT ÉLÈVE ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.4);">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Résultat élève</div>
+    <h2 class="heading-oswald" style="font-size:clamp(20px,2.8vw,32px);color:#fff;margin-bottom:40px;">Ce que ça donne en pratique</h2>
+    <div class="result-card">
+      <div style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#5048FF,#3B2FE8);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;color:#fff;flex-shrink:0;">Ar</div>
+        <div style="flex:1;min-width:200px;">
+          <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;color:#fff;margin-bottom:4px;">Arnaud</div>
+          <div style="font-size:12px;color:rgba(200,196,255,0.6);letter-spacing:0.08em;font-family:'Oswald',sans-serif;text-transform:uppercase;">Niche artisans &amp; habitat</div>
+        </div>
+      </div>
+      <div style="margin-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;">
+        <div style="text-align:center;padding:20px;background:rgba(6,6,15,0.5);border-radius:12px;border:1px solid rgba(30,30,56,0.6);">
+          <div style="font-family:'Oswald',sans-serif;font-size:13px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;">Avant</div>
+          <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:24px;color:rgba(255,255,255,0.4);">2 000 €</div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.25);margin-top:4px;">par mois</div>
+        </div>
+        <div style="text-align:center;padding:20px;background:rgba(6,6,15,0.5);border-radius:12px;border:1px solid rgba(30,30,56,0.6);display:flex;align-items:center;justify-content:center;">
+          <div style="font-size:22px;color:rgba(96,85,255,0.5);">→</div>
+        </div>
+        <div style="text-align:center;padding:20px;background:rgba(59,47,232,0.12);border-radius:12px;border:1px solid rgba(96,85,255,0.3);">
+          <div style="font-family:'Oswald',sans-serif;font-size:13px;color:rgba(200,196,255,0.6);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;">Après</div>
+          <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:24px;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">8 000 €+</div>
+          <div style="font-size:11px;color:rgba(200,196,255,0.4);margin-top:4px;">par mois</div>
+        </div>
+        <div style="text-align:center;padding:20px;background:rgba(6,6,15,0.5);border-radius:12px;border:1px solid rgba(30,30,56,0.6);">
+          <div style="font-family:'Oswald',sans-serif;font-size:13px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;">Délai</div>
+          <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:24px;color:#C8C4FF;">quelques mois</div>
+        </div>
+      </div>
+      <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.45);margin-top:24px;">Arnaud était en SMMA depuis 7 ans avec 20 clients épuisants à 100-300€/mois. Il a pivoté vers les artisans et l'habitat avec le Scaling Lab'. Résultat : 8 000 €+/mois avec beaucoup moins de clients et des marges bien supérieures.</p>
+    </div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.3);margin-top:16px;">
+      Résultat individuel — voir tous les cas élèves sur <a href="https://lescalinglab.com/resultats" style="color:rgba(200,196,255,0.5);">lescalinglab.com/resultats</a>
+    </p>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ CTA PROGRAMME ═══ -->
+<section style="padding:72px 32px;background:#06060F;">
+  <div style="max-width:860px;margin:0 auto;text-align:center;">
+    <div class="label" style="margin-bottom:16px;text-align:center;">Le programme</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,36px);color:#fff;margin-bottom:16px;">Comment le Scaling Lab' t'aide à conquérir cette niche</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);max-width:620px;margin:0 auto 40px;">
+      Le programme 1-1 d'Abdé Chan couvre le positionnement sur la niche, la construction de l'infrastructure GHL adaptée, les scripts d'approche, et la vente du premier contrat. 3 à 5 participants par mois maximum.
+    </p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://lescalinglab.com/#apply" class="btn-primary">Candidater au programme →</a>
+      <a href="https://lescalinglab.com/resultats" class="btn-ghost">Voir tous les résultats élèves</a>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ FAQ ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.3);">
+  <div style="max-width:720px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">FAQ</div>
+    <h2 class="heading-oswald" style="font-size:clamp(20px,2.5vw,30px);color:#fff;margin-bottom:40px;">Questions fréquentes — plombiers, électriciens & artisans</h2>
+    <div id="faq-list">
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Combien peut-on facturer un plombier ou un électricien pour une infrastructure IA ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Un setup complet (réponse appel manqué, relance devis, avis Google) se facture entre 2 000 et 5 000 €. Le retainer mensuel tourne entre 400 et 1 000 €/mois. ROI direct : si le système récupère 1 devis/semaine à 800 € de panier moyen, le retainer est rentabilisé en 2 semaines.</div>
+      </div>
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Comment approcher un plombier ou un électricien pour lui vendre de l'IA ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">L'angle de l'appel manqué : "La semaine dernière, combien de fois votre téléphone a sonné quand vous étiez sur le pont ?" Puis montrer le SMS automatique en 3 minutes. La démonstration dure 30 secondes et convainc immédiatement.</div>
+      </div>
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Les artisans sont-ils sceptiques face au digital ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Oui, la majorité. La clé : ne jamais parler d'IA, d'automatisation ou de digital. Parler uniquement de ce qu'ils voient : "Plus d'appels manqués perdus, plus de devis signés, plus d'avis Google." Résultat concret, pas technologie.</div>
+      </div>
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Quel type d'infrastructure livre-t-on concrètement à un artisan ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Le setup standard : SMS automatique 3 minutes après tout appel manqué, séquence relance devis J+3/J+7 via SMS et email simple, demande d'avis Google le lendemain de la fin du chantier, pipeline GHL pour suivre les devis en cours.</div>
+      </div>
+      <div class="faq-item" style="border-bottom:none;">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Comment justifier le retainer mensuel face à un artisan sceptique ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Calcul direct : "Mon système vous récupère en moyenne 2 devis supplémentaires par mois. À 700 € de panier moyen, ça fait 1 400 €/mois de CA additionnel. Mon retainer est à 500 €. La différence, c'est votre marge." Le calcul est fait en 10 secondes.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ COUVERTURE GÉOGRAPHIQUE ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.2);">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Couverture géographique</div>
+    <h2 class="heading-oswald" style="font-size:clamp(20px,2.5vw,30px);color:#fff;margin-bottom:16px;">Cette niche dans toutes les villes francophones</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.45);margin-bottom:40px;max-width:640px;">L'agence IA se gère en 100% remote — peu importe où se trouvent tes clients. Voici les pages dédiées à chaque ville francophone.</p>
+
+    <div style="margin-bottom:12px;font-size:11px;font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.35);">France — 30 villes</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px;">
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/paris/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Paris</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/marseille/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Marseille</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/lyon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Lyon</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/toulouse/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Toulouse</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/nice/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Nice</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/nantes/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Nantes</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/montpellier/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Montpellier</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/strasbourg/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Strasbourg</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/bordeaux/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Bordeaux</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/lille/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Lille</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/rennes/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Rennes</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/reims/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Reims</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/le-havre/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Le Havre</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/saint-etienne/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Saint-Étienne</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/toulon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Toulon</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/grenoble/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Grenoble</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/dijon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Dijon</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/angers/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Angers</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/nimes/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Nîmes</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/aix-en-provence/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Aix-en-Provence</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/clermont-ferrand/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Clermont-Ferrand</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/brest/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Brest</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/le-mans/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Le Mans</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/tours/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Tours</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/amiens/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Amiens</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/limoges/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Limoges</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/perpignan/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Perpignan</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/metz/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Metz</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/besancon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Besançon</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/orleans/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Orléans</a>
+    </div>
+
+    <div style="margin-bottom:12px;font-size:11px;font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.35);">Francophonie internationale — 20 villes</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/bruxelles/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Bruxelles</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/liege/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Liège</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/charleroi/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Charleroi</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/namur/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Namur</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/geneve/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Genève</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/lausanne/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Lausanne</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/fribourg/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Fribourg</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/montreal/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Montréal</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/quebec/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Québec</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/ottawa/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Ottawa</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/casablanca/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Casablanca</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/rabat/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Rabat</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/marrakech/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Marrakech</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/alger/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Alger</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/tunis/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Tunis</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/saint-denis-reunion/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Saint-Denis</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/fort-de-france/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Fort-de-France</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/luxembourg/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Luxembourg</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/dakar/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Dakar</a>
+        <a href="https://lescalinglab.com/agences/plombiers-electriciens/abidjan/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Abidjan</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer style="padding:40px 32px;border-top:1px solid rgba(30,30,56,0.8);background:#06060F;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+    <div style="display:flex;flex-direction:column;gap:5px;">
+      <a href="https://lescalinglab.com/" style="display:flex;align-items:baseline;gap:0;">
+        <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:20px;font-weight:400;color:rgba(255,255,255,0.5);letter-spacing:-0.02em;">scaling</span><span style="font-family:'Playfair Display',serif;font-style:italic;font-size:20px;font-weight:900;background:linear-gradient(135deg,#E0DEFF,#7B6FFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">lab'</span>
+      </a>
+      <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:11px;color:rgba(200,196,255,0.3);">by Abdé Chan</span>
+    </div>
+    <p style="font-size:12px;color:rgba(255,255,255,0.22);">© 2026 Scaling Lab' · Accompagnement 1-1 pour Agences IA</p>
+  </div>
+</footer>
+
+<!-- Animated grid background -->
+<script>
+(function(){
+  const CELL=40,STROKE='rgba(96,85,255,0.18)',FILL='#5048FF',NUM=30,MAX=0.14,DUR=2800;
+  const ns='http://www.w3.org/2000/svg';
+  const svg=document.createElementNS(ns,'svg');
+  svg.setAttribute('aria-hidden','true');
+  svg.style.cssText='position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:visible;';
+  const defs=document.createElementNS(ns,'defs');
+  const pat=document.createElementNS(ns,'pattern');
+  pat.setAttribute('id','gp_899a7e72');pat.setAttribute('width',CELL);pat.setAttribute('height',CELL);pat.setAttribute('patternUnits','userSpaceOnUse');
+  const lp=document.createElementNS(ns,'path');lp.setAttribute('d',`M.5 ${CELL}V.5H${CELL}`);lp.setAttribute('fill','none');lp.setAttribute('stroke',STROKE);lp.setAttribute('stroke-width','0.5');
+  pat.appendChild(lp);defs.appendChild(pat);svg.appendChild(defs);
+  const bg=document.createElementNS(ns,'rect');bg.setAttribute('width','100%');bg.setAttribute('height','100%');bg.setAttribute('fill','url(#gp_899a7e72)');svg.appendChild(bg);
+  const grp=document.createElementNS(ns,'g');svg.appendChild(grp);
+  document.body.prepend(svg);
+  function cols(){return Math.floor(window.innerWidth/CELL);}
+  function rows(){return Math.floor(window.innerHeight/CELL);}
+  function spawn(){
+    const r=document.createElementNS(ns,'rect');
+    r.setAttribute('width',CELL);r.setAttribute('height',CELL);
+    r.setAttribute('x',Math.floor(Math.random()*cols())*CELL);
+    r.setAttribute('y',Math.floor(Math.random()*rows())*CELL);
+    r.setAttribute('fill',FILL);r.setAttribute('opacity','0');
+    grp.appendChild(r);
+    let t=performance.now();
+    function step(now){
+      const p=(now-t)/DUR;
+      if(p<0.5){r.setAttribute('opacity',p*2*MAX);}
+      else if(p<1){r.setAttribute('opacity',(1-(p-0.5)*2)*MAX);}
+      else{grp.removeChild(r);return;}
+      requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  setInterval(()=>{if(grp.childNodes.length<NUM)spawn();},DUR/NUM);
+})();
+</script>
+
+<!-- FAQ toggle -->
+<script>
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item');
+  item.classList.toggle('open');
+}
+</script>
+
+<!-- z-index fix -->
+<style>nav, section, footer { position: relative; z-index: 2; }</style>
+
+</body>
+</html>

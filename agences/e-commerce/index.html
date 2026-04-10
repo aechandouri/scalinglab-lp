@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce &amp; Agence IA — 200 000 boutiques en ligne en france | Scaling Lab'</title>
+  <meta name="description" content="200 000 e-commerce & boutiques en ligne en France. Comment lancer une agence IA dans cette niche : l'opportunité, ce qu'on vend, le ticket moyen. Cas élève inclus." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lescalinglab.com/agences/e-commerce/" />
+  <meta property="og:title" content="Vendre l'IA aux E-Commerce — Scaling Lab'" />
+  <meta property="og:description" content="200 000 e-commerce & boutiques en ligne. 78% taux d'abandon de panier. Voici l'opportunité pour une agence IA." />
+  <meta property="og:url" content="https://lescalinglab.com/agences/e-commerce/" />
+  <meta property="og:type" content="article" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://lescalinglab.com/"},
+      {"@type":"ListItem","position":2,"name":"Niches","item":"https://lescalinglab.com/agences/"},
+      {"@type":"ListItem","position":3,"name":"E-Commerce","item":"https://lescalinglab.com/agences/e-commerce/"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Combien peut-on facturer un e-commerce pour une infrastructure IA ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un setup complet (relance panier, win-back clients, post-achat) se facture entre 2 000 et 6 000 €. Le retainer mensuel tourne entre 500 et 1 500 €/mois. Les boutiques avec >100 000 €/an de CA acceptent les tickets élevés, surtout si le retainer est partiellement indexé sur les performances."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment approcher un propriétaire de boutique e-commerce ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'angle chiffré : \"Combien de paniers abandonnés avez-vous par mois ? À [panier moyen] € et un taux de récupération de 10%, un système de relance vous rapporte [X] € par mois.\" La conversation démarre sur les métriques — pas sur la technologie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Un retainer basé sur la performance est-il possible en e-commerce ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui — c'est même la structure idéale pour convertir facilement. Setup fixe + retainer incluant un % sur les ventes récupérées au-delà d'un seuil. Le client prend moins de risque, vous capturez plus de valeur si le système performe. Modèle à proposer aux boutiques avec >200 commandes/mois."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quel type d'infrastructure livre-t-on concrètement à un e-commerce ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le setup standard : séquence relance panier abandonné en 1h/24h/72h (email + SMS), séquence win-back clients inactifs à 45/90/180 jours, séquence post-achat avec cross-sell à J+7 et demande d'avis à J+3. Intégration Shopify/WooCommerce via GoHighLevel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Faut-il connaître le e-commerce pour cibler cette niche ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non, mais des bases en métriques e-commerce sont utiles : taux d'abandon panier, CLV, taux de réachat. Klaviyo, Mailchimp, et GoHighLevel sont les outils standards. L'angle est le même pour toutes les boutiques : récupérer les ventes perdues et augmenter la fréquence d'achat."
+      }
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700;1,900&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        ink: '#06060F', deep: '#0C0C1E',
+        primary: '#3B2FE8', bright: '#6055FF', tint: '#C8C4FF'
+      } } }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #06060F; color: #fff; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+
+    .display-bold { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; letter-spacing: -0.04em; line-height: 1; }
+    .heading-oswald { font-family: 'Oswald', sans-serif; font-weight: 700; letter-spacing: -0.01em; line-height: 1.05; text-transform: uppercase; }
+    .label { font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: #6055FF; }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(160deg, #5048FF 0%, #3B2FE8 55%, #2E24CC 100%);
+      color: #fff; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700;
+      letter-spacing: 0.02em; padding: 14px 32px; border-radius: 100px;
+      border: none; cursor: pointer; position: relative; overflow: hidden; text-decoration: none;
+      transition: transform 0.25s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+      box-shadow: 0 0 32px rgba(59,47,232,0.55), 0 6px 24px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.45), inset 0 -1px 0 rgba(0,0,0,0.3);
+    }
+    .btn-primary::before { content:''; position:absolute; top:0; left:0; right:0; height:48%; background:linear-gradient(180deg,rgba(255,255,255,0.2) 0%,transparent 100%); border-radius:100px 100px 0 0; pointer-events:none; }
+    .btn-primary:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 0 55px rgba(59,47,232,0.7), 0 12px 36px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.55); }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.7);
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500;
+      padding: 12px 24px; border-radius: 100px; border: 1px solid rgba(255,255,255,0.1);
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease; cursor: pointer;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.2); }
+
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: rgba(200,196,255,0.8);
+      background: rgba(59,47,232,0.15); border: 1px solid rgba(96,85,255,0.3);
+      padding: 8px 16px; border-radius: 100px;
+    }
+    .pill-dot { width: 6px; height: 6px; border-radius: 50%; background: #6055FF; flex-shrink: 0; animation: pulse-dot 2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.75)} }
+
+    .glow-card {
+      background: rgba(12,12,30,0.7); border: 1px solid rgba(30,30,56,0.8);
+      box-shadow: 0 1px 0 rgba(100,90,255,0.12) inset, 0 0 0 1px rgba(30,30,56,1), 0 20px 60px rgba(0,0,0,0.4);
+      border-radius: 16px;
+    }
+    .glow-card-hover { transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease; }
+    .glow-card-hover:hover { box-shadow: 0 1px 0 rgba(100,90,255,0.25) inset, 0 0 0 1px rgba(74,59,255,0.35), 0 24px 60px rgba(59,47,232,0.15), 0 4px 20px rgba(0,0,0,0.5); transform: translateY(-2px); }
+
+    .stat-card {
+      background: rgba(12,12,30,0.6); border: 1px solid rgba(30,30,56,0.7);
+      border-radius: 12px; padding: 20px 24px; text-align: center;
+    }
+    .stat-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 28px; background: linear-gradient(135deg,#C8C4FF,#6055FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 4px; }
+
+    .pain-card { background: rgba(12,12,30,0.5); border: 1px solid rgba(59,47,232,0.15); border-radius: 14px; padding: 28px; }
+    .pain-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 36px; color: rgba(96,85,255,0.25); line-height: 1; }
+
+    .infra-item { display: flex; gap: 16px; align-items: flex-start; padding: 20px 0; border-bottom: 1px solid rgba(30,30,56,0.6); }
+    .infra-item:last-child { border-bottom: none; }
+    .infra-icon { width: 36px; height: 36px; border-radius: 8px; background: rgba(59,47,232,0.2); border: 1px solid rgba(96,85,255,0.25); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 16px; }
+
+    .result-card { background: linear-gradient(135deg, rgba(59,47,232,0.12) 0%, rgba(12,12,30,0.8) 100%); border: 1px solid rgba(96,85,255,0.25); border-radius: 20px; padding: 36px; }
+
+    .faq-item { border-bottom: 1px solid rgba(30,30,56,0.6); }
+    .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 24px 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; color: rgba(255,255,255,0.85); font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 500; }
+    .faq-q:hover { color: #fff; }
+    .faq-a { display: none; padding: 0 0 24px; font-size: 14px; line-height: 1.75; color: rgba(255,255,255,0.55); }
+    .faq-item.open .faq-a { display: block; }
+    .faq-chevron { transition: transform 0.2s ease; flex-shrink: 0; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    .breadcrumb { font-size: 12px; color: rgba(255,255,255,0.35); display: flex; align-items: center; gap: 8px; }
+    .breadcrumb a:hover { color: rgba(255,255,255,0.6); }
+
+    .hero-bg {
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 50%, rgba(43,36,214,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 70% at 20% 80%, rgba(74,59,255,0.08) 0%, transparent 50%),
+        #06060F;
+    }
+    .section-divider { border: none; border-top: 1px solid rgba(30,30,56,0.6); margin: 0; }
+
+    @media (max-width: 768px) {
+      .hide-mobile { display: none !important; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(16px);background:rgba(6,6,15,0.85);border-bottom:1px solid rgba(30,30,56,0.7);">
+  <div style="max-width:1100px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="https://lescalinglab.com/" style="display:flex;align-items:baseline;gap:0;">
+      <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:22px;font-weight:400;color:rgba(255,255,255,0.8);letter-spacing:-0.02em;">scaling</span><span style="font-family:'Playfair Display',serif;font-style:italic;font-size:22px;font-weight:900;background:linear-gradient(135deg,#E0DEFF,#7B6FFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 10px rgba(96,85,255,0.4));">lab'</span>
+    </a>
+    <div class="hide-mobile" style="display:flex;align-items:center;gap:32px;">
+      <a href="https://lescalinglab.com/agences/" style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.45);" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Toutes les niches</a>
+      <a href="https://lescalinglab.com/resultats" style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.45);" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Résultats élèves</a>
+    </div>
+    <a href="https://lescalinglab.com/#apply" class="btn-primary" style="padding:10px 22px;font-size:13px;">Candidater →</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero-bg" style="padding:104px 32px 64px;position:relative;overflow:hidden;">
+  <div style="max-width:860px;margin:0 auto;position:relative;z-index:3;">
+
+    <div class="breadcrumb" style="margin-bottom:28px;">
+      <a href="https://lescalinglab.com/">Accueil</a>
+      <span>›</span>
+      <a href="https://lescalinglab.com/agences/">Niches</a>
+      <span>›</span>
+      <span style="color:rgba(200,196,255,0.6);">E-Commerce</span>
+    </div>
+
+    <div class="pill" style="margin-bottom:28px;width:fit-content;">
+      <span class="pill-dot"></span>
+      Analyse de niche · E-commerce
+    </div>
+
+    <h1 style="margin-bottom:24px;">
+      <span class="display-bold" style="font-size:clamp(28px,4vw,52px);display:block;line-height:1.05;color:#fff;">E-Commerce :</span>
+      <span class="display-bold" style="font-size:clamp(20px,2.8vw,38px);display:block;line-height:1.1;background:linear-gradient(135deg,#C8C4FF 0%,#6055FF 50%,#3B2FE8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-top:8px;">200 000 boutiques en ligne en france, 78% taux d'abandon de panier</span>
+    </h1>
+
+    <p style="font-size:17px;line-height:1.75;color:rgba(255,255,255,0.55);max-width:640px;margin-bottom:40px;">
+      78% des visiteurs qui ajoutent un produit au panier n'achètent jamais. 60% des clients ne commandent qu'une seule fois. Ce n'est pas un problème de produit — c'est un problème d'automatisation. Et c'est mesurable dès le premier mois.
+    </p>
+
+    <div class="stats-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:600px;">
+      <div class="stat-card">
+        <div class="stat-num">200 000</div>
+        <div class="stat-label">Boutiques en ligne en France</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">78%</div>
+        <div class="stat-label">Taux d'abandon de panier</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">2-6k€</div>
+        <div class="stat-label">Ticket setup typique</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ LE MARCHÉ ═══ -->
+<section style="padding:72px 32px;background:#06060F;">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Le marché</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,34px);color:#fff;margin-bottom:16px;">Pourquoi c'est une niche à fort potentiel</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:680px;">
+      La France compte plus de 200 000 sites e-commerce actifs. 85% sont des TPE avec moins de 5 employés. Le problème structurel : 78% des visiteurs qui ajoutent un produit au panier n'achètent jamais — et aucun système ne les relance.
+    </p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;">
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Taille du marché</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">200 000 boutiques e-commerce actives en France, dont 85% sont des TPE avec moins de 5 employés. Marché de 160 milliards d'euros, avec une croissance annuelle de 8-10%.</div>
+      </div>
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Chiffre d'affaires moyen</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">50 000 à 500 000 €/an pour une boutique TPE. Marges nettes de 20-40%. Un taux de récupération de panier de 10% sur une boutique qui génère 500 paniers abandonnés/mois = 50 ventes supplémentaires.</div>
+      </div>
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Équipement numérique</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">Shopify ou WooCommerce pour la boutique. Klaviyo ou Mailchimp parfois installés — mais pas configurés. Aucune séquence de relance panier automatique, aucun win-back client, aucun post-achat structuré.</div>
+      </div>
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Profil client</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">Entrepreneurs solo ou équipes de 2-3 personnes. Comprennent les métriques (taux de conversion, panier moyen, CLV). Sensibles à l'argument du ROI direct et mesurable.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ LES PROBLÈMES ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.3);">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Le problème</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,34px);color:#fff;margin-bottom:12px;">L'acquisition dans cette niche : comment ça marche vraiment</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:660px;">
+      L'e-commerce a trois fuites de revenus mesurables, récurrentes, et corrigeables avec des séquences automatisées. Trois opportunités directes pour une agence IA.
+    </p>
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div class="pain-card">
+        <div class="pain-num">01</div>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin:8px 0;">78% des paniers abandonnés sans relance automatique</h3>
+        <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.55);margin-top:8px;">La moyenne d'abandon de panier en France est de 78%. Sans séquence de relance en 1h / 24h / 72h, ces acheteurs potentiels sont perdus. À 100€ de panier moyen, 1 000 paniers abandonnés/mois représentent 80-150 ventes supplémentaires récupérables.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-num">02</div>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin:8px 0;">Clients one-shot jamais réactivés — base email inexploitée</h3>
+        <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.55);margin-top:8px;">60% des clients d'un e-commerce ne commandent qu'une seule fois. La base email s'accumule mais n'est jamais travaillée. Sans séquence win-back à 45, 90 et 180 jours, ces clients partent chez un concurrent sans même s'en rendre compte.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-num">03</div>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin:8px 0;">Zéro séquence post-achat — opportunités d'upsell systématiquement ratées</h3>
+        <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.55);margin-top:8px;">La période post-achat est le meilleur moment pour proposer un produit complémentaire ou obtenir un avis. Sans automatisation, ce moment est systématiquement raté : pas d'avis, pas d'upsell, client qui oublie la marque en 3 semaines.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ L'INFRASTRUCTURE ═══ -->
+<section style="padding:72px 32px;background:#06060F;">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Ce que tu vends</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,34px);color:#fff;margin-bottom:12px;">L'infrastructure IA concrète</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:660px;">
+      Tout s'intègre à Shopify/WooCommerce via GoHighLevel. Le propriétaire voit ses métriques s'améliorer semaine après semaine — sans toucher au site.
+    </p>
+
+    <div class="glow-card" style="padding:32px;margin-bottom:32px;">
+      <div class="infra-item">
+        <div class="infra-icon">⚡</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Séquence relance panier abandonné — 1h / 24h / 72h</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">Email + SMS automatiques avec l'image du produit, un argument de réassurance et une réduction d'urgence (optionnelle). Taux de récupération panier : 8-15% des abandons.</div>
+        </div>
+      </div>
+      <div class="infra-item">
+        <div class="infra-icon">🔄</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Séquence win-back clients inactifs (45 / 90 / 180 jours)</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">Segmentation automatique des clients selon leur dernière commande. Email de réactivation avec offre personnalisée. Taux de réactivation sur clients dormants de 45-90 jours : 5-12%.</div>
+        </div>
+      </div>
+      <div class="infra-item">
+        <div class="infra-icon">📣</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Post-achat automatisé — cross-sell + collecte d'avis</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">J+3 : contenu / conseil d'utilisation. J+7 : demande d'avis. J+14 : recommandation produit complémentaire. Customer Lifetime Value en hausse de 25-40%.</div>
+        </div>
+      </div>
+      <div class="infra-item">
+        <div class="infra-icon">📊</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Dashboard e-commerce — paniers récupérés & CLV</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">Tableau de bord mensuel : paniers abandonnés récupérés, taux de réachat clients, avis collectés, CLV moyen avant/après. Le ROI est documenté en temps réel — le retainer se justifie avec les chiffres.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticket -->
+    <div style="background:rgba(59,47,232,0.1);border:1px solid rgba(96,85,255,0.2);border-radius:14px;padding:28px;display:flex;gap:32px;flex-wrap:wrap;align-items:center;">
+      <div>
+        <div style="font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.5);margin-bottom:6px;">Ticket setup</div>
+        <div style="font-family:'Oswald',sans-serif;font-size:28px;font-weight:700;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">2 000 – 6 000 €</div>
+      </div>
+      <div style="width:1px;height:40px;background:rgba(96,85,255,0.2);flex-shrink:0;" class="hide-mobile"></div>
+      <div>
+        <div style="font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.5);margin-bottom:6px;">Retainer mensuel</div>
+        <div style="font-family:'Oswald',sans-serif;font-size:28px;font-weight:700;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">500 – 1 500 €/mois</div>
+      </div>
+      <div style="flex:1;min-width:200px;">
+        <div style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.45);">Les boutiques avec >100 000 €/an de CA et >500 commandes/mois acceptent facilement des tickets à 4 000-6 000 €. Les petites boutiques commencent à 2 000-3 000 € setup. L'e-commerce est une niche où le retainer peut être indexé sur les performances.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ RÉSULTAT ÉLÈVE ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.4);">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Résultat élève</div>
+    <h2 class="heading-oswald" style="font-size:clamp(20px,2.8vw,32px);color:#fff;margin-bottom:40px;">Ce que ça donne en pratique</h2>
+    <div class="result-card">
+      <div style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#5048FF,#3B2FE8);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;color:#fff;flex-shrink:0;">→</div>
+        <div style="flex:1;min-width:200px;">
+          <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;color:#fff;margin-bottom:4px;">Programme Scaling Lab'</div>
+          <div style="font-size:12px;color:rgba(200,196,255,0.6);letter-spacing:0.08em;font-family:'Oswald',sans-serif;text-transform:uppercase;">Niche e-commerce</div>
+        </div>
+      </div>
+
+      <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.45);margin-top:24px;">L'e-commerce est une niche à ROI directement mesurable : chaque panier abandonné récupéré = revenus additionnels. Les propriétaires de boutiques comprennent les métriques et mesurent facilement l'impact. Un des meilleurs profils clients pour construire un retainer durable basé sur la performance.</p>
+    </div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.3);margin-top:16px;">
+      Résultat individuel — voir tous les cas élèves sur <a href="https://lescalinglab.com/resultats" style="color:rgba(200,196,255,0.5);">lescalinglab.com/resultats</a>
+    </p>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ CTA PROGRAMME ═══ -->
+<section style="padding:72px 32px;background:#06060F;">
+  <div style="max-width:860px;margin:0 auto;text-align:center;">
+    <div class="label" style="margin-bottom:16px;text-align:center;">Le programme</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,36px);color:#fff;margin-bottom:16px;">Comment le Scaling Lab' t'aide à conquérir cette niche</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);max-width:620px;margin:0 auto 40px;">
+      Le programme 1-1 d'Abdé Chan couvre le positionnement sur la niche, la construction de l'infrastructure GHL adaptée, les scripts d'approche, et la vente du premier contrat. 3 à 5 participants par mois maximum.
+    </p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://lescalinglab.com/#apply" class="btn-primary">Candidater au programme →</a>
+      <a href="https://lescalinglab.com/resultats" class="btn-ghost">Voir tous les résultats élèves</a>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ FAQ ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.3);">
+  <div style="max-width:720px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">FAQ</div>
+    <h2 class="heading-oswald" style="font-size:clamp(20px,2.5vw,30px);color:#fff;margin-bottom:40px;">Questions fréquentes — e-commerce & boutiques en ligne</h2>
+    <div id="faq-list">
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Combien peut-on facturer un e-commerce pour une infrastructure IA ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Un setup complet (relance panier, win-back clients, post-achat) se facture entre 2 000 et 6 000 €. Le retainer mensuel tourne entre 500 et 1 500 €/mois. Les boutiques avec >100 000 €/an de CA acceptent les tickets élevés, surtout si le retainer est partiellement indexé sur les performances.</div>
+      </div>
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Comment approcher un propriétaire de boutique e-commerce ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">L'angle chiffré : "Combien de paniers abandonnés avez-vous par mois ? À [panier moyen] € et un taux de récupération de 10%, un système de relance vous rapporte [X] € par mois." La conversation démarre sur les métriques — pas sur la technologie.</div>
+      </div>
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Un retainer basé sur la performance est-il possible en e-commerce ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Oui — c'est même la structure idéale pour convertir facilement. Setup fixe + retainer incluant un % sur les ventes récupérées au-delà d'un seuil. Le client prend moins de risque, vous capturez plus de valeur si le système performe. Modèle à proposer aux boutiques avec >200 commandes/mois.</div>
+      </div>
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Quel type d'infrastructure livre-t-on concrètement à un e-commerce ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Le setup standard : séquence relance panier abandonné en 1h/24h/72h (email + SMS), séquence win-back clients inactifs à 45/90/180 jours, séquence post-achat avec cross-sell à J+7 et demande d'avis à J+3. Intégration Shopify/WooCommerce via GoHighLevel.</div>
+      </div>
+      <div class="faq-item" style="border-bottom:none;">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Faut-il connaître le e-commerce pour cibler cette niche ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Non, mais des bases en métriques e-commerce sont utiles : taux d'abandon panier, CLV, taux de réachat. Klaviyo, Mailchimp, et GoHighLevel sont les outils standards. L'angle est le même pour toutes les boutiques : récupérer les ventes perdues et augmenter la fréquence d'achat.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ COUVERTURE GÉOGRAPHIQUE ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.2);">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Couverture géographique</div>
+    <h2 class="heading-oswald" style="font-size:clamp(20px,2.5vw,30px);color:#fff;margin-bottom:16px;">Cette niche dans toutes les villes francophones</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.45);margin-bottom:40px;max-width:640px;">L'agence IA se gère en 100% remote — peu importe où se trouvent tes clients. Voici les pages dédiées à chaque ville francophone.</p>
+
+    <div style="margin-bottom:12px;font-size:11px;font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.35);">France — 30 villes</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px;">
+        <a href="https://lescalinglab.com/agences/e-commerce/paris/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Paris</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/marseille/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Marseille</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/lyon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Lyon</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/toulouse/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Toulouse</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/nice/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Nice</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/nantes/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Nantes</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/montpellier/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Montpellier</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/strasbourg/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Strasbourg</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/bordeaux/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Bordeaux</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/lille/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Lille</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/rennes/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Rennes</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/reims/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Reims</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/le-havre/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Le Havre</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/saint-etienne/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Saint-Étienne</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/toulon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Toulon</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/grenoble/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Grenoble</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/dijon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Dijon</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/angers/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Angers</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/nimes/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Nîmes</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/aix-en-provence/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Aix-en-Provence</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/clermont-ferrand/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Clermont-Ferrand</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/brest/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Brest</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/le-mans/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Le Mans</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/tours/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Tours</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/amiens/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Amiens</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/limoges/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Limoges</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/perpignan/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Perpignan</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/metz/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Metz</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/besancon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Besançon</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/orleans/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Orléans</a>
+    </div>
+
+    <div style="margin-bottom:12px;font-size:11px;font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.35);">Francophonie internationale — 20 villes</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <a href="https://lescalinglab.com/agences/e-commerce/bruxelles/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Bruxelles</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/liege/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Liège</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/charleroi/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Charleroi</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/namur/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Namur</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/geneve/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Genève</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/lausanne/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Lausanne</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/fribourg/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Fribourg</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/montreal/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Montréal</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/quebec/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Québec</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/ottawa/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Ottawa</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/casablanca/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Casablanca</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/rabat/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Rabat</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/marrakech/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Marrakech</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/alger/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Alger</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/tunis/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Tunis</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/saint-denis-reunion/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Saint-Denis</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/fort-de-france/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Fort-de-France</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/luxembourg/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Luxembourg</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/dakar/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Dakar</a>
+        <a href="https://lescalinglab.com/agences/e-commerce/abidjan/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Abidjan</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer style="padding:40px 32px;border-top:1px solid rgba(30,30,56,0.8);background:#06060F;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+    <div style="display:flex;flex-direction:column;gap:5px;">
+      <a href="https://lescalinglab.com/" style="display:flex;align-items:baseline;gap:0;">
+        <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:20px;font-weight:400;color:rgba(255,255,255,0.5);letter-spacing:-0.02em;">scaling</span><span style="font-family:'Playfair Display',serif;font-style:italic;font-size:20px;font-weight:900;background:linear-gradient(135deg,#E0DEFF,#7B6FFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">lab'</span>
+      </a>
+      <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:11px;color:rgba(200,196,255,0.3);">by Abdé Chan</span>
+    </div>
+    <p style="font-size:12px;color:rgba(255,255,255,0.22);">© 2026 Scaling Lab' · Accompagnement 1-1 pour Agences IA</p>
+  </div>
+</footer>
+
+<!-- Animated grid background -->
+<script>
+(function(){
+  const CELL=40,STROKE='rgba(96,85,255,0.18)',FILL='#5048FF',NUM=30,MAX=0.14,DUR=2800;
+  const ns='http://www.w3.org/2000/svg';
+  const svg=document.createElementNS(ns,'svg');
+  svg.setAttribute('aria-hidden','true');
+  svg.style.cssText='position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:visible;';
+  const defs=document.createElementNS(ns,'defs');
+  const pat=document.createElementNS(ns,'pattern');
+  pat.setAttribute('id','gp_c59bda87');pat.setAttribute('width',CELL);pat.setAttribute('height',CELL);pat.setAttribute('patternUnits','userSpaceOnUse');
+  const lp=document.createElementNS(ns,'path');lp.setAttribute('d',`M.5 ${CELL}V.5H${CELL}`);lp.setAttribute('fill','none');lp.setAttribute('stroke',STROKE);lp.setAttribute('stroke-width','0.5');
+  pat.appendChild(lp);defs.appendChild(pat);svg.appendChild(defs);
+  const bg=document.createElementNS(ns,'rect');bg.setAttribute('width','100%');bg.setAttribute('height','100%');bg.setAttribute('fill','url(#gp_c59bda87)');svg.appendChild(bg);
+  const grp=document.createElementNS(ns,'g');svg.appendChild(grp);
+  document.body.prepend(svg);
+  function cols(){return Math.floor(window.innerWidth/CELL);}
+  function rows(){return Math.floor(window.innerHeight/CELL);}
+  function spawn(){
+    const r=document.createElementNS(ns,'rect');
+    r.setAttribute('width',CELL);r.setAttribute('height',CELL);
+    r.setAttribute('x',Math.floor(Math.random()*cols())*CELL);
+    r.setAttribute('y',Math.floor(Math.random()*rows())*CELL);
+    r.setAttribute('fill',FILL);r.setAttribute('opacity','0');
+    grp.appendChild(r);
+    let t=performance.now();
+    function step(now){
+      const p=(now-t)/DUR;
+      if(p<0.5){r.setAttribute('opacity',p*2*MAX);}
+      else if(p<1){r.setAttribute('opacity',(1-(p-0.5)*2)*MAX);}
+      else{grp.removeChild(r);return;}
+      requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  setInterval(()=>{if(grp.childNodes.length<NUM)spawn();},DUR/NUM);
+})();
+</script>
+
+<!-- FAQ toggle -->
+<script>
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item');
+  item.classList.toggle('open');
+}
+</script>
+
+<!-- z-index fix -->
+<style>nav, section, footer { position: relative; z-index: 2; }</style>
+
+</body>
+</html>

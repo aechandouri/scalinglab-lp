@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thérapeutes & Bien-Être &amp; Agence IA — 30 000 praticiens en france | Scaling Lab'</title>
+  <meta name="description" content="30 000 thérapeutes & praticiens bien-être en France. Comment lancer une agence IA dans cette niche : l'opportunité, ce qu'on vend, le ticket moyen. Cas élève inclus." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lescalinglab.com/agences/therapeutes/" />
+  <meta property="og:title" content="Vendre l'IA aux Thérapeutes & Bien-Être — Scaling Lab'" />
+  <meta property="og:description" content="30 000 thérapeutes & praticiens bien-être. 90% dépendent du bouche-à-oreille. Voici l'opportunité pour une agence IA." />
+  <meta property="og:url" content="https://lescalinglab.com/agences/therapeutes/" />
+  <meta property="og:type" content="article" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://lescalinglab.com/"},
+      {"@type":"ListItem","position":2,"name":"Niches","item":"https://lescalinglab.com/agences/"},
+      {"@type":"ListItem","position":3,"name":"Thérapeutes & Bien-Être","item":"https://lescalinglab.com/agences/therapeutes/"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Combien peut-on facturer un thérapeute ou un coach pour une infrastructure IA ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un setup complet (chatbot de qualification, séquence nurturing, pipeline GHL) se facture entre 2 000 et 5 000 €. Le retainer mensuel tourne entre 500 et 1 200 €/mois. Les coachs B2B avec des tickets clients >5 000 € acceptent facilement des setups à 4 000-5 000 €."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment approcher un thérapeute ou un coach pour lui vendre de l'IA ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ne pas mentionner l'IA. L'angle qui fonctionne : \"Combien de personnes se renseignent sur vos services chaque mois mais ne prennent jamais RDV ?\" Puis proposer un système de nurturing qui relance automatiquement ces prospects. Le vocabulaire : système commercial, flux de clients, automatisation — pas IA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "La niche thérapie est-elle éthique à démarcher commercialement ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, si l'approche est alignée avec les valeurs du praticien. L'objectif n'est pas de pousser des ventes agressives — c'est d'automatiser la qualification et le suivi pour que le praticien se concentre sur les clients vraiment alignés. La transparence et le respect du rythme du prospect sont au cœur du système."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quel type d'infrastructure livre-t-on à un thérapeute ou un coach ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le setup standard : chatbot de qualification sur site et DMs Instagram (filtre problématique, budget, disponibilité), séquence email/SMS nurturing sur 14-21 jours pour les leads non convertis, pipeline GHL pour suivre toutes les demandes, avis automatiques après chaque accompagnement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Faut-il comprendre la psychologie ou le coaching pour cibler cette niche ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Il suffit de comprendre le cycle commercial du praticien : les prospects arrivent via le contenu et le bouche-à-oreille, hésitent longtemps avant de s'engager, et ne sont jamais relancés. Savoir parler de \"remplissage d'agenda\" et de \"clients qualifiés\" suffit."
+      }
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700;1,900&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        ink: '#06060F', deep: '#0C0C1E',
+        primary: '#3B2FE8', bright: '#6055FF', tint: '#C8C4FF'
+      } } }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #06060F; color: #fff; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+
+    .display-bold { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; letter-spacing: -0.04em; line-height: 1; }
+    .heading-oswald { font-family: 'Oswald', sans-serif; font-weight: 700; letter-spacing: -0.01em; line-height: 1.05; text-transform: uppercase; }
+    .label { font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: #6055FF; }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(160deg, #5048FF 0%, #3B2FE8 55%, #2E24CC 100%);
+      color: #fff; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700;
+      letter-spacing: 0.02em; padding: 14px 32px; border-radius: 100px;
+      border: none; cursor: pointer; position: relative; overflow: hidden; text-decoration: none;
+      transition: transform 0.25s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+      box-shadow: 0 0 32px rgba(59,47,232,0.55), 0 6px 24px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.45), inset 0 -1px 0 rgba(0,0,0,0.3);
+    }
+    .btn-primary::before { content:''; position:absolute; top:0; left:0; right:0; height:48%; background:linear-gradient(180deg,rgba(255,255,255,0.2) 0%,transparent 100%); border-radius:100px 100px 0 0; pointer-events:none; }
+    .btn-primary:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 0 55px rgba(59,47,232,0.7), 0 12px 36px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.55); }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.7);
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500;
+      padding: 12px 24px; border-radius: 100px; border: 1px solid rgba(255,255,255,0.1);
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease; cursor: pointer;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.2); }
+
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: rgba(200,196,255,0.8);
+      background: rgba(59,47,232,0.15); border: 1px solid rgba(96,85,255,0.3);
+      padding: 8px 16px; border-radius: 100px;
+    }
+    .pill-dot { width: 6px; height: 6px; border-radius: 50%; background: #6055FF; flex-shrink: 0; animation: pulse-dot 2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.75)} }
+
+    .glow-card {
+      background: rgba(12,12,30,0.7); border: 1px solid rgba(30,30,56,0.8);
+      box-shadow: 0 1px 0 rgba(100,90,255,0.12) inset, 0 0 0 1px rgba(30,30,56,1), 0 20px 60px rgba(0,0,0,0.4);
+      border-radius: 16px;
+    }
+    .glow-card-hover { transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease; }
+    .glow-card-hover:hover { box-shadow: 0 1px 0 rgba(100,90,255,0.25) inset, 0 0 0 1px rgba(74,59,255,0.35), 0 24px 60px rgba(59,47,232,0.15), 0 4px 20px rgba(0,0,0,0.5); transform: translateY(-2px); }
+
+    .stat-card {
+      background: rgba(12,12,30,0.6); border: 1px solid rgba(30,30,56,0.7);
+      border-radius: 12px; padding: 20px 24px; text-align: center;
+    }
+    .stat-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 28px; background: linear-gradient(135deg,#C8C4FF,#6055FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 4px; }
+
+    .pain-card { background: rgba(12,12,30,0.5); border: 1px solid rgba(59,47,232,0.15); border-radius: 14px; padding: 28px; }
+    .pain-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 36px; color: rgba(96,85,255,0.25); line-height: 1; }
+
+    .infra-item { display: flex; gap: 16px; align-items: flex-start; padding: 20px 0; border-bottom: 1px solid rgba(30,30,56,0.6); }
+    .infra-item:last-child { border-bottom: none; }
+    .infra-icon { width: 36px; height: 36px; border-radius: 8px; background: rgba(59,47,232,0.2); border: 1px solid rgba(96,85,255,0.25); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 16px; }
+
+    .result-card { background: linear-gradient(135deg, rgba(59,47,232,0.12) 0%, rgba(12,12,30,0.8) 100%); border: 1px solid rgba(96,85,255,0.25); border-radius: 20px; padding: 36px; }
+
+    .faq-item { border-bottom: 1px solid rgba(30,30,56,0.6); }
+    .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 24px 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; color: rgba(255,255,255,0.85); font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 500; }
+    .faq-q:hover { color: #fff; }
+    .faq-a { display: none; padding: 0 0 24px; font-size: 14px; line-height: 1.75; color: rgba(255,255,255,0.55); }
+    .faq-item.open .faq-a { display: block; }
+    .faq-chevron { transition: transform 0.2s ease; flex-shrink: 0; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    .breadcrumb { font-size: 12px; color: rgba(255,255,255,0.35); display: flex; align-items: center; gap: 8px; }
+    .breadcrumb a:hover { color: rgba(255,255,255,0.6); }
+
+    .hero-bg {
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 50%, rgba(43,36,214,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 70% at 20% 80%, rgba(74,59,255,0.08) 0%, transparent 50%),
+        #06060F;
+    }
+    .section-divider { border: none; border-top: 1px solid rgba(30,30,56,0.6); margin: 0; }
+
+    @media (max-width: 768px) {
+      .hide-mobile { display: none !important; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(16px);background:rgba(6,6,15,0.85);border-bottom:1px solid rgba(30,30,56,0.7);">
+  <div style="max-width:1100px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="https://lescalinglab.com/" style="display:flex;align-items:baseline;gap:0;">
+      <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:22px;font-weight:400;color:rgba(255,255,255,0.8);letter-spacing:-0.02em;">scaling</span><span style="font-family:'Playfair Display',serif;font-style:italic;font-size:22px;font-weight:900;background:linear-gradient(135deg,#E0DEFF,#7B6FFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 10px rgba(96,85,255,0.4));">lab'</span>
+    </a>
+    <div class="hide-mobile" style="display:flex;align-items:center;gap:32px;">
+      <a href="https://lescalinglab.com/agences/" style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.45);" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Toutes les niches</a>
+      <a href="https://lescalinglab.com/resultats" style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.45);" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Résultats élèves</a>
+    </div>
+    <a href="https://lescalinglab.com/#apply" class="btn-primary" style="padding:10px 22px;font-size:13px;">Candidater →</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero-bg" style="padding:104px 32px 64px;position:relative;overflow:hidden;">
+  <div style="max-width:860px;margin:0 auto;position:relative;z-index:3;">
+
+    <div class="breadcrumb" style="margin-bottom:28px;">
+      <a href="https://lescalinglab.com/">Accueil</a>
+      <span>›</span>
+      <a href="https://lescalinglab.com/agences/">Niches</a>
+      <span>›</span>
+      <span style="color:rgba(200,196,255,0.6);">Thérapeutes & Bien-Être</span>
+    </div>
+
+    <div class="pill" style="margin-bottom:28px;width:fit-content;">
+      <span class="pill-dot"></span>
+      Analyse de niche · Thérapeutes & bien-être
+    </div>
+
+    <h1 style="margin-bottom:24px;">
+      <span class="display-bold" style="font-size:clamp(28px,4vw,52px);display:block;line-height:1.05;color:#fff;">Thérapeutes & Bien-Être :</span>
+      <span class="display-bold" style="font-size:clamp(20px,2.8vw,38px);display:block;line-height:1.1;background:linear-gradient(135deg,#C8C4FF 0%,#6055FF 50%,#3B2FE8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-top:8px;">30 000 praticiens en france, 90% dépendent du bouche-à-oreille</span>
+    </h1>
+
+    <p style="font-size:17px;line-height:1.75;color:rgba(255,255,255,0.55);max-width:640px;margin-bottom:40px;">
+      Sally est passée de salariée sans expérience en agence à 18 000 €/mois en ciblant les thérapeutes. La raison : 30 000 praticiens qui dépendent du bouche-à-oreille pour remplir leur agenda, et aucun n'a de système commercial pour le remplacer.
+    </p>
+
+    <div class="stats-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:600px;">
+      <div class="stat-card">
+        <div class="stat-num">30 000</div>
+        <div class="stat-label">Praticiens en France</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">90%</div>
+        <div class="stat-label">Dépendent du bouche-à-oreille</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">2-5k€</div>
+        <div class="stat-label">Ticket setup typique</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ LE MARCHÉ ═══ -->
+<section style="padding:72px 32px;background:#06060F;">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Le marché</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,34px);color:#fff;margin-bottom:16px;">Pourquoi c'est une niche à fort potentiel</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:680px;">
+      Le marché du bien-être et de la thérapie en France compte plus de 30 000 praticiens actifs : psychologues, coachs certifiés, thérapeutes, hypnothérapeutes, sophrologues. La demande est en forte croissance — mais 90% de ces praticiens dépendent exclusivement du bouche-à-oreille pour remplir leur agenda.
+    </p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;">
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Taille du marché</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">Plus de 30 000 praticiens bien-être actifs en France : psychologues, coachs, sophrologues, hypnothérapeutes, thérapeutes PNL. Marché de 1,2 milliard d'euros, en croissance de 12% par an.</div>
+      </div>
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Chiffre d'affaires moyen</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">50 000 à 120 000 €/an pour un praticien solo à temps plein. Les coachs certifiés haut de gamme dépassent souvent 150 000 €. Marges nettes de 60-75% — le budget pour un système d'automatisation est là.</div>
+      </div>
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Équipement numérique</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">Un outil de prise de RDV (Calendly), parfois un site vitrine. Aucun CRM, aucune séquence email structurée, aucune relance automatique des leads qui se renseignent.</div>
+      </div>
+      <div class="glow-card glow-card-hover" style="padding:24px;">
+        <div style="font-size:12px;color:#6055FF;font-family:'Oswald',sans-serif;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;">Profil client</div>
+        <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);">75% de femmes, 28-55 ans. Actives sur Instagram, présentes sur LinkedIn pour les coachs B2B. L'approche doit être authentique, pas commerciale.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ LES PROBLÈMES ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.3);">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Le problème</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,34px);color:#fff;margin-bottom:12px;">L'acquisition dans cette niche : comment ça marche vraiment</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:660px;">
+      La thérapie et le coaching ont trois freins commerciaux structurels. Ils sont universels dans la niche — et chacun a une solution directe.
+    </p>
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div class="pain-card">
+        <div class="pain-num">01</div>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin:8px 0;">Bouche-à-oreille exclusif — croissance structurellement plafonnée</h3>
+        <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.55);margin-top:8px;">90% des thérapeutes n'ont aucun levier commercial autre que les recommandations. Ça marche jusqu'à un certain niveau, puis ça plafonne. Impossible de décider de remplir son agenda en 30 jours si tout repose sur le réseau.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-num">02</div>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin:8px 0;">Les prospects qui se renseignent ne sont jamais relancés</h3>
+        <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.55);margin-top:8px;">Un visiteur du site qui laisse ses coordonnées pour se renseigner n'est pas rappelé dans l'heure. Il contacte un autre praticien. Sans séquence de nurturing automatique, 60-70% de ces leads disparaissent en 48h.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-num">03</div>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin:8px 0;">Zéro qualification avant le premier appel — du temps perdu chaque semaine</h3>
+        <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.55);margin-top:8px;">Des appels de 20-30 minutes avec des gens hors cible (mauvaise spécialité, hors budget, fausse urgence) représentent 3 à 5 heures perdues par semaine. Un chatbot de pré-qualification élimine ce gâchis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ L'INFRASTRUCTURE ═══ -->
+<section style="padding:72px 32px;background:#06060F;">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Ce que tu vends</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,34px);color:#fff;margin-bottom:12px;">L'infrastructure IA concrète</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);margin-bottom:40px;max-width:660px;">
+      L'infrastructure doit être discrète et alignée avec le positionnement du praticien. Pas de chatbot agressif — un système qui filtre, relance et référence, de façon fluide.
+    </p>
+
+    <div class="glow-card" style="padding:32px;margin-bottom:32px;">
+      <div class="infra-item">
+        <div class="infra-icon">⚡</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Chatbot de qualification sur site + DMs Instagram</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">Questions de filtrage : type de problématique, modalité souhaitée (présentiel/distanciel), disponibilité, budget. Les candidats qualifiés reçoivent un lien de réservation automatique.</div>
+        </div>
+      </div>
+      <div class="infra-item">
+        <div class="infra-icon">🔄</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Séquence email/SMS nurturing 14 jours sur leads non convertis</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">5 à 7 emails sur 2 semaines + 2 SMS de relance. Taux de prise de premier RDV sur liste froide : de 5% à 18-25%.</div>
+        </div>
+      </div>
+      <div class="infra-item">
+        <div class="infra-icon">📣</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Pipeline GHL + automatisation avis et réputation</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">Toutes les demandes, RDV et séances en cours dans un tableau de bord. Avis Google automatiques après chaque consultation. En 3 mois, domination des recherches locales.</div>
+        </div>
+      </div>
+      <div class="infra-item">
+        <div class="infra-icon">📊</div>
+        <div>
+          <div style="font-weight:600;font-size:14px;color:#fff;margin-bottom:6px;">Pipeline CRM + reporting remplissage agenda</div>
+          <div style="font-size:13px;line-height:1.65;color:rgba(255,255,255,0.5);">Vue en temps réel : leads en attente, RDV confirmés, taux de conversion sur les demandes entrantes. Rapport mensuel sur l'évolution du taux de remplissage. Le praticien voit enfin d'où viennent ses clients.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticket -->
+    <div style="background:rgba(59,47,232,0.1);border:1px solid rgba(96,85,255,0.2);border-radius:14px;padding:28px;display:flex;gap:32px;flex-wrap:wrap;align-items:center;">
+      <div>
+        <div style="font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.5);margin-bottom:6px;">Ticket setup</div>
+        <div style="font-family:'Oswald',sans-serif;font-size:28px;font-weight:700;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">2 000 – 5 000 €</div>
+      </div>
+      <div style="width:1px;height:40px;background:rgba(96,85,255,0.2);flex-shrink:0;" class="hide-mobile"></div>
+      <div>
+        <div style="font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.5);margin-bottom:6px;">Retainer mensuel</div>
+        <div style="font-family:'Oswald',sans-serif;font-size:28px;font-weight:700;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">500 – 1 200 €/mois</div>
+      </div>
+      <div style="flex:1;min-width:200px;">
+        <div style="font-size:13px;line-height:1.6;color:rgba(255,255,255,0.45);">Les coachs B2B haut de gamme (>100 000 €/an) acceptent facilement des tickets à 4 000-5 000 €. Les thérapeutes bien-être commencent plus souvent à 2 000-3 000 € setup.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ RÉSULTAT ÉLÈVE ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.4);">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Résultat élève</div>
+    <h2 class="heading-oswald" style="font-size:clamp(20px,2.8vw,32px);color:#fff;margin-bottom:40px;">Ce que ça donne en pratique</h2>
+    <div class="result-card">
+      <div style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#5048FF,#3B2FE8);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;color:#fff;flex-shrink:0;">S</div>
+        <div style="flex:1;min-width:200px;">
+          <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;color:#fff;margin-bottom:4px;">Sally</div>
+          <div style="font-size:12px;color:rgba(200,196,255,0.6);letter-spacing:0.08em;font-family:'Oswald',sans-serif;text-transform:uppercase;">Niche thérapeutes &amp; bien-être</div>
+        </div>
+      </div>
+      <div style="margin-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;">
+        <div style="text-align:center;padding:20px;background:rgba(6,6,15,0.5);border-radius:12px;border:1px solid rgba(30,30,56,0.6);">
+          <div style="font-family:'Oswald',sans-serif;font-size:13px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;">Avant</div>
+          <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:24px;color:rgba(255,255,255,0.4);">0</div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.25);margin-top:4px;">par mois</div>
+        </div>
+        <div style="text-align:center;padding:20px;background:rgba(6,6,15,0.5);border-radius:12px;border:1px solid rgba(30,30,56,0.6);display:flex;align-items:center;justify-content:center;">
+          <div style="font-size:22px;color:rgba(96,85,255,0.5);">→</div>
+        </div>
+        <div style="text-align:center;padding:20px;background:rgba(59,47,232,0.12);border-radius:12px;border:1px solid rgba(96,85,255,0.3);">
+          <div style="font-family:'Oswald',sans-serif;font-size:13px;color:rgba(200,196,255,0.6);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;">Après</div>
+          <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:24px;background:linear-gradient(135deg,#C8C4FF,#6055FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">18 000 €</div>
+          <div style="font-size:11px;color:rgba(200,196,255,0.4);margin-top:4px;">par mois</div>
+        </div>
+        <div style="text-align:center;padding:20px;background:rgba(6,6,15,0.5);border-radius:12px;border:1px solid rgba(30,30,56,0.6);">
+          <div style="font-family:'Oswald',sans-serif;font-size:13px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;">Délai</div>
+          <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:24px;color:#C8C4FF;">quelques mois</div>
+        </div>
+      </div>
+      <p style="font-size:14px;line-height:1.75;color:rgba(255,255,255,0.45);margin-top:24px;">Sally est partie de zéro — salariée sans expérience en agence — pour atteindre 18 000 €/mois en ciblant les thérapeutes et praticiens bien-être. La niche comprend immédiatement la valeur d'un système qui remplace le bouche-à-oreille imprévisible par un flux de clients qualifiés.</p>
+    </div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.3);margin-top:16px;">
+      Résultat individuel — voir tous les cas élèves sur <a href="https://lescalinglab.com/resultats" style="color:rgba(200,196,255,0.5);">lescalinglab.com/resultats</a>
+    </p>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ CTA PROGRAMME ═══ -->
+<section style="padding:72px 32px;background:#06060F;">
+  <div style="max-width:860px;margin:0 auto;text-align:center;">
+    <div class="label" style="margin-bottom:16px;text-align:center;">Le programme</div>
+    <h2 class="heading-oswald" style="font-size:clamp(22px,3vw,36px);color:#fff;margin-bottom:16px;">Comment le Scaling Lab' t'aide à conquérir cette niche</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);max-width:620px;margin:0 auto 40px;">
+      Le programme 1-1 d'Abdé Chan couvre le positionnement sur la niche, la construction de l'infrastructure GHL adaptée, les scripts d'approche, et la vente du premier contrat. 3 à 5 participants par mois maximum.
+    </p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://lescalinglab.com/#apply" class="btn-primary">Candidater au programme →</a>
+      <a href="https://lescalinglab.com/resultats" class="btn-ghost">Voir tous les résultats élèves</a>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ FAQ ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.3);">
+  <div style="max-width:720px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">FAQ</div>
+    <h2 class="heading-oswald" style="font-size:clamp(20px,2.5vw,30px);color:#fff;margin-bottom:40px;">Questions fréquentes — thérapeutes & praticiens bien-être</h2>
+    <div id="faq-list">
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Combien peut-on facturer un thérapeute ou un coach pour une infrastructure IA ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Un setup complet (chatbot de qualification, séquence nurturing, pipeline GHL) se facture entre 2 000 et 5 000 €. Le retainer mensuel tourne entre 500 et 1 200 €/mois. Les coachs B2B avec des tickets clients >5 000 € acceptent facilement des setups à 4 000-5 000 €.</div>
+      </div>
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Comment approcher un thérapeute ou un coach pour lui vendre de l'IA ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Ne pas mentionner l'IA. L'angle qui fonctionne : "Combien de personnes se renseignent sur vos services chaque mois mais ne prennent jamais RDV ?" Puis proposer un système de nurturing qui relance automatiquement ces prospects. Le vocabulaire : système commercial, flux de clients, automatisation — pas IA.</div>
+      </div>
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          La niche thérapie est-elle éthique à démarcher commercialement ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Oui, si l'approche est alignée avec les valeurs du praticien. L'objectif n'est pas de pousser des ventes agressives — c'est d'automatiser la qualification et le suivi pour que le praticien se concentre sur les clients vraiment alignés. La transparence et le respect du rythme du prospect sont au cœur du système.</div>
+      </div>
+      <div class="faq-item" style="">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Quel type d'infrastructure livre-t-on à un thérapeute ou un coach ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Le setup standard : chatbot de qualification sur site et DMs Instagram (filtre problématique, budget, disponibilité), séquence email/SMS nurturing sur 14-21 jours pour les leads non convertis, pipeline GHL pour suivre toutes les demandes, avis automatiques après chaque accompagnement.</div>
+      </div>
+      <div class="faq-item" style="border-bottom:none;">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Faut-il comprendre la psychologie ou le coaching pour cibler cette niche ?
+          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(200,196,255,0.5)" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Non. Il suffit de comprendre le cycle commercial du praticien : les prospects arrivent via le contenu et le bouche-à-oreille, hésitent longtemps avant de s'engager, et ne sont jamais relancés. Savoir parler de "remplissage d'agenda" et de "clients qualifiés" suffit.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ═══ COUVERTURE GÉOGRAPHIQUE ═══ -->
+<section style="padding:72px 32px;background:rgba(12,12,30,0.2);">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="label" style="margin-bottom:16px;">Couverture géographique</div>
+    <h2 class="heading-oswald" style="font-size:clamp(20px,2.5vw,30px);color:#fff;margin-bottom:16px;">Cette niche dans toutes les villes francophones</h2>
+    <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.45);margin-bottom:40px;max-width:640px;">L'agence IA se gère en 100% remote — peu importe où se trouvent tes clients. Voici les pages dédiées à chaque ville francophone.</p>
+
+    <div style="margin-bottom:12px;font-size:11px;font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.35);">France — 30 villes</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px;">
+        <a href="https://lescalinglab.com/agences/therapeutes/paris/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Paris</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/marseille/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Marseille</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/lyon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Lyon</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/toulouse/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Toulouse</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/nice/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Nice</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/nantes/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Nantes</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/montpellier/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Montpellier</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/strasbourg/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Strasbourg</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/bordeaux/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Bordeaux</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/lille/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Lille</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/rennes/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Rennes</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/reims/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Reims</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/le-havre/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Le Havre</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/saint-etienne/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Saint-Étienne</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/toulon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Toulon</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/grenoble/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Grenoble</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/dijon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Dijon</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/angers/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Angers</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/nimes/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Nîmes</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/aix-en-provence/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Aix-en-Provence</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/clermont-ferrand/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Clermont-Ferrand</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/brest/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Brest</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/le-mans/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Le Mans</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/tours/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Tours</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/amiens/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Amiens</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/limoges/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Limoges</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/perpignan/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Perpignan</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/metz/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Metz</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/besancon/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Besançon</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/orleans/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Orléans</a>
+    </div>
+
+    <div style="margin-bottom:12px;font-size:11px;font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(200,196,255,0.35);">Francophonie internationale — 20 villes</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <a href="https://lescalinglab.com/agences/therapeutes/bruxelles/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Bruxelles</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/liege/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Liège</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/charleroi/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Charleroi</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/namur/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Namur</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/geneve/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Genève</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/lausanne/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Lausanne</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/fribourg/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Fribourg</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/montreal/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Montréal</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/quebec/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Québec</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/ottawa/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Ottawa</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/casablanca/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Casablanca</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/rabat/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Rabat</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/marrakech/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Marrakech</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/alger/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Alger</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/tunis/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Tunis</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/saint-denis-reunion/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Saint-Denis</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/fort-de-france/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Fort-de-France</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/luxembourg/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Luxembourg</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/dakar/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Dakar</a>
+        <a href="https://lescalinglab.com/agences/therapeutes/abidjan/" style="display:inline-flex;padding:7px 14px;background:rgba(12,12,30,0.6);border:1px solid rgba(30,30,56,0.7);border-radius:100px;font-size:13px;color:rgba(255,255,255,0.5);font-family:'Inter',sans-serif;transition:color 0.2s ease,border-color 0.2s ease;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(96,85,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(30,30,56,0.7)'">Abidjan</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer style="padding:40px 32px;border-top:1px solid rgba(30,30,56,0.8);background:#06060F;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+    <div style="display:flex;flex-direction:column;gap:5px;">
+      <a href="https://lescalinglab.com/" style="display:flex;align-items:baseline;gap:0;">
+        <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:20px;font-weight:400;color:rgba(255,255,255,0.5);letter-spacing:-0.02em;">scaling</span><span style="font-family:'Playfair Display',serif;font-style:italic;font-size:20px;font-weight:900;background:linear-gradient(135deg,#E0DEFF,#7B6FFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">lab'</span>
+      </a>
+      <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:11px;color:rgba(200,196,255,0.3);">by Abdé Chan</span>
+    </div>
+    <p style="font-size:12px;color:rgba(255,255,255,0.22);">© 2026 Scaling Lab' · Accompagnement 1-1 pour Agences IA</p>
+  </div>
+</footer>
+
+<!-- Animated grid background -->
+<script>
+(function(){
+  const CELL=40,STROKE='rgba(96,85,255,0.18)',FILL='#5048FF',NUM=30,MAX=0.14,DUR=2800;
+  const ns='http://www.w3.org/2000/svg';
+  const svg=document.createElementNS(ns,'svg');
+  svg.setAttribute('aria-hidden','true');
+  svg.style.cssText='position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:visible;';
+  const defs=document.createElementNS(ns,'defs');
+  const pat=document.createElementNS(ns,'pattern');
+  pat.setAttribute('id','gp_4a39aa96');pat.setAttribute('width',CELL);pat.setAttribute('height',CELL);pat.setAttribute('patternUnits','userSpaceOnUse');
+  const lp=document.createElementNS(ns,'path');lp.setAttribute('d',`M.5 ${CELL}V.5H${CELL}`);lp.setAttribute('fill','none');lp.setAttribute('stroke',STROKE);lp.setAttribute('stroke-width','0.5');
+  pat.appendChild(lp);defs.appendChild(pat);svg.appendChild(defs);
+  const bg=document.createElementNS(ns,'rect');bg.setAttribute('width','100%');bg.setAttribute('height','100%');bg.setAttribute('fill','url(#gp_4a39aa96)');svg.appendChild(bg);
+  const grp=document.createElementNS(ns,'g');svg.appendChild(grp);
+  document.body.prepend(svg);
+  function cols(){return Math.floor(window.innerWidth/CELL);}
+  function rows(){return Math.floor(window.innerHeight/CELL);}
+  function spawn(){
+    const r=document.createElementNS(ns,'rect');
+    r.setAttribute('width',CELL);r.setAttribute('height',CELL);
+    r.setAttribute('x',Math.floor(Math.random()*cols())*CELL);
+    r.setAttribute('y',Math.floor(Math.random()*rows())*CELL);
+    r.setAttribute('fill',FILL);r.setAttribute('opacity','0');
+    grp.appendChild(r);
+    let t=performance.now();
+    function step(now){
+      const p=(now-t)/DUR;
+      if(p<0.5){r.setAttribute('opacity',p*2*MAX);}
+      else if(p<1){r.setAttribute('opacity',(1-(p-0.5)*2)*MAX);}
+      else{grp.removeChild(r);return;}
+      requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  setInterval(()=>{if(grp.childNodes.length<NUM)spawn();},DUR/NUM);
+})();
+</script>
+
+<!-- FAQ toggle -->
+<script>
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item');
+  item.classList.toggle('open');
+}
+</script>
+
+<!-- z-index fix -->
+<style>nav, section, footer { position: relative; z-index: 2; }</style>
+
+</body>
+</html>

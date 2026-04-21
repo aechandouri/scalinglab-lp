@@ -3299,157 +3299,33 @@
 })();
 
 /* ══════════════════════════════════════════════════════
-   MOTION ONE — ENTRANCE ANIMATIONS + COUNTERS + MAGNETIC
+   TITRES SMOOTH — opacity + blur + translateY au scroll
 ══════════════════════════════════════════════════════ */
 (function() {
   var M = window.Motion;
   if (!M) return;
   var animate = M.animate, inView = M.inView;
+  var easeOut = [0.16, 1, 0.3, 1];
 
-  /* Easing curves */
-  var spring   = [0.34, 1.56, 0.64, 1];   /* overshoot spring */
-  var easeOut  = [0.16, 1, 0.3, 1];        /* expo decelerate */
-  var ease     = [0.25, 0.46, 0.45, 0.94]; /* soft ease */
-
-  /* ── Number counter ── */
-  function runCounter(numEl) {
-    var end    = +numEl.getAttribute('data-count');
-    var prefix = numEl.getAttribute('data-prefix') || '';
-    var suffix = numEl.getAttribute('data-suffix') || '';
-    var dur    = 2000;
-    var start  = performance.now();
-    function tick(now) {
-      var p = Math.min((now - start) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 4);
-      numEl.textContent = prefix + Math.round(end * eased) + suffix;
-      if (p < 1) requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  }
-
-  /* ── HEADINGS — blur + lift ── */
-  document.querySelectorAll('.display-bold').forEach(function(el) {
-    el.style.opacity = '0';
-    el.style.filter  = 'blur(12px)';
-    el.style.transform = 'translateY(48px)';
-  });
-  inView('.display-bold', function(e) {
-    animate(e.target, {
-      opacity: [0, 1],
-      y: [48, 0],
-      filter: ['blur(12px)', 'blur(0px)']
-    }, { duration: 0.9, easing: easeOut });
-  }, { amount: 0 });
-
-  /* ── LABELS — scale + blur ── */
-  document.querySelectorAll('.label').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'scale(0.82) translateY(16px)';
-    el.style.filter    = 'blur(6px)';
-  });
-  inView('.label', function(e) {
-    animate(e.target, {
-      opacity: [0, 1], scale: [0.82, 1], y: [16, 0], filter: ['blur(6px)', 'blur(0px)']
-    }, { duration: 0.6, easing: spring });
-  }, { amount: 0 });
-
-  /* ── STAT BOXES — spring scale + counter ── */
-  document.querySelectorAll('.stat-box').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'scale(0.75) translateY(30px)';
-    el.style.filter    = 'blur(10px)';
-  });
-  inView('.stat-box', function(e) {
-    var idx = Array.from(document.querySelectorAll('.stat-box')).indexOf(e.target);
-    animate(e.target, {
-      opacity: [0, 1], scale: [0.75, 1], y: [30, 0], filter: ['blur(10px)', 'blur(0px)']
-    }, { duration: 0.75, delay: idx * 0.12, easing: spring });
-    var numEl = e.target.querySelector('.stat-num');
-    if (numEl) setTimeout(function() { runCounter(numEl); }, 200 + idx * 120);
-  }, { amount: 0 });
-
-  /* ── CASE STUDY CARDS — dramatic vertical entry ── */
-  document.querySelectorAll('.cs-card').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateY(60px) scale(0.92)';
-    el.style.filter    = 'blur(6px)';
-  });
-  inView('.cs-card', function(e) {
-    var idx = Array.from(document.querySelectorAll('.cs-card')).indexOf(e.target);
-    animate(e.target, {
-      opacity: [0, 1], y: [60, 0], scale: [0.92, 1], filter: ['blur(6px)', 'blur(0px)']
-    }, { duration: 0.7, delay: idx * 0.1, easing: spring });
-  }, { amount: 0 });
-
-  /* ── FSTEP ITEMS — stagger slide from left ── */
-  document.querySelectorAll('.fstep').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateX(-50px)';
-    el.style.filter    = 'blur(6px)';
-  });
-  inView('.fstep', function(e) {
-    var i = +e.target.getAttribute('data-step') || 0;
-    animate(e.target, {
-      opacity: [0, 1], x: [-50, 0], filter: ['blur(6px)', 'blur(0px)']
-    }, { duration: 0.65, delay: i * 0.1, easing: easeOut });
-  }, { amount: 0 });
-
-  /* ── SYS-STEP ITEMS — stagger slide from left ── */
-  document.querySelectorAll('.sys-step').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateX(-50px)';
-    el.style.filter    = 'blur(6px)';
-  });
-  inView('.sys-step', function(e) {
-    var i = +e.target.getAttribute('data-sys') || 0;
-    animate(e.target, {
-      opacity: [0, 1], x: [-50, 0], filter: ['blur(6px)', 'blur(0px)']
-    }, { duration: 0.65, delay: i * 0.1, easing: easeOut });
-  }, { amount: 0 });
-
-  /* ── PROBLEMS GRID — stagger with spring scale ── */
-  document.querySelectorAll('.problems-grid > div').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateY(50px) scale(0.9)';
-    el.style.filter    = 'blur(8px)';
-  });
-  inView('.problems-grid > div', function(e) {
-    var idx = Array.from(document.querySelectorAll('.problems-grid > div')).indexOf(e.target);
-    animate(e.target, {
-      opacity: [0, 1], y: [50, 0], scale: [0.9, 1], filter: ['blur(8px)', 'blur(0px)']
-    }, { duration: 0.7, delay: idx * 0.08, easing: spring });
-  }, { amount: 0 });
-
-  /* ── FAQ — blur cascade ── */
-  document.querySelectorAll('details').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateY(24px)';
-    el.style.filter    = 'blur(4px)';
-  });
-  inView('details', function(e) {
-    var idx = Array.from(document.querySelectorAll('details')).indexOf(e.target);
-    animate(e.target, {
-      opacity: [0, 1], y: [24, 0], filter: ['blur(4px)', 'blur(0px)']
-    }, { duration: 0.55, delay: idx * 0.06, easing: ease });
-  }, { amount: 0 });
-
-  /* ── MAGNETIC CTA ── */
-  document.querySelectorAll('.btn-primary').forEach(function(btn) {
-    btn.addEventListener('mousemove', function(e) {
-      var r = btn.getBoundingClientRect();
-      var x = (e.clientX - r.left - r.width  / 2) * 0.28;
-      var y = (e.clientY - r.top  - r.height / 2) * 0.28;
-      btn.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(1.06)';
+  var sels = ['.display-bold', '.heading-oswald'];
+  sels.forEach(function(sel) {
+    document.querySelectorAll(sel).forEach(function(el) {
+      el.style.opacity   = '0';
+      el.style.transform = 'translateY(36px)';
+      el.style.filter    = 'blur(10px)';
     });
-    btn.addEventListener('mouseleave', function() {
-      animate(btn, { x: 0, y: 0, scale: 1 }, { duration: 0.5, easing: easeOut });
-    });
+    inView(sel, function(e) {
+      animate(e.target, {
+        opacity: [0, 1],
+        y: [36, 0],
+        filter: ['blur(10px)', 'blur(0px)']
+      }, { duration: 0.85, easing: easeOut });
+    }, { amount: 0 });
   });
 
-  /* ── SAFETY FALLBACK — reveal any stuck elements after 2s ── */
-  var SELS = ['.display-bold','.label','.stat-box','.cs-card','.fstep','.sys-step','.problems-grid > div','details'];
+  /* Fallback — débloquer si bloqué après 2s */
   setTimeout(function() {
-    SELS.forEach(function(sel) {
+    sels.forEach(function(sel) {
       document.querySelectorAll(sel).forEach(function(el) {
         if (parseFloat(window.getComputedStyle(el).opacity) < 0.5) {
           el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease';

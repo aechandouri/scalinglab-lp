@@ -1893,9 +1893,6 @@
   document.querySelectorAll('.sys-step[data-sys]').forEach(function(el){
     el.addEventListener('click',function(){
       cur=+el.getAttribute('data-sys'); prog=0; render();
-      if(window.innerWidth<=768){
-        setTimeout(function(){ el.scrollIntoView({behavior:'smooth',block:'start'}); },80);
-      }
     });
   });
 })();
@@ -2426,11 +2423,6 @@
           cur = +el.getAttribute('data-step');
           prog = 0;
           render(true);
-          if (window.innerWidth <= 768) {
-            setTimeout(function () {
-              el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 80);
-          }
         });
       });
     })();

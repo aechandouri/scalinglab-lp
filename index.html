@@ -987,22 +987,30 @@
       .fstep-mobile-panel {
         flex: 0 0 100% !important;
         order: 10;
-        margin-left: 46px;
-        display: grid;
+        margin-left: 0 !important;
+        display: grid !important;
         grid-template-rows: 0fr;
         transition: grid-template-rows 0.45s cubic-bezier(0.25,0.46,0.45,0.94);
+        width: 100%;
+        box-sizing: border-box;
       }
       .fstep-mobile-panel.open { grid-template-rows: 1fr; }
-      .fstep-mobile-panel > div { overflow: hidden; }
+      .fstep-mobile-panel > div { overflow: hidden; width: 100%; }
       .fstep-mobile-panel > div > .fstep-mobile-clone {
-        padding: 12px 0 20px;
+        padding: 10px 0 20px;
         position: static !important;
         opacity: 1 !important;
         transform: none !important;
         pointer-events: auto !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        overflow-x: hidden;
       }
-      /* Neutralize all position:absolute on cloned panels */
       .fstep-mobile-clone { position: static !important; inset: auto !important; }
+      /* Collapse multi-col grids inside mobile clones */
+      .fstep-mobile-clone [style*="1fr 1fr 1fr"],
+      .fstep-mobile-clone [style*="1fr 1fr 1fr"] { grid-template-columns: 1fr !important; }
+      .fstep-mobile-clone > div { max-width: 100% !important; box-sizing: border-box !important; }
 
       /* Sys */
       .sys-wrapper { grid-template-columns: 1fr !important; gap: 0 !important; }
@@ -1012,21 +1020,42 @@
       .sys-mobile-panel {
         flex: 0 0 100% !important;
         order: 10;
-        margin-left: 46px;
-        display: grid;
+        margin-left: 0 !important;
+        display: grid !important;
         grid-template-rows: 0fr;
         transition: grid-template-rows 0.45s cubic-bezier(0.25,0.46,0.45,0.94);
+        width: 100%;
+        box-sizing: border-box;
       }
       .sys-mobile-panel.open { grid-template-rows: 1fr; }
-      .sys-mobile-panel > div { overflow: hidden; }
+      .sys-mobile-panel > div { overflow: hidden; width: 100%; }
       .sys-mobile-panel > div > .sys-mobile-clone {
-        padding: 12px 0 20px;
+        padding: 10px 0 20px;
         position: static !important;
         opacity: 1 !important;
         transform: none !important;
         pointer-events: auto !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        overflow-x: hidden;
       }
       .sys-mobile-clone { position: static !important; inset: auto !important; }
+      /* Collapse 3-col tunnel grid on mobile */
+      .sys-mobile-clone [style*="1fr 1fr 1fr"] { grid-template-columns: 1fr !important; }
+      .sys-mobile-clone > div { max-width: 100% !important; box-sizing: border-box !important; }
+
+      /* Niche table: 5-col → 3-col (Niche + Panier + Score), hide TAM & AI */
+      .sys-mobile-clone [style*="1.6fr 1fr 1fr 1fr 1fr"] {
+        grid-template-columns: 1.4fr 1fr 64px !important;
+      }
+      .sys-mobile-clone [style*="1.6fr 1fr 1fr 1fr 1fr"] > *:nth-child(3),
+      .sys-mobile-clone [style*="1.6fr 1fr 1fr 1fr 1fr"] > *:nth-child(4) {
+        display: none !important;
+      }
+      /* Weekly tracker 3-col → full width on mobile */
+      .fstep-mobile-clone [style*="80px 1fr 70px"] {
+        grid-template-columns: 70px 1fr 62px !important;
+      }
 
       /* Keep existing mobile fixes */
       .problems-grid { grid-template-columns: 1fr !important; }
@@ -1034,13 +1063,28 @@
       .cs-grid-bottom { grid-template-columns: 1fr !important; max-width: 100% !important; }
     }
 
-    /* ── Motion One: initial hidden state for animated elements ── */
-    .mo-hidden { opacity: 0; transform: translateY(24px); }
-    .mo-hidden-x { opacity: 0; transform: translateX(-20px); }
+    /* ── Mobile panels: hidden by default, shown only on mobile ── */
+    .fstep-mobile-panel, .sys-mobile-panel { display: none; }
+
+    /* ── CTA primary pulse glow ── */
+    @keyframes cta-glow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(96,85,255,0.6), 0 6px 28px rgba(59,47,232,0.45); }
+      50%       { box-shadow: 0 0 0 10px rgba(96,85,255,0), 0 8px 40px rgba(59,47,232,0.75); }
+    }
+    .btn-primary { animation: cta-glow 2.8s ease-in-out infinite; }
+
+    /* ── Scroll progress bar ── */
+    #scroll-progress {
+      position: fixed; top: 0; left: 0; height: 2px; width: 0%;
+      background: linear-gradient(90deg, #3B2FE8, #7B6FFF, #C8C4FF);
+      z-index: 9999; pointer-events: none;
+      transition: width 0.08s linear;
+    }
   </style>
 </head>
 
 <body>
+<div id="scroll-progress"></div>
 
 <!-- ════════════════════════════════════
      NAV
@@ -1116,19 +1160,19 @@
     <!-- Stats row — centered, 4 equal cols -->
     <div class="fade-up delay-4 hero-stats-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:760px;margin:0 auto;">
       <div class="stat-box" style="text-align:center;--delay:0s;">
-        <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:36px;letter-spacing:-0.01em;color:#FFFFFF;line-height:1;position:relative;z-index:1;">+$723k</div>
+        <div class="stat-num" data-count="723" data-prefix="+$" data-suffix="k" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:36px;letter-spacing:-0.01em;color:#FFFFFF;line-height:1;position:relative;z-index:1;">+$723k</div>
         <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;font-weight:500;font-family:'Oswald',sans-serif;letter-spacing:0.05em;text-transform:uppercase;position:relative;z-index:1;">Cash collecté</div>
       </div>
       <div class="stat-box" style="text-align:center;--delay:0.8s;">
-        <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:36px;letter-spacing:-0.01em;color:#FFFFFF;line-height:1;position:relative;z-index:1;">86%</div>
+        <div class="stat-num" data-count="86" data-prefix="" data-suffix="%" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:36px;letter-spacing:-0.01em;color:#FFFFFF;line-height:1;position:relative;z-index:1;">86%</div>
         <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;font-weight:500;font-family:'Oswald',sans-serif;letter-spacing:0.05em;text-transform:uppercase;position:relative;z-index:1;">Marges nettes</div>
       </div>
       <div class="stat-box" style="text-align:center;--delay:1.6s;">
-        <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:36px;letter-spacing:-0.01em;color:#FFFFFF;line-height:1;position:relative;z-index:1;">115+</div>
+        <div class="stat-num" data-count="115" data-prefix="" data-suffix="+" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:36px;letter-spacing:-0.01em;color:#FFFFFF;line-height:1;position:relative;z-index:1;">115+</div>
         <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;font-weight:500;font-family:'Oswald',sans-serif;letter-spacing:0.05em;text-transform:uppercase;position:relative;z-index:1;">Agences accompagnées</div>
       </div>
       <div class="stat-box" style="text-align:center;--delay:2.4s;">
-        <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:36px;letter-spacing:-0.01em;color:#FFFFFF;line-height:1;position:relative;z-index:1;">75+</div>
+        <div class="stat-num" data-count="75" data-prefix="" data-suffix="+" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:36px;letter-spacing:-0.01em;color:#FFFFFF;line-height:1;position:relative;z-index:1;">75+</div>
         <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;font-weight:500;font-family:'Oswald',sans-serif;letter-spacing:0.05em;text-transform:uppercase;position:relative;z-index:1;">Niches testées</div>
       </div>
     </div>
@@ -3249,47 +3293,175 @@
 </style>
 
 <script>
+/* ══════════════════════════════════════════════════════
+   SCROLL PROGRESS BAR
+══════════════════════════════════════════════════════ */
+(function() {
+  var bar = document.getElementById('scroll-progress');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var doc = document.documentElement;
+    var pct = (doc.scrollTop || document.body.scrollTop) / (doc.scrollHeight - doc.clientHeight) * 100;
+    bar.style.width = Math.min(pct, 100) + '%';
+  }, { passive: true });
+})();
+
+/* ══════════════════════════════════════════════════════
+   MOTION ONE — ENTRANCE ANIMATIONS + COUNTERS + MAGNETIC
+══════════════════════════════════════════════════════ */
 (function() {
   var M = window.Motion;
   if (!M) return;
   var animate = M.animate, inView = M.inView;
 
-  var ease = [0.25, 0.46, 0.45, 0.94];
-  var easeOut = [0.16, 1, 0.3, 1];
+  /* Easing curves */
+  var spring   = [0.34, 1.56, 0.64, 1];   /* overshoot spring */
+  var easeOut  = [0.16, 1, 0.3, 1];        /* expo decelerate */
+  var ease     = [0.25, 0.46, 0.45, 0.94]; /* soft ease */
 
-  var ANIM_SELECTORS = [
-    '.display-bold', '.label', '.stat-box', '.cs-card',
-    '.fstep', '.sys-step', '.problems-grid > div', 'details'
-  ];
+  /* ── Number counter ── */
+  function runCounter(numEl) {
+    var end    = +numEl.getAttribute('data-count');
+    var prefix = numEl.getAttribute('data-prefix') || '';
+    var suffix = numEl.getAttribute('data-suffix') || '';
+    var dur    = 2000;
+    var start  = performance.now();
+    function tick(now) {
+      var p = Math.min((now - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 4);
+      numEl.textContent = prefix + Math.round(end * eased) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
 
-  /* Set initial hidden state */
-  document.querySelectorAll('.display-bold').forEach(function(el) { el.style.opacity='0'; el.style.transform='translateY(28px)'; });
-  document.querySelectorAll('.label').forEach(function(el) { el.style.opacity='0'; el.style.transform='translateY(14px)'; });
-  document.querySelectorAll('.stat-box').forEach(function(el) { el.style.opacity='0'; el.style.transform='scale(0.94) translateY(16px)'; });
-  document.querySelectorAll('.cs-card').forEach(function(el) { el.style.opacity='0'; el.style.transform='translateY(24px)'; });
-  document.querySelectorAll('.fstep').forEach(function(el) { el.style.opacity='0'; el.style.transform='translateX(-18px)'; });
-  document.querySelectorAll('.sys-step').forEach(function(el) { el.style.opacity='0'; el.style.transform='translateX(-18px)'; });
-  document.querySelectorAll('.problems-grid > div').forEach(function(el) { el.style.opacity='0'; el.style.transform='translateY(20px)'; });
-  document.querySelectorAll('details').forEach(function(el) { el.style.opacity='0'; el.style.transform='translateY(12px)'; });
+  /* ── HEADINGS — blur + lift ── */
+  document.querySelectorAll('.display-bold').forEach(function(el) {
+    el.style.opacity = '0';
+    el.style.filter  = 'blur(12px)';
+    el.style.transform = 'translateY(48px)';
+  });
+  inView('.display-bold', function(e) {
+    animate(e.target, {
+      opacity: [0, 1],
+      y: [48, 0],
+      filter: ['blur(12px)', 'blur(0px)']
+    }, { duration: 0.9, easing: easeOut });
+  }, { amount: 0 });
 
-  /* Animate in when entering viewport — amount:0 fires on first visible pixel */
-  inView('.display-bold', function(e) { animate(e.target, { opacity:[0,1], y:[28,0] }, { duration:0.75, easing:easeOut }); }, { amount:0 });
-  inView('.label',        function(e) { animate(e.target, { opacity:[0,1], y:[14,0] }, { duration:0.5,  easing:ease    }); }, { amount:0 });
-  inView('.stat-box',     function(e) { animate(e.target, { opacity:[0,1], scale:[0.94,1], y:[16,0] }, { duration:0.55, easing:easeOut }); }, { amount:0 });
-  inView('.cs-card',      function(e) { animate(e.target, { opacity:[0,1], y:[24,0] }, { duration:0.55, easing:easeOut }); }, { amount:0 });
-  inView('.fstep',        function(e) { var i=+e.target.getAttribute('data-step')||0; animate(e.target, { opacity:[0,1], x:[-18,0] }, { duration:0.5, delay:i*0.07, easing:easeOut }); }, { amount:0 });
-  inView('.sys-step',     function(e) { var i=+e.target.getAttribute('data-sys')||0;  animate(e.target, { opacity:[0,1], x:[-18,0] }, { duration:0.5, delay:i*0.07, easing:easeOut }); }, { amount:0 });
-  inView('.problems-grid > div', function(e) { animate(e.target, { opacity:[0,1], y:[20,0] }, { duration:0.55, easing:easeOut }); }, { amount:0 });
-  inView('details',       function(e) { animate(e.target, { opacity:[0,1], y:[12,0] }, { duration:0.45, easing:ease }); }, { amount:0 });
+  /* ── LABELS — scale + blur ── */
+  document.querySelectorAll('.label').forEach(function(el) {
+    el.style.opacity   = '0';
+    el.style.transform = 'scale(0.82) translateY(16px)';
+    el.style.filter    = 'blur(6px)';
+  });
+  inView('.label', function(e) {
+    animate(e.target, {
+      opacity: [0, 1], scale: [0.82, 1], y: [16, 0], filter: ['blur(6px)', 'blur(0px)']
+    }, { duration: 0.6, easing: spring });
+  }, { amount: 0 });
 
-  /* Safety fallback: reveal any still-hidden elements after 2s */
+  /* ── STAT BOXES — spring scale + counter ── */
+  document.querySelectorAll('.stat-box').forEach(function(el) {
+    el.style.opacity   = '0';
+    el.style.transform = 'scale(0.75) translateY(30px)';
+    el.style.filter    = 'blur(10px)';
+  });
+  inView('.stat-box', function(e) {
+    var idx = Array.from(document.querySelectorAll('.stat-box')).indexOf(e.target);
+    animate(e.target, {
+      opacity: [0, 1], scale: [0.75, 1], y: [30, 0], filter: ['blur(10px)', 'blur(0px)']
+    }, { duration: 0.75, delay: idx * 0.12, easing: spring });
+    var numEl = e.target.querySelector('.stat-num');
+    if (numEl) setTimeout(function() { runCounter(numEl); }, 200 + idx * 120);
+  }, { amount: 0 });
+
+  /* ── CASE STUDY CARDS — dramatic vertical entry ── */
+  document.querySelectorAll('.cs-card').forEach(function(el) {
+    el.style.opacity   = '0';
+    el.style.transform = 'translateY(60px) scale(0.92)';
+    el.style.filter    = 'blur(6px)';
+  });
+  inView('.cs-card', function(e) {
+    var idx = Array.from(document.querySelectorAll('.cs-card')).indexOf(e.target);
+    animate(e.target, {
+      opacity: [0, 1], y: [60, 0], scale: [0.92, 1], filter: ['blur(6px)', 'blur(0px)']
+    }, { duration: 0.7, delay: idx * 0.1, easing: spring });
+  }, { amount: 0 });
+
+  /* ── FSTEP ITEMS — stagger slide from left ── */
+  document.querySelectorAll('.fstep').forEach(function(el) {
+    el.style.opacity   = '0';
+    el.style.transform = 'translateX(-50px)';
+    el.style.filter    = 'blur(6px)';
+  });
+  inView('.fstep', function(e) {
+    var i = +e.target.getAttribute('data-step') || 0;
+    animate(e.target, {
+      opacity: [0, 1], x: [-50, 0], filter: ['blur(6px)', 'blur(0px)']
+    }, { duration: 0.65, delay: i * 0.1, easing: easeOut });
+  }, { amount: 0 });
+
+  /* ── SYS-STEP ITEMS — stagger slide from left ── */
+  document.querySelectorAll('.sys-step').forEach(function(el) {
+    el.style.opacity   = '0';
+    el.style.transform = 'translateX(-50px)';
+    el.style.filter    = 'blur(6px)';
+  });
+  inView('.sys-step', function(e) {
+    var i = +e.target.getAttribute('data-sys') || 0;
+    animate(e.target, {
+      opacity: [0, 1], x: [-50, 0], filter: ['blur(6px)', 'blur(0px)']
+    }, { duration: 0.65, delay: i * 0.1, easing: easeOut });
+  }, { amount: 0 });
+
+  /* ── PROBLEMS GRID — stagger with spring scale ── */
+  document.querySelectorAll('.problems-grid > div').forEach(function(el) {
+    el.style.opacity   = '0';
+    el.style.transform = 'translateY(50px) scale(0.9)';
+    el.style.filter    = 'blur(8px)';
+  });
+  inView('.problems-grid > div', function(e) {
+    var idx = Array.from(document.querySelectorAll('.problems-grid > div')).indexOf(e.target);
+    animate(e.target, {
+      opacity: [0, 1], y: [50, 0], scale: [0.9, 1], filter: ['blur(8px)', 'blur(0px)']
+    }, { duration: 0.7, delay: idx * 0.08, easing: spring });
+  }, { amount: 0 });
+
+  /* ── FAQ — blur cascade ── */
+  document.querySelectorAll('details').forEach(function(el) {
+    el.style.opacity   = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.filter    = 'blur(4px)';
+  });
+  inView('details', function(e) {
+    var idx = Array.from(document.querySelectorAll('details')).indexOf(e.target);
+    animate(e.target, {
+      opacity: [0, 1], y: [24, 0], filter: ['blur(4px)', 'blur(0px)']
+    }, { duration: 0.55, delay: idx * 0.06, easing: ease });
+  }, { amount: 0 });
+
+  /* ── MAGNETIC CTA ── */
+  document.querySelectorAll('.btn-primary').forEach(function(btn) {
+    btn.addEventListener('mousemove', function(e) {
+      var r = btn.getBoundingClientRect();
+      var x = (e.clientX - r.left - r.width  / 2) * 0.28;
+      var y = (e.clientY - r.top  - r.height / 2) * 0.28;
+      btn.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(1.06)';
+    });
+    btn.addEventListener('mouseleave', function() {
+      animate(btn, { x: 0, y: 0, scale: 1 }, { duration: 0.5, easing: easeOut });
+    });
+  });
+
+  /* ── SAFETY FALLBACK — reveal any stuck elements after 2s ── */
+  var SELS = ['.display-bold','.label','.stat-box','.cs-card','.fstep','.sys-step','.problems-grid > div','details'];
   setTimeout(function() {
-    ANIM_SELECTORS.forEach(function(sel) {
+    SELS.forEach(function(sel) {
       document.querySelectorAll(sel).forEach(function(el) {
         if (parseFloat(window.getComputedStyle(el).opacity) < 0.5) {
-          el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-          el.style.opacity = '1';
-          el.style.transform = 'none';
+          el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease';
+          el.style.opacity = '1'; el.style.transform = 'none'; el.style.filter = 'none';
         }
       });
     });

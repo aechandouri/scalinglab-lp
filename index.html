@@ -367,7 +367,9 @@
 
   <!-- ── Fonts & Tailwind ── -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
@@ -1078,8 +1080,10 @@
       position: fixed; top: 0; left: 0; height: 2px; width: 0%;
       background: linear-gradient(90deg, #3B2FE8, #7B6FFF, #C8C4FF);
       z-index: 9999; pointer-events: none;
-      transition: width 0.08s linear;
     }
+
+    /* ── Disable CSS fadeUp — GSAP takes over ── */
+    .fade-up { animation: none !important; opacity: 1; }
   </style>
 </head>
 
@@ -1195,7 +1199,7 @@
   <!-- Subtle glow behind video -->
   <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:900px;height:500px;border-radius:50%;background:radial-gradient(ellipse,rgba(59,47,232,0.18) 0%,transparent 65%);pointer-events:none;filter:blur(30px);"></div>
 
-  <div style="max-width:900px;margin:0 auto;position:relative;z-index:2;">
+  <div class="vsl-inner" style="max-width:900px;margin:0 auto;position:relative;z-index:2;">
 
     <!-- Label + heading — centered -->
     <div style="text-align:center;margin-bottom:40px;">
@@ -3286,178 +3290,218 @@
 
 <script>
 /* ══════════════════════════════════════════════════════
-   SCROLL PROGRESS BAR
+   GSAP + SCROLLTRIGGER + LENIS — ANIMATION ENGINE
 ══════════════════════════════════════════════════════ */
 (function() {
-  var bar = document.getElementById('scroll-progress');
-  if (!bar) return;
-  window.addEventListener('scroll', function() {
-    var doc = document.documentElement;
-    var pct = (doc.scrollTop || document.body.scrollTop) / (doc.scrollHeight - doc.clientHeight) * 100;
-    bar.style.width = Math.min(pct, 100) + '%';
-  }, { passive: true });
-})();
+  if (typeof gsap === 'undefined') return;
+  gsap.registerPlugin(ScrollTrigger);
 
-/* ══════════════════════════════════════════════════════
-   MOTION ONE — ENTRANCE ANIMATIONS + COUNTERS + MAGNETIC
-══════════════════════════════════════════════════════ */
-(function() {
-  var M = window.Motion;
-  if (!M) return;
-  var animate = M.animate, inView = M.inView;
+  var isMobile = window.innerWidth <= 768;
 
-  /* Easing curves */
-  var spring   = [0.34, 1.56, 0.64, 1];   /* overshoot spring */
-  var easeOut  = [0.16, 1, 0.3, 1];        /* expo decelerate */
-  var ease     = [0.25, 0.46, 0.45, 0.94]; /* soft ease */
-
-  /* ── Number counter ── */
-  function runCounter(numEl) {
-    var end    = +numEl.getAttribute('data-count');
-    var prefix = numEl.getAttribute('data-prefix') || '';
-    var suffix = numEl.getAttribute('data-suffix') || '';
-    var dur    = 2000;
-    var start  = performance.now();
-    function tick(now) {
-      var p = Math.min((now - start) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 4);
-      numEl.textContent = prefix + Math.round(end * eased) + suffix;
-      if (p < 1) requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
+  /* ── Lenis buttery smooth scroll ── */
+  var lenis;
+  if (typeof Lenis !== 'undefined') {
+    lenis = new Lenis({ lerp: 0.085, smoothWheel: true, syncTouch: false });
+    gsap.ticker.add(function(t) { lenis.raf(t * 1000); });
+    gsap.ticker.lagSmoothing(0);
+    lenis.on('scroll', function() { ScrollTrigger.update(); });
   }
 
-  /* ── HEADINGS — blur + lift ── */
+  /* ── Number counter ── */
+  function counter(el) {
+    var end = +el.getAttribute('data-count');
+    var pre = el.getAttribute('data-prefix') || '';
+    var suf = el.getAttribute('data-suffix') || '';
+    var obj = { v: 0 };
+    gsap.to(obj, {
+      v: end, duration: 2.4, ease: 'power4.out',
+      onUpdate: function() { el.textContent = pre + Math.round(obj.v) + suf; }
+    });
+  }
+
+  /* ── Hero entrance — fully sequenced timeline ── */
+  var tl = gsap.timeline({ defaults: { ease: 'power4.out' }, delay: 0.1 });
+
+  tl.from('section.hero-bg .pill', {
+    opacity: 0, y: 22, filter: 'blur(10px)', duration: 0.65
+  })
+  .from('section.hero-bg h1 .display-bold', {
+    opacity: 0, y: 64, filter: 'blur(20px)', duration: 1.0
+  }, '-=0.25')
+  .from('section.hero-bg h1 .heading-oswald', {
+    opacity: 0, y: 42, filter: 'blur(12px)', duration: 0.8
+  }, '-=0.5')
+  .from('section.hero-bg .fade-up.delay-2', {
+    opacity: 0, y: 28, filter: 'blur(8px)', duration: 0.7
+  }, '-=0.4')
+  .from('section.hero-bg .fade-up.delay-3', {
+    opacity: 0, y: 22, filter: 'blur(6px)', duration: 0.6
+  }, '-=0.35')
+  .from('section.hero-bg .stat-box', {
+    opacity: 0, y: 40, scale: 0.78, filter: 'blur(14px)',
+    stagger: 0.14, duration: 1.0, ease: 'back.out(1.6)',
+    onComplete: function() {
+      document.querySelectorAll('section.hero-bg .stat-box').forEach(function(box, i) {
+        var n = box.querySelector('.stat-num');
+        if (n) setTimeout(function() { counter(n); }, i * 140);
+      });
+    }
+  }, '-=0.45');
+
+  /* ── Scroll progress bar — GSAP scrub ── */
+  gsap.to('#scroll-progress', {
+    width: '100%', ease: 'none',
+    scrollTrigger: { scrub: 0.25, trigger: 'body', start: 'top top', end: 'bottom bottom' }
+  });
+
+  /* ── Section headings — blur + lift on scroll ── */
   document.querySelectorAll('.display-bold').forEach(function(el) {
-    el.style.opacity = '0';
-    el.style.filter  = 'blur(12px)';
-    el.style.transform = 'translateY(48px)';
+    if (el.closest('h1')) return;
+    gsap.from(el, {
+      opacity: 0, y: 56, filter: 'blur(18px)', duration: 1.0,
+      scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
+    });
   });
-  inView('.display-bold', function(e) {
-    animate(e.target, {
-      opacity: [0, 1],
-      y: [48, 0],
-      filter: ['blur(12px)', 'blur(0px)']
-    }, { duration: 0.9, easing: easeOut });
-  }, { amount: 0 });
 
-  /* ── LABELS — scale + blur ── */
+  document.querySelectorAll('.heading-oswald').forEach(function(el) {
+    if (el.closest('h1')) return;
+    gsap.from(el, {
+      opacity: 0, y: 36, filter: 'blur(10px)', duration: 0.8,
+      scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
+    });
+  });
+
+  /* ── Labels — spring pop ── */
   document.querySelectorAll('.label').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'scale(0.82) translateY(16px)';
-    el.style.filter    = 'blur(6px)';
-  });
-  inView('.label', function(e) {
-    animate(e.target, {
-      opacity: [0, 1], scale: [0.82, 1], y: [16, 0], filter: ['blur(6px)', 'blur(0px)']
-    }, { duration: 0.6, easing: spring });
-  }, { amount: 0 });
-
-  /* ── STAT BOXES — spring scale + counter ── */
-  document.querySelectorAll('.stat-box').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'scale(0.75) translateY(30px)';
-    el.style.filter    = 'blur(10px)';
-  });
-  inView('.stat-box', function(e) {
-    var idx = Array.from(document.querySelectorAll('.stat-box')).indexOf(e.target);
-    animate(e.target, {
-      opacity: [0, 1], scale: [0.75, 1], y: [30, 0], filter: ['blur(10px)', 'blur(0px)']
-    }, { duration: 0.75, delay: idx * 0.12, easing: spring });
-    var numEl = e.target.querySelector('.stat-num');
-    if (numEl) setTimeout(function() { runCounter(numEl); }, 200 + idx * 120);
-  }, { amount: 0 });
-
-  /* ── CASE STUDY CARDS — dramatic vertical entry ── */
-  document.querySelectorAll('.cs-card').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateY(60px) scale(0.92)';
-    el.style.filter    = 'blur(6px)';
-  });
-  inView('.cs-card', function(e) {
-    var idx = Array.from(document.querySelectorAll('.cs-card')).indexOf(e.target);
-    animate(e.target, {
-      opacity: [0, 1], y: [60, 0], scale: [0.92, 1], filter: ['blur(6px)', 'blur(0px)']
-    }, { duration: 0.7, delay: idx * 0.1, easing: spring });
-  }, { amount: 0 });
-
-  /* ── FSTEP ITEMS — stagger slide from left ── */
-  document.querySelectorAll('.fstep').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateX(-50px)';
-    el.style.filter    = 'blur(6px)';
-  });
-  inView('.fstep', function(e) {
-    var i = +e.target.getAttribute('data-step') || 0;
-    animate(e.target, {
-      opacity: [0, 1], x: [-50, 0], filter: ['blur(6px)', 'blur(0px)']
-    }, { duration: 0.65, delay: i * 0.1, easing: easeOut });
-  }, { amount: 0 });
-
-  /* ── SYS-STEP ITEMS — stagger slide from left ── */
-  document.querySelectorAll('.sys-step').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateX(-50px)';
-    el.style.filter    = 'blur(6px)';
-  });
-  inView('.sys-step', function(e) {
-    var i = +e.target.getAttribute('data-sys') || 0;
-    animate(e.target, {
-      opacity: [0, 1], x: [-50, 0], filter: ['blur(6px)', 'blur(0px)']
-    }, { duration: 0.65, delay: i * 0.1, easing: easeOut });
-  }, { amount: 0 });
-
-  /* ── PROBLEMS GRID — stagger with spring scale ── */
-  document.querySelectorAll('.problems-grid > div').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateY(50px) scale(0.9)';
-    el.style.filter    = 'blur(8px)';
-  });
-  inView('.problems-grid > div', function(e) {
-    var idx = Array.from(document.querySelectorAll('.problems-grid > div')).indexOf(e.target);
-    animate(e.target, {
-      opacity: [0, 1], y: [50, 0], scale: [0.9, 1], filter: ['blur(8px)', 'blur(0px)']
-    }, { duration: 0.7, delay: idx * 0.08, easing: spring });
-  }, { amount: 0 });
-
-  /* ── FAQ — blur cascade ── */
-  document.querySelectorAll('details').forEach(function(el) {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateY(24px)';
-    el.style.filter    = 'blur(4px)';
-  });
-  inView('details', function(e) {
-    var idx = Array.from(document.querySelectorAll('details')).indexOf(e.target);
-    animate(e.target, {
-      opacity: [0, 1], y: [24, 0], filter: ['blur(4px)', 'blur(0px)']
-    }, { duration: 0.55, delay: idx * 0.06, easing: ease });
-  }, { amount: 0 });
-
-  /* ── MAGNETIC CTA ── */
-  document.querySelectorAll('.btn-primary').forEach(function(btn) {
-    btn.addEventListener('mousemove', function(e) {
-      var r = btn.getBoundingClientRect();
-      var x = (e.clientX - r.left - r.width  / 2) * 0.28;
-      var y = (e.clientY - r.top  - r.height / 2) * 0.28;
-      btn.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(1.06)';
-    });
-    btn.addEventListener('mouseleave', function() {
-      animate(btn, { x: 0, y: 0, scale: 1 }, { duration: 0.5, easing: easeOut });
+    gsap.from(el, {
+      opacity: 0, scale: 0.8, y: 20, filter: 'blur(8px)',
+      duration: 0.7, ease: 'back.out(1.8)',
+      scrollTrigger: { trigger: el, start: 'top 90%', toggleActions: 'play none none none' }
     });
   });
 
-  /* ── SAFETY FALLBACK — reveal any stuck elements after 2s ── */
-  var SELS = ['.display-bold','.label','.stat-box','.cs-card','.fstep','.sys-step','.problems-grid > div','details'];
-  setTimeout(function() {
-    SELS.forEach(function(sel) {
-      document.querySelectorAll(sel).forEach(function(el) {
-        if (parseFloat(window.getComputedStyle(el).opacity) < 0.5) {
-          el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease';
-          el.style.opacity = '1'; el.style.transform = 'none'; el.style.filter = 'none';
+  /* ── ScrollTrigger.batch helper ── */
+  function batch(sel, fromVars, startPos) {
+    ScrollTrigger.batch(sel, {
+      onEnter: function(els) {
+        gsap.from(els, Object.assign({ clearProps: 'all' }, fromVars));
+      },
+      start: startPos || 'top 88%',
+      once: true
+    });
+  }
+
+  /* ── Case study cards ── */
+  batch('.cs-card', {
+    opacity: 0, y: 80, scale: 0.87, filter: 'blur(14px)',
+    stagger: 0.13, duration: 1.0, ease: 'back.out(1.4)'
+  });
+
+  /* ── Fstep + sys-step — slide in from left ── */
+  batch('.fstep', {
+    opacity: 0, x: -70, filter: 'blur(10px)',
+    stagger: 0.1, duration: 0.85, ease: 'power4.out'
+  }, 'top 92%');
+
+  batch('.sys-step', {
+    opacity: 0, x: -70, filter: 'blur(10px)',
+    stagger: 0.1, duration: 0.85, ease: 'power4.out'
+  }, 'top 92%');
+
+  /* ── Problems grid — spring scale in ── */
+  batch('.problems-grid > div', {
+    opacity: 0, y: 70, scale: 0.85, filter: 'blur(14px)',
+    stagger: 0.1, duration: 0.95, ease: 'back.out(1.6)'
+  });
+
+  /* ── FAQ items ── */
+  batch('details', {
+    opacity: 0, y: 32, filter: 'blur(6px)',
+    stagger: 0.07, duration: 0.65, ease: 'power3.out'
+  }, 'top 92%');
+
+  /* ── VSL — scale reveal ── */
+  gsap.from('#vsl .vsl-inner', {
+    scale: 0.92, opacity: 0.4, duration: 1.3, ease: 'power3.out',
+    scrollTrigger: { trigger: '#vsl', start: 'top 82%', toggleActions: 'play none none none' }
+  });
+
+  /* ── Parallax — hero decorative orbs (desktop) ── */
+  if (!isMobile) {
+    document.querySelectorAll('.hero-bg > div[style]').forEach(function(orb, i) {
+      gsap.to(orb, {
+        yPercent: -20 - i * 10,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: 'section.hero-bg',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1.0 + i * 0.4
         }
       });
     });
-  }, 2000);
+  }
+
+  /* ── 3D tilt — problem cards (desktop) ── */
+  if (!isMobile) {
+    document.querySelectorAll('.problems-grid > div').forEach(function(card) {
+      card.style.transformStyle = 'preserve-3d';
+      card.style.willChange = 'transform';
+
+      card.addEventListener('mousemove', function(e) {
+        var r = card.getBoundingClientRect();
+        var nx = (e.clientX - r.left - r.width  / 2) / (r.width  / 2);
+        var ny = (e.clientY - r.top  - r.height / 2) / (r.height / 2);
+        gsap.to(card, { rotateX: -ny * 10, rotateY: nx * 10, scale: 1.04, duration: 0.35, ease: 'power2.out' });
+      });
+
+      card.addEventListener('mouseleave', function() {
+        gsap.to(card, { rotateX: 0, rotateY: 0, scale: 1, duration: 0.75, ease: 'elastic.out(1, 0.35)' });
+      });
+    });
+  }
+
+  /* ── Magnetic CTA — elastic spring return ── */
+  document.querySelectorAll('.btn-primary').forEach(function(btn) {
+    btn.addEventListener('mousemove', function(e) {
+      var r = btn.getBoundingClientRect();
+      var mx = (e.clientX - r.left - r.width  / 2) * 0.32;
+      var my = (e.clientY - r.top  - r.height / 2) * 0.32;
+      gsap.to(btn, { x: mx, y: my, scale: 1.07, duration: 0.4, ease: 'power2.out' });
+    });
+    btn.addEventListener('mouseleave', function() {
+      gsap.to(btn, { x: 0, y: 0, scale: 1, duration: 0.7, ease: 'elastic.out(1, 0.38)' });
+    });
+  });
+
+  /* ── Section entry animations — generic p/li/span reveal ── */
+  gsap.utils.toArray('section').forEach(function(section) {
+    var inner = section.querySelector('[style*="max-width:1100px"], [style*="max-width:900px"]');
+    if (!inner) return;
+    gsap.from(inner, {
+      opacity: 0.0001,
+      duration: 0.01,
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 95%',
+        toggleActions: 'play none none none',
+        onEnter: function() { gsap.set(inner, { clearProps: 'opacity' }); }
+      }
+    });
+  });
+
+  /* ── Safety fallback — reveal stuck elements after 2.5s ── */
+  setTimeout(function() {
+    var stuck = ['.display-bold','.label','.stat-box','.cs-card','.fstep','.sys-step','.problems-grid > div','details','.pill','.heading-oswald'];
+    stuck.forEach(function(s) {
+      document.querySelectorAll(s).forEach(function(el) {
+        if (+window.getComputedStyle(el).opacity < 0.5) {
+          gsap.set(el, { clearProps: 'all' });
+        }
+      });
+    });
+  }, 2500);
+
 })();
 </script>
 </body>

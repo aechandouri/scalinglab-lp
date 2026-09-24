@@ -85,7 +85,7 @@ Chaque pilier s'appuie sur le précédent. Ensemble, ils forment un système irr
 
 ### Niche Ultra-Rentable & Offre Irrésistible
 
-Sélection de ta niche parmi les **20 niches les plus rentables** + création d'une offre transformationnelle issue de +50 offres prouvées sur 75 niches.
+Sélection de ta niche parmi les **20 niches les plus rentables** + création d'une offre transformationnelle issue de +50 offres prouvées sur 75 niches. [Voir les 15 niches couvertes →](https://lescalinglab.com/agences/)
 
 Niche sélection
 Offre irrésistible
@@ -175,7 +175,7 @@ E-commerce
 
 Routine du Scaling Lab'
 
-🔥 Semaine 3 · 18j consécutifs
+Semaine 3 · 18j consécutifs
 
 Lun
 
@@ -235,67 +235,63 @@ DW = Deep Work · CI = Check-in Abdé · **2h/jour suffisent** pour transformer 
 
 Les 6 Systèmes de l'Agence
 
-⚙️
 Opérationnel
 
-SOPs, delivery, onboarding clients
+SOPs, delivery, onboarding
 
-📊
 Métriques
 
-Dashboard, KPIs, pipeline deals
+Dashboard, KPIs, pipeline
 
-🎯
 Prospection
 
-4 canaux, scripts closing, CRM
+4 canaux, scripts, CRM
 
-✍️
 Contenu
 
-Calendrier éditorial, leads magnets
+Calendrier éditorial, lead magnets
 
-💰
 Finance
 
 Pricing, marges, réinvestissement
 
-🎓
 Formation
 
 Recrutement, onboarding équipe
+
+→ **Croissance prévisible** quand les 6 systèmes tournent ensemble
 
 Le Tunnel d'Acquisition Complet
 
 Haut du Tunnel
 
-📣 Publicités
+Publicités
 
-✍️ Contenu Value
+Contenu Value
 
-🎯 Prospection Tiède
+Prospection Tiède
 
-🤝 Partenariats
+Partenariats
 
 Milieu du Tunnel
 
-🧲 Lead Magnets
+Lead Magnets
 
-▶️ Assets YouTube
+Assets YouTube
 
-📧 Séquences Email
+Séquences Email
 
-🙏 Page Merci
+Page Merci
 
 Bas du Tunnel
 
-🎬 VSL
+VSL
 
-🎓 Webinaires
+Webinaires
 
-📰 Newsletter
+Newsletter
 
-📅 Prise de RDV
+Prise de RDV
 
 → **4 canaux simultanés** — jamais dépendant d'une seule source de leads
 
@@ -333,15 +329,11 @@ Chacun de ces éléments vaut à lui seul le prix d'entrée au programme.
 
 1
 
-🚀
-
 ### De Prestataire à Partenaire de Croissance
 
 Devenir la catégorie de 1 dans ta niche avec une offre basée sur un résultat garanti — pas un service.
 
 2
-
-🎯
 
 ### Le Tunnel Complet — Plus Jamais à Court de Leads
 
@@ -349,15 +341,11 @@ Devenir la catégorie de 1 dans ta niche avec une offre basée sur un résultat 
 
 3
 
-⚡
-
 ### Accès 1-1 à Abdé — 9× par Mois
 
 Canal Slack 24/7 + GMeet 2×/semaine. Feedback actionnable en moins de 2h. Jamais de groupe.
 
 4
-
-🔒
 
 ### La Responsabilisation
 
@@ -365,74 +353,69 @@ Check-in toutes les 48h. Suivi précis de la roadmap. La pression positive qui t
 
 5
 
-❄️
-
 ### L'Effet Boule de Neige
 
 4 leviers composés pour que ton business tourne sans toi. Liberté financière + liberté de temps — enfin.
 
 La Transformation
 
-😓 Avant
+AVANT
+
+APRÈS
 
 Prestation de service
-
-1 500 – 3 000€/mois
-
-Remplaçable par IA
-
-En concurrence directe
-
-Vendu au volume
-
-✦ Après
-
 Résultat garanti IA
 
-10 000 – 25 000€/mois
+1 500 – 3 000€/mois
+10k – 25k€/mois
 
+Remplaçable par IA
 Catégorie de 1
 
+En concurrence directe
 Incomparable
 
+Vendu au volume
 Partenaire stratégique
 
-Le Système d'Acquisition
+La même valeur livrée. Un positionnement totalement différent.
 
-📣
+Le Système d'Acquisition
 
 Publicités
 
 Meta · TikTok · YouTube
 
-+40% leads
+40%
 
-✍️
+leads
 
 Contenu Organique
 
 LinkedIn · Instagram · YouTube
 
-+25% leads
+25%
 
-🎯
+leads
 
 Prospection Froide
 
 Email · DM · Cold Call
 
-+20% leads
+20%
 
-🤝
+leads
 
 Partenariats
 
 Commissions · Apporteurs
 
-+15% leads
+15%
+
+leads
 
 Script closing éprouvé
-210+ deals high-ticket fermés
+210+ deals high-ticket
 
 A
 
@@ -440,7 +423,7 @@ Canal Privé · Abdé
 
 En ligne maintenant
 
-⚡ Rép. < 2h
+Rép. < 2h
 
 Tu
 
@@ -452,7 +435,7 @@ A
 
 Abdé · 09:47
 
-Envoie-moi l'enregistrement de ton dernier call. Je t'identifie exactement où tu perds le prospect et on règle ça aujourd'hui. 🎯
+Envoie-moi l'enregistrement de ton dernier call. Je t'identifie exactement où tu perds le prospect et on règle ça aujourd'hui.
 
 A
 
@@ -525,8 +508,6 @@ Les autres
 ✓
 Scaling Lab'
 
-👥
-
 Format
 
 Comment ça se passe
@@ -536,8 +517,6 @@ Calls de groupe — 15 personnes, 10 min de parole
 
 ✓
 Suivi 1-1 exclusif — *jamais de groupe*
-
-🎤
 
 Accès
 
@@ -549,8 +528,6 @@ Un "coach" délégué qui ne connaît pas ton business
 ✓
 *Abdé en direct* — connaît ton business, tes chiffres, tes blocages
 
-⚡
-
 Réactivité
 
 Délai de réponse
@@ -560,8 +537,6 @@ Délai de réponse
 
 ✓
 Check-in toutes les *48h*, feedback actionnable en <2h
-
-🗺️
 
 Roadmap
 
@@ -573,8 +548,6 @@ Vidéos de formation génériques, zéro contexte personnalisé
 ✓
 Plan *J1→J120* sur-mesure, micro-tâches quotidiennes
 
-🔬
-
 Méthodes
 
 Fraîcheur des tactiques
@@ -585,8 +558,6 @@ Datant de 5–10 ans, marchés US inconnus
 ✓
 Testées sur le *marché US en 2025-2026*, appliquées en France dès maintenant
 
-🔗
-
 Système
 
 Canaux & couverture
@@ -596,8 +567,6 @@ Un seul canal enseigné (LinkedIn ou cold email ou ads…)
 
 ✓
 Système *complet et multimodal* — 4 canaux en parallèle, tout est lié
-
-🧠
 
 Suivi dans le temps
 
@@ -726,6 +695,8 @@ Le programme accueille des profils entre **0 et 50k€/mois** de CA — la major
 Dans quelles niches le système a-t-il été validé ?
 
 **75+ niches** ont été testées et validées : immobilier, BTP, cliniques esthétiques, installateurs solaires, restaurants, e-commerce, coaching, SaaS, avocats, médecins, et bien d'autres. À ce jour, aucune niche n'a été trouvée où le système ne fonctionne pas. Un process de validation de niche en **48h** est intégré au programme pour les cas atypiques.
+
+[→ Explorer les 15 niches validées avec stats, pain points et cas clients](https://lescalinglab.com/agences/)
 
 Quelle est la différence entre le Scaling Lab' et une formation en ligne ?
 

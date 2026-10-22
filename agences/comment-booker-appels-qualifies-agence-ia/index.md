@@ -92,23 +92,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=-MFIecpB17I)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Centres esthétiques
+[Comment choisir la bonne niche pour ton agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/centres-esthetiques/)
-[Dentistes
+Lire le guide →](https://lescalinglab.com/agences/comment-choisir-niche-agence-ia/)
+[Comment closer en appel de vente pour une agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/dentistes/)
-[Avocats
+Lire le guide →](https://lescalinglab.com/agences/comment-closer-appels-vente-agence-ia/)
+[Comment construire sa crédibilité en agence IA sans expér…
 
-Explorer la niche →](https://lescalinglab.com/agences/avocats/)
-[Experts-comptables
+Lire le guide →](https://lescalinglab.com/agences/comment-construire-credibilite-agence-ia/)
+[Comment créer du contenu B2B qui génère des inbounds pour…
 
-Explorer la niche →](https://lescalinglab.com/agences/experts-comptables/)
-[Coaching & consultants
+Lire le guide →](https://lescalinglab.com/agences/comment-creer-contenu-b2b-agence-ia/)
+[Comment créer une landing page qui convertit pour une age…
 
-Explorer la niche →](https://lescalinglab.com/agences/coaching-consultants/)
+Lire le guide →](https://lescalinglab.com/agences/comment-creer-landing-page-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

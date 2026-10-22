@@ -92,23 +92,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=PSe--JoHb34)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[BTP & construction
+[Comment booker des appels de vente qualifiés pour ton age…
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Restaurants
+Lire le guide →](https://lescalinglab.com/agences/comment-booker-appels-qualifies-agence-ia/)
+[Comment choisir la bonne niche pour ton agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/restaurants/)
-[Plombiers & électriciens
+Lire le guide →](https://lescalinglab.com/agences/comment-choisir-niche-agence-ia/)
+[Comment closer en appel de vente pour une agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/plombiers-electriciens/)
-[Garages automobiles
+Lire le guide →](https://lescalinglab.com/agences/comment-closer-appels-vente-agence-ia/)
+[Comment construire sa crédibilité en agence IA sans expér…
 
-Explorer la niche →](https://lescalinglab.com/agences/garages-auto/)
-[Salons de coiffure
+Lire le guide →](https://lescalinglab.com/agences/comment-construire-credibilite-agence-ia/)
+[Comment créer du contenu B2B qui génère des inbounds pour…
 
-Explorer la niche →](https://lescalinglab.com/agences/salons-coiffure/)
+Lire le guide →](https://lescalinglab.com/agences/comment-creer-contenu-b2b-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

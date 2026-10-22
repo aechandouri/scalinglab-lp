@@ -92,23 +92,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=aKnuQys0xAs)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[BTP & construction
+[Comment garantir des résultats à ses clients en agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Solaire & photovoltaïque
+Lire le guide →](https://lescalinglab.com/agences/comment-garantir-resultats-clients-agence-ia/)
+[Comment générer du trafic qualifié pour une agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/solaire/)
-[Dentistes
+Lire le guide →](https://lescalinglab.com/agences/comment-generer-trafic-agence-ia/)
+[Comment gérer l'objection prix et ne plus baisser ses tarifs
 
-Explorer la niche →](https://lescalinglab.com/agences/dentistes/)
-[Avocats
+Lire le guide →](https://lescalinglab.com/agences/comment-gerer-objection-prix-agence-ia/)
+[Comment livrer ses clients avec une agence IA — sans te n…
 
-Explorer la niche →](https://lescalinglab.com/agences/avocats/)
-[Immobilier
+Lire le guide →](https://lescalinglab.com/agences/comment-livrer-clients-agence-ia/)
+[Comment négocier et structurer ses contrats pour une agen…
 
-Explorer la niche →](https://lescalinglab.com/agences/immobilier/)
+Lire le guide →](https://lescalinglab.com/agences/comment-negocier-contrats-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

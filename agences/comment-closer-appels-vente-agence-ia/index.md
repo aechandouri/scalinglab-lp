@@ -98,23 +98,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=FlDcrqK9Ylg)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[BTP & construction
+[Comment construire sa crédibilité en agence IA sans expér…
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Immobilier
+Lire le guide →](https://lescalinglab.com/agences/comment-construire-credibilite-agence-ia/)
+[Comment créer du contenu B2B qui génère des inbounds pour…
 
-Explorer la niche →](https://lescalinglab.com/agences/immobilier/)
-[Avocats
+Lire le guide →](https://lescalinglab.com/agences/comment-creer-contenu-b2b-agence-ia/)
+[Comment créer une landing page qui convertit pour une age…
 
-Explorer la niche →](https://lescalinglab.com/agences/avocats/)
-[Solaire & photovoltaïque
+Lire le guide →](https://lescalinglab.com/agences/comment-creer-landing-page-agence-ia/)
+[Comment créer une offre irrésistible pour ton agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/solaire/)
-[Coaching & consultants
+Lire le guide →](https://lescalinglab.com/agences/comment-creer-offre-agence-ia/)
+[Comment créer une VSL qui génère 35-50 appels/mois pour t…
 
-Explorer la niche →](https://lescalinglab.com/agences/coaching-consultants/)
+Lire le guide →](https://lescalinglab.com/agences/comment-creer-vsl-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

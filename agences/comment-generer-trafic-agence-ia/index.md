@@ -92,23 +92,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=-MFIecpB17I)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Immobilier
+[Comment gérer l'objection prix et ne plus baisser ses tarifs
 
-Explorer la niche →](https://lescalinglab.com/agences/immobilier/)
-[BTP & construction
+Lire le guide →](https://lescalinglab.com/agences/comment-gerer-objection-prix-agence-ia/)
+[Comment livrer ses clients avec une agence IA — sans te n…
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Solaire & photovoltaïque
+Lire le guide →](https://lescalinglab.com/agences/comment-livrer-clients-agence-ia/)
+[Comment négocier et structurer ses contrats pour une agen…
 
-Explorer la niche →](https://lescalinglab.com/agences/solaire/)
-[Restaurants
+Lire le guide →](https://lescalinglab.com/agences/comment-negocier-contrats-agence-ia/)
+[Comment passer de SMMA à agence IA sans perdre ses revenus
 
-Explorer la niche →](https://lescalinglab.com/agences/restaurants/)
-[E-commerce
+Lire le guide →](https://lescalinglab.com/agences/comment-passer-smma-agence-ia/)
+[Comment piloter ses KPIs et scaler son agence IA par les…
 
-Explorer la niche →](https://lescalinglab.com/agences/e-commerce/)
+Lire le guide →](https://lescalinglab.com/agences/comment-piloter-kpis-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

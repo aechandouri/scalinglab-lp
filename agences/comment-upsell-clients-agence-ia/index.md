@@ -86,23 +86,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=kh2cXi8mKZ4)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Centres esthétiques
+[Comment utiliser GoHighLevel pour lancer et scaler son ag…
 
-Explorer la niche →](https://lescalinglab.com/agences/centres-esthetiques/)
-[Dentistes
+Lire le guide →](https://lescalinglab.com/agences/comment-utiliser-gohighlevel-agence-ia/)
+[Comment automatiser sa prospection pour générer des leads…
 
-Explorer la niche →](https://lescalinglab.com/agences/dentistes/)
-[Coaching & consultants
+Lire le guide →](https://lescalinglab.com/agences/comment-automatiser-prospection-agence-ia/)
+[Comment booker des appels de vente qualifiés pour ton age…
 
-Explorer la niche →](https://lescalinglab.com/agences/coaching-consultants/)
-[E-commerce
+Lire le guide →](https://lescalinglab.com/agences/comment-booker-appels-qualifies-agence-ia/)
+[Comment choisir la bonne niche pour ton agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/e-commerce/)
-[Immobilier
+Lire le guide →](https://lescalinglab.com/agences/comment-choisir-niche-agence-ia/)
+[Comment closer en appel de vente pour une agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/immobilier/)
+Lire le guide →](https://lescalinglab.com/agences/comment-closer-appels-vente-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

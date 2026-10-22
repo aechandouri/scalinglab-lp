@@ -92,23 +92,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=kh2cXi8mKZ4)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Centres esthétiques
+[Comment négocier et structurer ses contrats pour une agen…
 
-Explorer la niche →](https://lescalinglab.com/agences/centres-esthetiques/)
-[BTP & construction
+Lire le guide →](https://lescalinglab.com/agences/comment-negocier-contrats-agence-ia/)
+[Comment passer de SMMA à agence IA sans perdre ses revenus
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Immobilier
+Lire le guide →](https://lescalinglab.com/agences/comment-passer-smma-agence-ia/)
+[Comment piloter ses KPIs et scaler son agence IA par les…
 
-Explorer la niche →](https://lescalinglab.com/agences/immobilier/)
-[Dentistes
+Lire le guide →](https://lescalinglab.com/agences/comment-piloter-kpis-agence-ia/)
+[Comment prospecter en cold outreach pour remplir son pipe…
 
-Explorer la niche →](https://lescalinglab.com/agences/dentistes/)
-[Garages automobiles
+Lire le guide →](https://lescalinglab.com/agences/comment-prospecter-cold-outreach-agence-ia/)
+[Comment réduire le churn et garder ses clients en agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/garages-auto/)
+Lire le guide →](https://lescalinglab.com/agences/comment-reduire-churn-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

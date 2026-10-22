@@ -98,23 +98,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=xoYe4gqNIU4)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Avocats
+[Comment passer de SMMA à agence IA sans perdre ses revenus
 
-Explorer la niche →](https://lescalinglab.com/agences/avocats/)
-[Experts-comptables
+Lire le guide →](https://lescalinglab.com/agences/comment-passer-smma-agence-ia/)
+[Comment piloter ses KPIs et scaler son agence IA par les…
 
-Explorer la niche →](https://lescalinglab.com/agences/experts-comptables/)
-[Coaching & consultants
+Lire le guide →](https://lescalinglab.com/agences/comment-piloter-kpis-agence-ia/)
+[Comment prospecter en cold outreach pour remplir son pipe…
 
-Explorer la niche →](https://lescalinglab.com/agences/coaching-consultants/)
-[Immobilier
+Lire le guide →](https://lescalinglab.com/agences/comment-prospecter-cold-outreach-agence-ia/)
+[Comment réduire le churn et garder ses clients en agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/immobilier/)
-[Solaire & photovoltaïque
+Lire le guide →](https://lescalinglab.com/agences/comment-reduire-churn-agence-ia/)
+[Comment scaler son agence IA au-delà de 10k€/mois
 
-Explorer la niche →](https://lescalinglab.com/agences/solaire/)
+Lire le guide →](https://lescalinglab.com/agences/comment-scaler-agence-ia-50k/)
 
 Scaling Lab' — Coaching 1-1
 

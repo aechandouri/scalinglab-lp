@@ -92,23 +92,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=xoYe4gqNIU4)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Centres esthétiques
+[Comment générer du trafic qualifié pour une agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/centres-esthetiques/)
-[Coaching & consultants
+Lire le guide →](https://lescalinglab.com/agences/comment-generer-trafic-agence-ia/)
+[Comment gérer l'objection prix et ne plus baisser ses tarifs
 
-Explorer la niche →](https://lescalinglab.com/agences/coaching-consultants/)
-[BTP & construction
+Lire le guide →](https://lescalinglab.com/agences/comment-gerer-objection-prix-agence-ia/)
+[Comment livrer ses clients avec une agence IA — sans te n…
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Dentistes
+Lire le guide →](https://lescalinglab.com/agences/comment-livrer-clients-agence-ia/)
+[Comment négocier et structurer ses contrats pour une agen…
 
-Explorer la niche →](https://lescalinglab.com/agences/dentistes/)
-[Thérapeutes & bien-être
+Lire le guide →](https://lescalinglab.com/agences/comment-negocier-contrats-agence-ia/)
+[Comment passer de SMMA à agence IA sans perdre ses revenus
 
-Explorer la niche →](https://lescalinglab.com/agences/therapeutes/)
+Lire le guide →](https://lescalinglab.com/agences/comment-passer-smma-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

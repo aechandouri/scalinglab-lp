@@ -5,13 +5,17 @@ url: https://lescalinglab.com/
 source: index.html
 ---
 
+[Ryan & Julien **70k€+ contractés en un mois**Louis **4k€  à  58k€ en 2 mois**Dylan **2,5k€  à  17k€/mois**Abdou **0  à  15k€/mois**Arthur & Matys **10k€/mois en 112 jours**Arnaud **100k€/an**
+
+Ryan & Julien **70k€+ contractés en un mois**Louis **4k€  à  58k€ en 2 mois**Dylan **2,5k€  à  17k€/mois**Abdou **0  à  15k€/mois**Arthur & Matys **10k€/mois en 112 jours**Arnaud **100k€/an**](#proof)
+
 Présentation
 
 ## Regarde avant de postuler
 
 Abdé t'explique exactement ce que tu vas construire en 120 jours — et pourquoi ça marche dans n'importe quelle niche.
 
-— by Abdé Chan
+par Abdé Chan
 
 Regarde la Présentation Entièrement
 
@@ -644,35 +648,68 @@ Preuve Sociale
 
 Interviews filmées — pas de témoignages anonymes, pas de résultats inventés.
 
-Interview
+**6**Interviews
 
-Abdou — De 0 à 15k€/mois en 6 mois
+**3 h 20**De témoignages
 
-Niche des Experts-Comptables
+**6**Niches différentes
 
-Interview
+[Nouvelle interview
+34:33
 
-Louis — De 4k€ à 58k€ en 2 mois
+### Ryan & Julien
 
-Niche des Centres de beauté
+Agence de croissance · Niche du BTP
 
-Interview
+6k€ à 22k€/mois
 
-Arthur & Matys — De 1000€ à 10k€/mois en 112 jours
+> « C'est presque plus des calls de vente, c'est plus des formalités administratives. Les gars veulent déjà bosser avec toi. »
+>
+> Ryan · à 4:13 dans l'interview
 
-Niche des Coachs et Infopreneurs
+**70k€+**contractés en un seul mois
 
-Interview
+**21k€+**collectés sur leur meilleur mois](https://www.youtube.com/watch?v=f5lM0ymB2SQ)
+[Interview
+52:23
 
-Dylan — De 2,5k€ à 17k€/mois en 6 mois
+### Louis
 
-Niche des Cliniques Esthétiques
+En 2 mois · Centres de beauté
 
-Interview
+4k€ à 58k€](https://www.youtube.com/watch?v=R5c1iT4V_Ts)
+[Interview
+25:02
 
-Arnaud — 100K€/an dans la niche de l'Habitat
+### Dylan
 
-Niche de l'Habitat
+En 6 mois · Cliniques esthétiques
+
+2,5k€ à 17k€/mois](https://www.youtube.com/watch?v=7G31z3wOkSY)
+[Interview
+20:50
+
+### Abdou
+
+En 6 mois · Experts-comptables
+
+0 à 15k€/mois](https://www.youtube.com/watch?v=E4vwqmR9ooo)
+[Interview
+29:59
+
+### Arthur & Matys
+
+En 112 jours · Coachs et infopreneurs
+
+1 000€ à 10k€/mois](https://www.youtube.com/watch?v=RnQPJ1ECUB4)
+[Interview
+38:04
+
+### Arnaud
+
+Niche de l'Habitat · après 5 ans en SMMA
+
+100k€/an](https://www.youtube.com/watch?v=01uFZGnZreQ)
 
 [+ de Preuve/Résultat sur mon Instagram](https://www.instagram.com/its.abdechan/)
 

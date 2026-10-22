@@ -104,23 +104,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=Hku7EG3K10k)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Centres esthétiques
+[Comment décrocher son premier client en agence IA — de zé…
 
-Explorer la niche →](https://lescalinglab.com/agences/centres-esthetiques/)
-[BTP & construction
+Lire le guide →](https://lescalinglab.com/agences/comment-decrocher-premier-client-agence-ia/)
+[Les 5 erreurs qui tuent les agences IA — et comment les é…
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Solaire & photovoltaïque
+Lire le guide →](https://lescalinglab.com/agences/comment-eviter-erreurs-agence-ia/)
+[Comment facturer plus fort avec ton agence IA — de 500 à…
 
-Explorer la niche →](https://lescalinglab.com/agences/solaire/)
-[Dentistes
+Lire le guide →](https://lescalinglab.com/agences/comment-facturer-plus-fort-agence-ia/)
+[Comment garantir des résultats à ses clients en agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/dentistes/)
-[Immobilier
+Lire le guide →](https://lescalinglab.com/agences/comment-garantir-resultats-clients-agence-ia/)
+[Comment générer du trafic qualifié pour une agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/immobilier/)
+Lire le guide →](https://lescalinglab.com/agences/comment-generer-trafic-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

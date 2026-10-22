@@ -86,23 +86,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=Y2heMDCgvto)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Centres esthétiques
+[Comment scaler son agence IA au-delà de 10k€/mois
 
-Explorer la niche →](https://lescalinglab.com/agences/centres-esthetiques/)
-[Coaching & consultants
+Lire le guide →](https://lescalinglab.com/agences/comment-scaler-agence-ia-50k/)
+[Comment upseller ses clients et passer de 3k€ à 7k€+ par…
 
-Explorer la niche →](https://lescalinglab.com/agences/coaching-consultants/)
-[E-commerce
+Lire le guide →](https://lescalinglab.com/agences/comment-upsell-clients-agence-ia/)
+[Comment utiliser GoHighLevel pour lancer et scaler son ag…
 
-Explorer la niche →](https://lescalinglab.com/agences/e-commerce/)
-[Salons de coiffure
+Lire le guide →](https://lescalinglab.com/agences/comment-utiliser-gohighlevel-agence-ia/)
+[Comment automatiser sa prospection pour générer des leads…
 
-Explorer la niche →](https://lescalinglab.com/agences/salons-coiffure/)
-[Kinés & ostéopathes
+Lire le guide →](https://lescalinglab.com/agences/comment-automatiser-prospection-agence-ia/)
+[Comment booker des appels de vente qualifiés pour ton age…
 
-Explorer la niche →](https://lescalinglab.com/agences/kines-osteos/)
+Lire le guide →](https://lescalinglab.com/agences/comment-booker-appels-qualifies-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

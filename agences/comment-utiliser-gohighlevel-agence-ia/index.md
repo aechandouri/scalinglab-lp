@@ -92,23 +92,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=Y2heMDCgvto)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Centres esthétiques
+[Comment automatiser sa prospection pour générer des leads…
 
-Explorer la niche →](https://lescalinglab.com/agences/centres-esthetiques/)
-[BTP & construction
+Lire le guide →](https://lescalinglab.com/agences/comment-automatiser-prospection-agence-ia/)
+[Comment booker des appels de vente qualifiés pour ton age…
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Immobilier
+Lire le guide →](https://lescalinglab.com/agences/comment-booker-appels-qualifies-agence-ia/)
+[Comment choisir la bonne niche pour ton agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/immobilier/)
-[Dentistes
+Lire le guide →](https://lescalinglab.com/agences/comment-choisir-niche-agence-ia/)
+[Comment closer en appel de vente pour une agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/dentistes/)
-[Restaurants
+Lire le guide →](https://lescalinglab.com/agences/comment-closer-appels-vente-agence-ia/)
+[Comment construire sa crédibilité en agence IA sans expér…
 
-Explorer la niche →](https://lescalinglab.com/agences/restaurants/)
+Lire le guide →](https://lescalinglab.com/agences/comment-construire-credibilite-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

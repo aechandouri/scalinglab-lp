@@ -92,23 +92,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=H_Bgi13j9G4)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Centres esthétiques
+[Les 5 erreurs qui tuent les agences IA — et comment les é…
 
-Explorer la niche →](https://lescalinglab.com/agences/centres-esthetiques/)
-[BTP & construction
+Lire le guide →](https://lescalinglab.com/agences/comment-eviter-erreurs-agence-ia/)
+[Comment facturer plus fort avec ton agence IA — de 500 à…
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Restaurants
+Lire le guide →](https://lescalinglab.com/agences/comment-facturer-plus-fort-agence-ia/)
+[Comment garantir des résultats à ses clients en agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/restaurants/)
-[Garages automobiles
+Lire le guide →](https://lescalinglab.com/agences/comment-garantir-resultats-clients-agence-ia/)
+[Comment générer du trafic qualifié pour une agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/garages-auto/)
-[Salons de coiffure
+Lire le guide →](https://lescalinglab.com/agences/comment-generer-trafic-agence-ia/)
+[Comment gérer l'objection prix et ne plus baisser ses tarifs
 
-Explorer la niche →](https://lescalinglab.com/agences/salons-coiffure/)
+Lire le guide →](https://lescalinglab.com/agences/comment-gerer-objection-prix-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

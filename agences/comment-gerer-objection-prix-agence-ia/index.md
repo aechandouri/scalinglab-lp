@@ -98,23 +98,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=FlDcrqK9Ylg)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[BTP & construction
+[Comment livrer ses clients avec une agence IA — sans te n…
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Solaire & photovoltaïque
+Lire le guide →](https://lescalinglab.com/agences/comment-livrer-clients-agence-ia/)
+[Comment négocier et structurer ses contrats pour une agen…
 
-Explorer la niche →](https://lescalinglab.com/agences/solaire/)
-[Plombiers & électriciens
+Lire le guide →](https://lescalinglab.com/agences/comment-negocier-contrats-agence-ia/)
+[Comment passer de SMMA à agence IA sans perdre ses revenus
 
-Explorer la niche →](https://lescalinglab.com/agences/plombiers-electriciens/)
-[Garages automobiles
+Lire le guide →](https://lescalinglab.com/agences/comment-passer-smma-agence-ia/)
+[Comment piloter ses KPIs et scaler son agence IA par les…
 
-Explorer la niche →](https://lescalinglab.com/agences/garages-auto/)
-[Restaurants
+Lire le guide →](https://lescalinglab.com/agences/comment-piloter-kpis-agence-ia/)
+[Comment prospecter en cold outreach pour remplir son pipe…
 
-Explorer la niche →](https://lescalinglab.com/agences/restaurants/)
+Lire le guide →](https://lescalinglab.com/agences/comment-prospecter-cold-outreach-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

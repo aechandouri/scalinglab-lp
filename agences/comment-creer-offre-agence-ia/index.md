@@ -92,23 +92,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=H_Bgi13j9G4)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Centres esthétiques
+[Comment créer une VSL qui génère 35-50 appels/mois pour t…
 
-Explorer la niche →](https://lescalinglab.com/agences/centres-esthetiques/)
-[BTP & construction
+Lire le guide →](https://lescalinglab.com/agences/comment-creer-vsl-agence-ia/)
+[Comment décrocher son premier client en agence IA — de zé…
 
-Explorer la niche →](https://lescalinglab.com/agences/btp-construction/)
-[Immobilier
+Lire le guide →](https://lescalinglab.com/agences/comment-decrocher-premier-client-agence-ia/)
+[Les 5 erreurs qui tuent les agences IA — et comment les é…
 
-Explorer la niche →](https://lescalinglab.com/agences/immobilier/)
-[Coaching & consultants
+Lire le guide →](https://lescalinglab.com/agences/comment-eviter-erreurs-agence-ia/)
+[Comment facturer plus fort avec ton agence IA — de 500 à…
 
-Explorer la niche →](https://lescalinglab.com/agences/coaching-consultants/)
-[Experts-comptables
+Lire le guide →](https://lescalinglab.com/agences/comment-facturer-plus-fort-agence-ia/)
+[Comment garantir des résultats à ses clients en agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/experts-comptables/)
+Lire le guide →](https://lescalinglab.com/agences/comment-garantir-resultats-clients-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 

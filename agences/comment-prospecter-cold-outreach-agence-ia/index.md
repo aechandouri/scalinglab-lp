@@ -98,23 +98,23 @@ Voir la vidéo complète →](https://www.youtube.com/watch?v=H_Bgi13j9G4)
 
 Niches recommandées
 
-## Applique cette méthode dans ta niche
+## Continue avec ces guides
 
-[Experts-comptables
+[Comment réduire le churn et garder ses clients en agence IA
 
-Explorer la niche →](https://lescalinglab.com/agences/experts-comptables/)
-[Avocats
+Lire le guide →](https://lescalinglab.com/agences/comment-reduire-churn-agence-ia/)
+[Comment scaler son agence IA au-delà de 10k€/mois
 
-Explorer la niche →](https://lescalinglab.com/agences/avocats/)
-[Coaching & consultants
+Lire le guide →](https://lescalinglab.com/agences/comment-scaler-agence-ia-50k/)
+[Comment upseller ses clients et passer de 3k€ à 7k€+ par…
 
-Explorer la niche →](https://lescalinglab.com/agences/coaching-consultants/)
-[Immobilier
+Lire le guide →](https://lescalinglab.com/agences/comment-upsell-clients-agence-ia/)
+[Comment utiliser GoHighLevel pour lancer et scaler son ag…
 
-Explorer la niche →](https://lescalinglab.com/agences/immobilier/)
-[Solaire & photovoltaïque
+Lire le guide →](https://lescalinglab.com/agences/comment-utiliser-gohighlevel-agence-ia/)
+[Comment automatiser sa prospection pour générer des leads…
 
-Explorer la niche →](https://lescalinglab.com/agences/solaire/)
+Lire le guide →](https://lescalinglab.com/agences/comment-automatiser-prospection-agence-ia/)
 
 Scaling Lab' — Coaching 1-1
 
